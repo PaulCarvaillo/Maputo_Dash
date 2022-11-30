@@ -74,6 +74,7 @@ pure-eval==0.2.2
 pycodestyle==2.9.1
 pycparser==2.21
 Pygments==2.13.0
+pynndescent==0.5.8
 pyparsing==3.0.9
 python-dateutil==2.8.2
 pytz==2022.4
@@ -98,6 +99,8 @@ toml==0.10.2
 tornado==6.2
 tqdm==4.64.1
 traitlets==5.4.0
+umap==0.1.1
+umap-learn==0.5.3
 urllib3==1.26.12
 wcwidth==0.2.5
 Werkzeug==2.2.2
