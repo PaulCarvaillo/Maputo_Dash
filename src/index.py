@@ -33,7 +33,6 @@ def display_page(pathname):
         return create_layout(app, df_metafiles_xenocanto=df_metafiles_xenocanto_reduced)
     elif pathname == '/pages/ROI':
         return cl2(app, df_metafiles_xenocanto=df_metafiles_xenocanto_reduced)
-        return create_layout(app, df_metafiles_xenocanto=df_metafiles_xenocanto_reduced)
     elif pathname == '/pages/PCA':
         return cl3(app, df_ROI_final=df_ROI_final)
     elif pathname == '/pages/UMAPs':
