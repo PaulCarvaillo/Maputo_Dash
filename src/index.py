@@ -11,13 +11,11 @@ from pages.study_of_ROI.layout import create_layout as cl2
 from pages.PCA.layout import create_layout as cl3
 from pages.UMAPs.layout import create_layout as cl4
 from pages.tSNE.layout import create_layout as cl5
+from loaded_data import df_metafiles_xenocanto, df_ROI_final
 
 # --------------------Layout of first page, links to different pages---
-df_metafiles_xenocanto = pd.read_csv(
-    '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/metafiles_xenocanto.csv')
 df_metafiles_xenocanto_reduced = df_metafiles_xenocanto.loc[:, [
     'id','rec','loc', 'gen', 'sp', 'lat', 'lng', 'alt', 'type', 'q', 'length', 'bird-seen']]
-df_ROI_final = pd.read_csv('/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_ROI_final.csv')
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),

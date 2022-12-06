@@ -7,17 +7,7 @@ from dash.exceptions import PreventUpdate
 from controller.UMAP.UMAP_GRAPHS import plot_umap
 import matplotlib
 matplotlib.use('Agg')
-from loaded_data import df_annot_final
-
-
-
-df_ROI_final = pd.read_csv(
-    '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_ROI_final.csv')
-
-# df_annot_final = pd.read_csv(
-#     '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_annot_final.csv')
-
-
+from loaded_data import df_annot_final, df_ROI_final
 
 def create_layout(app, df_ROI_final):
     # Page layouts
