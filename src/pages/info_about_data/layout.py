@@ -14,6 +14,7 @@ import dash_leaflet.express as dlx
 import plotly_express as px
 from loaded_data import df_metafiles_xenocanto
 
+
 def create_layout(app, df_metafiles_xenocanto):
     # Page layouts
     return html.Div(
@@ -109,7 +110,7 @@ def create_layout(app, df_metafiles_xenocanto):
 #     data=df_metafiles_xenocanto
 #     if n:
 #         return data.to_dict('records')
-    
+
 @app.callback(Output('datatable-interactivity', 'style_data_conditional'),
               Input('datatable-interactivity', 'selected_columns'))
 def update_styles(selected_columns):
@@ -138,7 +139,7 @@ def update_graphs(rows, derived_virtual_selected_rows, n):
 
     if n:
         dff.to_csv(
-            '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv')
+            '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df_new.csv')
 
     return [dl.Map([dl.TileLayer(), dl.GeoJSON(data=geojson_birds, id="geojson", zoomToBounds=True, cluster=True)],
                    style={"width": "600px",
@@ -166,9 +167,10 @@ def generate_graphs(data):
                                height=650,
                                title="Genus & Species distribution amongst files <br><sup>Areas represent number of files, hover for info.</sup>"
                                )
-        scatter = px.scatter(data, x='file_length', facet_col='q',labels={'file_length':'file length (s)','y':'ID of file'},
+        scatter = px.scatter(data, x='file_length', facet_col='q', labels={'file_length': 'file length (s)', 'y': 'ID of file'},
                              title='Length and quality of files', category_orders={"q": ["A", "B", "C", "D", "E"]})
-        bar = px.bar(data,barmode='group', x='rec',labels={'rec':'Recorder Name','count':'Number of recordings'})
+        bar = px.bar(data, barmode='group', x='rec', labels={
+                     'rec': 'Recorder Name', 'count': 'Number of recordings'})
     else:
         raise PreventUpdate
 

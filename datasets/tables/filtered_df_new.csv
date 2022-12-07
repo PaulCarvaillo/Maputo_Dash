@@ -1,0 +1,97 @@
+,id,rec,loc,gen,sp,lat,lng,alt,type,q,length,bird-seen
+0,705357,Olivier Hamerlynck,"Lopes, Matutuíne District, Maputo Province",Caprimulgus,pectoralis,-26.8025,32.8737,20,song,B,0:31,no
+1,452899,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Chrysococcyx,caprius,-25.9061,32.6335,10,song,B,0:04,no
+2,448614,Antonio Xeira,Inhaca island,Chrysococcyx,klaas,-26.023,32.907,50,song,B,1:49,yes
+3,445134,Antonio Xeira,Inhaca island,Streptopelia,capicola,-26.023,32.907,50,song,A,0:12,no
+4,104019,Bram Piot,Inhaca island,Treron,calvus,-26.0228,32.907,20,call,B,0:15,yes
+5,399267,Gary Allport,"Marracuene, Maputo",Rallus,caerulescens,-25.7331,32.709,10,call,B,0:09,no
+6,708429,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Porzana,pusilla,-25.7331,32.703,0,uncertain,B,0:46,unknown
+7,708425,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Porzana,pusilla,-25.7331,32.703,0,uncertain,B,1:19,no
+8,407075,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Paragallinula,angulata,-25.8197,32.689,0,"call, flight call",A,1:37,yes
+9,701253,Antonio Xeira,Inhaca island,Burhinus,vermiculatus,-26.023,32.907,50,alarm call,B,0:07,yes
+10,386969,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Numenius,phaeopus,-25.8197,32.689,0,call,B,0:08,yes
+11,386790,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Numenius,phaeopus,-25.8197,32.689,0,call,B,0:16,yes
+12,385131,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,call,B,0:11,yes
+13,334803,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,"alarm call, call, 'tittering' call; alarm call",B,0:23,yes
+14,308218,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,"call, song, 'bubbling' call, aggression",B,0:06,yes
+15,701493,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Gallinago,nigripennis,-25.7331,32.703,0,song,B,0:41,yes
+16,415839,Gary Allport,"Marracuene, Maputo",Gallinago,nigripennis,-25.7331,32.709,10,call,B,1:45,no
+17,59742,Bram Piot,Inhaca island,Bostrychia,hagedash,-26.023,32.907,5,flight call,B,0:17,yes
+18,59739,Bram Piot,Inhaca island,Ardea,cinerea,-26.023,32.907,5,call,B,0:06,yes
+19,685451,Olivier Hamerlynck,"Marracuene District, Marracuene, Maputo",Asio,capensis,-25.7062,32.7041,0,flight call,B,3:27,yes
+20,59751,Bram Piot,Inhaca island,Upupa,africana,-26.023,32.907,10,song,B,0:26,yes
+21,400926,Barnaby,"Marracuene, Maputo",Halcyon,chelicuti,-25.7638,32.7396,5,song,B,0:13,yes
+22,201464,Niall Perrins,"Matutuíne District, Maputo",Merops,superciliosus,-26.2374,32.8682,0,"call, flight call",B,1:12,yes
+23,103956,Bram Piot,Maputo,Poicephalus,cryptoxanthus,-25.962,32.599,30,call,B,0:56,unknown
+24,201484,Niall Perrins,"Matutuíne District, Maputo",Smithornis,capensis,-26.2121,32.9387,40,flight call,B,1:36,yes
+25,201450,Niall Perrins,"Matutuíne District, Maputo",Batis,fratrum,-26.1856,32.8951,30,call,B,0:40,yes
+26,104063,Bram Piot,Inhaca island,Batis,molitor,-26.0228,32.907,20,song,B,0:16,unknown
+27,104062,Bram Piot,Inhaca island,Batis,molitor,-26.0228,32.907,20,call,B,0:27,unknown
+28,104021,Bram Piot,Inhaca island,Chlorophoneus,olivaceus,-26.023,32.907,20,alarm call,A,0:09,unknown
+29,59750,Bram Piot,Inhaca island,Telophorus,viridis,-26.023,32.907,10,song,B,0:26,unknown
+30,59745,Bram Piot,Inhaca island,Dryoscopus,cubla,-26.023,32.907,10,call,B,0:13,yes
+31,59749,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,A,0:27,yes
+32,104060,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.0228,32.907,20,song,B,0:59,yes
+33,104059,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.0228,32.907,20,song,B,0:27,yes
+34,59748,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,B,0:39,yes
+35,59747,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,B,0:33,yes
+36,201448,Niall Perrins,"Matutuíne District, Maputo",Trochocercus,cyanomelas,-26.1856,32.8951,30,song,B,0:44,yes
+37,721755,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Corvus,splendens,-25.9061,32.6335,0,call,B,0:16,yes
+38,104058,Bram Piot,Inhaca island,Corvus,splendens,-26.0228,32.907,10,call,B,0:14,unknown
+39,449420,Gary Allport,"Matutuíne District, Maputo Province",Calendulauda,africanoides,-26.3424,32.4675,50,song,B,0:13,yes
+40,721751,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Pycnonotus,barbatus,-25.9061,32.6335,0,song,A,0:21,no
+41,392008,Tom Wulf,"Gala Gala Eco Resort, Ponta do Ouro",Andropadus,importunus,-26.8533,32.8879,30,song,A,1:02,yes
+42,104020,Bram Piot,Inhaca island,Andropadus,importunus,-26.0228,32.907,20,call,A,0:26,no
+43,104018,Bram Piot,Inhaca island,Andropadus,importunus,-26.0228,32.907,20,song,A,1:32,yes
+44,201449,Niall Perrins,"Matutuíne District, Maputo",Andropadus,importunus,-26.1856,32.8951,30,song,B,0:56,yes
+45,59737,Bram Piot,Inhaca island,Andropadus,importunus,-26.023,32.907,10,song,B,0:39,unknown
+46,104014,Bram Piot,Inhaca island,Phyllastrephus,terrestris,-26.023,32.907,20,call,A,0:59,unknown
+47,104016,Bram Piot,Inhaca island,Phyllastrephus,terrestris,-26.023,32.907,20,call,B,0:37,unknown
+48,59752,Bram Piot,Inhaca island,Phyllastrephus,terrestris,-26.023,32.907,10,call,B,0:38,unknown
+49,452902,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Acrocephalus,gracilirostris,-25.9061,32.6335,10,song,B,0:06,no
+50,433951,Gary Allport,"Marracuene, Maputo",Acrocephalus,gracilirostris,-25.7331,32.709,10,song,B,0:39,no
+51,201497,Niall Perrins,"Matutuíne District, Maputo",Acrocephalus,gracilirostris,-26.237,32.9233,0,call,B,0:26,yes
+52,453372,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Acrocephalus,baeticatus,-25.9061,32.6335,10,song,B,0:12,yes
+53,432684,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:29,yes
+54,432681,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:28,yes
+55,432472,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:29,no
+56,432471,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:28,no
+57,432469,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:27,no
+58,444840,Antonio Xeira,"Reserva Maputo, Maputo",Cisticola,chiniana,-26.5048,32.7156,10,song,B,0:08,yes
+59,201332,Niall Perrins,"Matutuíne District, Maputo",Cisticola,galactotes,-26.1802,32.9001,20,call,A,0:48,yes
+60,710853,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Cisticola,galactotes,-25.9061,32.6335,0,call,B,0:10,no
+61,452901,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Cisticola,galactotes,-25.9061,32.6335,10,song,B,0:21,no
+62,704993,Antonio Xeira,"Hotel Cardoso, Maputo",Prinia,subflava,-25.9782,32.586,60,song,B,0:06,no
+63,201315,Niall Perrins,"Matutuíne District, Maputo",Apalis,ruddi,-26.2134,32.9386,40,call,B,1:06,yes
+64,721734,Antonio Xeira,"Ponta do Ouro, Matutuíne",Camaroptera,brachyura,-26.8452,32.8925,0,call,B,0:42,no
+65,59744,Bram Piot,Inhaca island,Camaroptera,brachyura,-26.023,32.907,10,call,B,0:32,yes
+66,104017,Bram Piot,Inhaca island,Zosterops,anderssoni,-26.0228,32.907,20,call,B,0:20,yes
+67,444708,Antonio Xeira,"Ponta do Ouro, Matutuíne",Notopholia,corusca,-26.8452,32.8925,10,song,B,0:39,yes
+68,704997,Antonio Xeira,"Hotel Cardoso, Maputo",Turdus,libonyana,-25.9782,32.586,60,song,B,0:52,no
+69,444789,Antonio Xeira,"Hotel Cardoso, Maputo",Turdus,libonyana,-25.9782,32.586,60,song,B,0:45,yes
+70,511386,Barnaby Briggs,"Matutuíne, Maputo",Cercotrichas,signata,-26.5048,32.7157,10,song,A,0:40,yes
+71,444704,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cercotrichas,signata,-26.8452,32.8925,10,song,B,1:04,yes
+72,201495,Niall Perrins,"Matutuíne District, Maputo",Cercotrichas,signata,-26.2007,32.9423,30,song,B,0:54,yes
+73,59743,Bram Piot,Inhaca island,Muscicapa,adusta,-26.023,32.907,5,call,B,0:25,unknown
+74,400928,Barnaby,"Marracuene, Maputo",Cossypha,humeralis,-25.7638,32.7396,5,song,A,0:25,yes
+75,201496,Niall Perrins,"Matutuíne District, Maputo",Anthreptes,reichenowi,-26.199,32.9403,30,song,B,1:05,yes
+76,721728,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cyanomitra,olivacea,-26.8452,32.8925,0,call,B,0:13,yes
+77,201314,Niall Perrins,"Matutuíne District, Maputo",Cyanomitra,veroxii,-26.5253,32.6955,40,call,B,0:34,yes
+78,520072,Lynette Rudman,"Marracuene, Maputo",Cinnyris,bifasciatus,-25.77,32.7368,10,song,B,0:53,no
+79,520069,Lynette Rudman,"Marracuene, Maputo",Cinnyris,bifasciatus,-25.77,32.7368,10,song,B,1:39,no
+80,399256,Gary Allport,"Marracuene, Maputo",Ploceus,xanthopterus,-25.7331,32.709,10,"call, nasal twanging note",B,0:59,yes
+81,451700,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Ploceus,velatus,-25.9061,32.6335,10,song,B,2:37,yes
+82,391200,Gary Allport,"Maputo, Cidade de Maputo",Quelea,erythrops,-25.9346,32.6313,0,call,B,0:05,yes
+83,391097,Gary Allport,"Maputo, Cidade de Maputo",Quelea,erythrops,-25.9389,32.6248,10,call,B,0:08,yes
+84,104057,Bram Piot,Inhaca island,Estrilda,astrild,-26.0228,32.907,5,song,B,0:35,yes
+85,316699,Jude Allport,"Maputo, Marracuene, Cidade de Maputo",Ortygospiza,atricollis,-25.8197,32.689,0,song,B,0:49,yes
+86,449457,Gary Allport,"Matutuíne District, Maputo Province",Vidua,funerea,-26.3424,32.4675,50,song,B,0:32,yes
+87,453958,Barnaby,"Marracuene, Maputo",Macronyx,croceus,-25.7638,32.7396,10,song,B,0:21,unknown
+88,452897,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Macronyx,croceus,-25.9061,32.6335,10,song,B,0:08,no
+89,453378,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,song,A,0:15,yes
+90,453377,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,call,A,0:22,yes
+91,453375,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,call,A,0:15,yes
+92,710790,Olivier Hamerlynck,"Marracuene District, Marracuene District, Maputo Province",Mystery,mystery,-25.7283,32.6992,0,song,B,0:43,unknown
+93,705358,Olivier Hamerlynck,"Lopes, Matutuíne District, Maputo Province",Mystery,mystery,-26.8025,32.8737,20,song,B,0:29,no
+94,456528,Gary Allport/ Olivier Vilaca ,"Maputo, Maputo",Mystery,mystery,-25.9315,32.6179,10,song,B,4:12,no
+95,452910,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,song,B,0:07,no
