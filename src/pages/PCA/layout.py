@@ -75,7 +75,7 @@ def create_layout(app, df_ROI_final):
                                             'marginLeft': '30px'}, className="subtitle padded"
                                     ),
                                     dcc.Dropdown(
-                                        ['order', 'family', 'genus', 'species'], value='species', id='color', style={
+                                        ['order', 'family', 'genus', 'species','biotope','sound_id'], value='species', id='color', style={
                                             'marginLeft': '10px'}),
                                     html.H6(
                                         ["features :"], style={

@@ -70,8 +70,8 @@ def plot_umap(df_ROI_final, features_options='basic', color='species', n_compone
 
     df_proj_2d = pd.DataFrame(proj_2d)
     proj_2d_with_categories = pd.concat(
-        [df_proj_2d, df[['order', 'family', 'genus', 'species', 'sound_id']]], axis=1)
-    fig_2d = px.scatter(proj_2d_with_categories, x=0, y=1, width=1000, height=800, color=df[color].astype('category'), color_discrete_sequence=discrete_colors, custom_data=['order', 'family', 'genus', 'species', 'sound_id'],
+        [df_proj_2d, df[['order', 'family', 'genus', 'species', 'sound_id', 'biotope']]], axis=1)
+    fig_2d = px.scatter(proj_2d_with_categories, x=0, y=1, width=1000, height=800, color=df[color].astype('category'), color_discrete_sequence=discrete_colors, custom_data=['order', 'family', 'genus', 'species', 'sound_id', 'biotope'],
                         labels={'color': str(color)}
                         )
     fig_2d.update_traces(hovertemplate="<br>".join(["UMAP_X: %{x}",
@@ -81,6 +81,7 @@ def plot_umap(df_ROI_final, features_options='basic', color='species', n_compone
                                                     "Genus: %{customdata[2]}",
                                                     "Species: %{customdata[3]}",
                                                     "Sound_ID: %{customdata[4]}",
+                                                    "Biotope: %{customdata[5]}",
                                                     ])
                          )
     # # Train and make predictions

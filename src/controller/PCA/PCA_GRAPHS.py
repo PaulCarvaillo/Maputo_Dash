@@ -14,9 +14,8 @@ from sklearn.preprocessing import minmax_scale
 import matplotlib
 matplotlib.use('Agg')
 
-GENERIC_FEATURES = ['min_t', 'max_t', 'min_f', 'max_f',
-                    'dt', 'df', 'centroid_f',
-                    'centroid_t', 'duration_t', 'bandwidth_f', 'area_tf']
+GENERIC_FEATURES = ['min_f', 'max_f', 'centroid_f',
+                    'duration_t', 'bandwidth_f', 'area_tf']
 
 SHAPE_FEATURES = ['shp_002', 'shp_003', 'shp_004', 'shp_005', 'shp_006', 'shp_007',
                   'shp_008', 'shp_009', 'shp_010', 'shp_011', 'shp_012', 'shp_013',
@@ -68,14 +67,13 @@ def compute_PCA(df_ROI_final, features_options='basic', dimensions=2, color="spe
     total_var = pca.explained_variance_ratio_.sum() * 100
 
     # Dump components relations with features:
-    weights = (pd.DataFrame(abs(pca.components_),
+    weights = (pd.DataFrame(pca.components_,
                columns=data_scaled.columns, index=[f'PC-{i+1}' for i in range(dimensions)]))
     weights = weights.reset_index()
 
     # figures-----------------------
     labels = {
-        str(i): f"PC {i+1} ({var:.1f}%)"
-        for i, var in enumerate(pca.explained_variance_ratio_ * 100)
+        str(i): f"PC {i+1} ({var1:.1f}%) - EV = {var2:.1f}" for i, (var1, var2) in enumerate(zip(pca.explained_variance_ratio_ * 100, pca.explained_variance_))
     }
 
     colors_ = np.linspace(0, 1, len(df[color].unique()))
@@ -86,7 +84,7 @@ def compute_PCA(df_ROI_final, features_options='basic', dimensions=2, color="spe
         height=1000,
         labels=labels,
         dimensions=range(dimensions),
-        color=df[color],
+        color=df[color].astype('category'),
         color_discrete_sequence=discrete_colors,
         title=f'Principal component analysis of ROIs ---Total Explained Variance: {total_var:.2f}%',
     )
