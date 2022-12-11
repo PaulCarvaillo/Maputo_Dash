@@ -28,7 +28,7 @@ def create_layout(app, df_ROI_final):
                         [
                             html.Div(
                                 [
-                                    html.H4("Birds of Maputo Special Reserve"),
+                                    html.H4("CDAC app"),
                                 ],
                                 className="product",
                             ),

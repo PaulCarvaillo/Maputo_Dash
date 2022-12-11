@@ -23,7 +23,7 @@ def create_layout(app, df_ROI_final):
                         [
                             html.Div(
                                 [
-                                    html.H4("Birds of Maputo Special Reserve"),
+                                    html.H4("CDAC App"),
                                 ],
                                 className="product",
                             ),
@@ -71,7 +71,7 @@ def create_layout(app, df_ROI_final):
                                             'marginLeft': '30px'}, className="subtitle padded"
                                     ),
                                     dcc.Dropdown(
-                                        ['order', 'family', 'genus', 'species', 'sound_id','biotope'], value='species', id='color', style={
+                                        ['order', 'family', 'genus', 'species', 'sound_id', 'biotope'], value='species', id='color', style={
                                             'marginLeft': '10px'}),
                                     html.H6(
                                         ["features :"], style={
@@ -97,19 +97,30 @@ def create_layout(app, df_ROI_final):
                         ],
                         className="two columns",
                     ),
-                    
+
                     dcc.Store(id='datastore_PCA', storage_type='session'),
-                    html.Div([html.H6(["Single Species :"], style={
-                            'marginLeft': '30px'}, className="subtitle padded"),
-                    dcc.Checklist([species for species in df_annot_final.family.unique()], value=[
-                    ], id='single_species', style={'marginLeft': '10px'})], className="twelve columns")
+                    html.Div([html.H6(["Select Biotope :"], style={
+                        'marginLeft': '30px'}, className="subtitle padded"),
+                        dcc.Checklist([biotope for biotope in df_annot_final.biotope.unique()], value=[
+                        ], inline=True, id='select_biotope', style={'marginLeft': '10px'}),
+
+                        html.H6(["Select Families :"], style={
+                                'marginLeft': '30px'}, className="subtitle padded"),
+                        dcc.Checklist([family for family in df_annot_final.family.unique()], value=[
+                        ], inline=True, id='select_family', style={'marginLeft': '10px'}),
+
+                        html.H6(["Select Species :"], style={
+                                'marginLeft': '30px'}, className="subtitle padded"),
+                        dcc.Checklist([species for species in df_annot_final.species.unique()], value=[
+                        ], inline=True, id='select_species', style={'marginLeft': '10px'})], className="twelve columns"),
+
                 ])
         ]),
 # callbacks
 
 
-@app.callback(Output("UMAP", "figure"), Input("single_species", "value"), Input("button", "n_clicks"), Input("features", "value"), Input("dimensions", "value"), Input("color", "value"), Input("roi_method", "value"))
-def generate_graphs(single_species, n, features, dimensions, color, roi_method):
+@app.callback(Output("UMAP", "figure"), Input("select_family", "value"), Input("select_biotope", "value"), Input("select_species", "value"), Input("button", "n_clicks"), Input("features", "value"), Input("dimensions", "value"), Input("color", "value"), Input("roi_method", "value"))
+def generate_graphs(select_family, select_biotope, select_species, n, features, dimensions, color, roi_method):
     if n == 0:
         raise PreventUpdate
 
@@ -119,8 +130,12 @@ def generate_graphs(single_species, n, features, dimensions, color, roi_method):
     if roi_method == 'auto':
         data = df_ROI_final
 
-    if single_species != []:
-        data = data[data['family'].isin(single_species)]
+    if select_family != []:
+        data = data[data['family'].isin(select_family)]
+    if select_biotope != []:
+        data = data[data['biotope'].isin(select_biotope)]
+    if select_species != []:
+        data = data[data['species'].isin(select_species)]
 
     fig = plot_umap(df_ROI_final=data, features_options=features,
                     n_components=dimensions, color=color, init='random', random_state=0, method=roi_method)

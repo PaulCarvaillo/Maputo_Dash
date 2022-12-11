@@ -11,6 +11,7 @@ from pages.study_of_ROI.layout import create_layout as cl2
 from pages.PCA.layout import create_layout as cl3
 from pages.UMAPs.layout import create_layout as cl4
 from pages.tSNE.layout import create_layout as cl5
+from pages.features.layout import create_layout as cl6
 from loaded_data import df_metafiles_xenocanto, df_ROI_final
 
 # --------------------Layout of first page, links to different pages---
@@ -39,6 +40,8 @@ def display_page(pathname):
         return cl4(app, df_ROI_final=df_ROI_final)
     elif pathname == '/pages/tSNE':
         return cl5(app, df_ROI_final=df_ROI_final)
+    elif pathname == '/pages/features':
+        return cl6(app, df_ROI_final=df_ROI_final)
     else:
         return create_layout(app, df_metafiles_xenocanto=df_metafiles_xenocanto_reduced)
 

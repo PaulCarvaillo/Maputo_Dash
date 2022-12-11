@@ -28,7 +28,7 @@ def create_layout(app, df_metafiles_xenocanto):
                         [
                             html.Div(
                                 [
-                                    html.H4("Birds of Maputo Special Reserve"),
+                                    html.H4("CDAC app"),
                                 ],
                                 className="product",
                             ),
@@ -44,6 +44,8 @@ def create_layout(app, df_metafiles_xenocanto):
                         ["Query Xenocanto"], style={
                             'marginLeft': '30px'}
                     ),
+                    dcc.Input(value="cnt=Mozambique", placeholder='query text', id='XC_query', type='text', style={
+                        'marginLeft': '30px'}),
                     html.Button('Query Xeno-Canto', id='query', n_clicks=0, style={
                         'marginLeft': '30px'}),
 
@@ -69,6 +71,8 @@ def create_layout(app, df_metafiles_xenocanto):
                     html.Button(
                         "Save Filtered Dataset in csv",
                         id="save_button"),
+                    html.Button('Add additional categorical data', id='add_data', n_clicks=0, style={
+                        'marginLeft': '30px'}),
                     html.Br(),
                     html.Br(),
                     html.Br(),

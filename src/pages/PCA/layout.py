@@ -1,4 +1,6 @@
+from loaded_data import df_annot_final
 from utils import utils
+import plotly_express as px
 from app import app
 import pandas as pd
 from dash import dcc, html
@@ -7,7 +9,6 @@ from dash.exceptions import PreventUpdate
 from controller.PCA.PCA_GRAPHS import compute_PCA as cPCA
 import matplotlib
 matplotlib.use('Agg')
-from loaded_data import df_annot_final
 
 df_ROI_final = pd.read_csv(
     '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_ROI_final.csv')
@@ -29,7 +30,7 @@ def create_layout(app, df_ROI_final):
                         [
                             html.Div(
                                 [
-                                    html.H4("Birds of Maputo Special Reserve"),
+                                    html.H4("CDAC App"),
                                 ],
                                 className="product",
                             ),
@@ -56,6 +57,8 @@ def create_layout(app, df_ROI_final):
 
                                     dcc.Graph(id='PCA'),
                                     dcc.Graph(id='PCA_features'),
+                                    dcc.Graph(id='loadings'),
+                                    dcc.Graph(id='sunburst1'),
 
                                 ]),
                         ],
@@ -75,14 +78,14 @@ def create_layout(app, df_ROI_final):
                                             'marginLeft': '30px'}, className="subtitle padded"
                                     ),
                                     dcc.Dropdown(
-                                        ['order', 'family', 'genus', 'species','biotope','sound_id'], value='species', id='color', style={
+                                        ['order', 'family', 'genus', 'species', 'biotope', 'sound_id'], value='species', id='color', style={
                                             'marginLeft': '10px'}),
                                     html.H6(
                                         ["features :"], style={
                                             'marginLeft': '30px'}, className="subtitle padded"
                                     ),
                                     dcc.Dropdown(
-                                        ['basic', 'shapes', 'shapes+basic', 'spectral','spectral+basic', 'temporal','temporal+basic', 'all'], value='basic', id='features', style={
+                                        ['basic', 'shapes', 'shapes+basic', 'spectral', 'spectral+basic', 'temporal', 'temporal+basic', 'all'], value='basic', id='features', style={
                                             'marginLeft': '10px'}),
                                     html.H6(
                                         ["Roi detection method:"], style={
@@ -96,7 +99,7 @@ def create_layout(app, df_ROI_final):
                                             'marginLeft': '30px'},
                                     ),
                                     dcc.Input(id="dimensions", type="number", value=2, placeholder="dimensions", style={
-                                              'marginLeft': '30px'})
+                                              'marginLeft': '30px'}),
                                 ]),
                         ],
                         className="three columns",
@@ -110,7 +113,7 @@ def create_layout(app, df_ROI_final):
 # callbacks
 
 
-@app.callback(Output("PCA", "figure"), Output("PCA_features", "figure"), Input("button", "n_clicks"), Input("features", "value"), Input("dimensions", "value"), Input("color", "value"), Input("roi_method", "value"))
+@app.callback(Output("PCA", "figure"), Output("PCA_features", "figure"), Output("sunburst1", "figure"), Output("loadings", "figure"), Input("button", "n_clicks"), Input("features", "value"), Input("dimensions", "value"), Input("color", "value"), Input("roi_method", "value"))
 def generate_graphs(n, features, dimensions, color, roi_method):
     if n == 0:
         raise PreventUpdate
@@ -121,7 +124,15 @@ def generate_graphs(n, features, dimensions, color, roi_method):
     if roi_method == 'auto':
         data = df_ROI_final
 
-    fig, fig2 = cPCA(df_ROI_final=data, features_options=features,
-                     dimensions=dimensions, color=color)
+    fig, fig2, loadings_graph = cPCA(df_ROI_final=data, features_options=features,
+                                     dimensions=dimensions, color=color)
 
-    return fig, fig2
+    data['birds'] = 'Birds'
+    sunburst = px.sunburst(data,
+                           path=['biotope', 'family', 'genus', 'species'],
+                           width=750,
+                           height=650,
+                           title="Genus & Species distribution amongst Regions of interests <br><sup>Areas represent number of ROI, hover for info.</sup>"
+                           )
+
+    return fig, fig2, sunburst, loadings_graph

@@ -65,6 +65,7 @@ def compute_PCA(df_ROI_final, features_options='basic', dimensions=2, color="spe
     pca = PCA(n_components=dimensions)
     components = pca.fit_transform(data_scaled)
     total_var = pca.explained_variance_ratio_.sum() * 100
+    loadings = pca.components_.T * np.sqrt(pca.explained_variance_)
 
     # Dump components relations with features:
     weights = (pd.DataFrame(pca.components_,
@@ -99,7 +100,30 @@ def compute_PCA(df_ROI_final, features_options='basic', dimensions=2, color="spe
         fig2.update_xaxes({'categoryorder': 'total descending'})
         # fig2.update_xaxes(visible=False)
 
-    fig2.update_layout(barmode='stack', height=1200,
+    fig2.update_layout(barmode='stack', height=600,
                        width=1300, showlegend=False)
 
-    return fig, fig2
+    # LOADINGS GRAPH
+    loadings_graph = go.Figure()
+    loadings_graph.add_shape(type='circle', x0=-1, x1=1, y0=-1, y1=1)
+
+    for i, feature in enumerate(features):
+        loadings_graph.add_shape(
+            type='line',
+            x0=0, y0=0,
+            x1=loadings[i, 0],
+            y1=loadings[i, 1]
+        )
+        loadings_graph.add_annotation(
+            x=loadings[i, 0],
+            y=loadings[i, 1],
+            ax=0, ay=0,
+            xanchor="center",
+            yanchor="bottom",
+            text=feature,
+        )
+    loadings_graph.update_layout(yaxis_range=[-1, 1])
+    loadings_graph.update_layout(xaxis_range=[-1, 1], height=400, width=400,
+                                 title='PCA Correlation circle', xaxis_title='PC1', yaxis_title='PC2')
+
+    return fig, fig2, loadings_graph

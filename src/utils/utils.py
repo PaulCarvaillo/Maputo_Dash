@@ -48,13 +48,18 @@ def get_menu():
     menu = html.Div(
         [
             dcc.Link(
-                "Data description",
+                "Clean and inspect data",
                 href="/pages/info_about_data",
                 className="tab first",
             ),
             dcc.Link(
-                "Regions of interest",
+                "Detect Regions of interest",
                 href="/pages/ROI",
+                className="tab",
+            ),
+            dcc.Link(
+                "Analyse: Feature selection",
+                href="/pages/features",
                 className="tab",
             ),
             dcc.Link(

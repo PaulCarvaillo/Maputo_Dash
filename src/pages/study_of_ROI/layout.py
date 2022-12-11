@@ -13,12 +13,12 @@ import plotly_express as px
 import plotly.graph_objects as go
 import base64
 from pathlib import Path
+from loaded_data import df_annot_final
 
 import matplotlib
 matplotlib.use('Agg')
 
-centroids_annot = pd.read_csv(
-    '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/annot.csv')
+centroids_annot = df_annot_final
 df_data = pd.read_csv(
     '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_datapaths.csv')
 
@@ -36,7 +36,7 @@ def create_layout(app, df_metafiles_xenocanto):
                         [
                             html.Div(
                                 [
-                                    html.H4("Birds of Maputo Special Reserve"),
+                                    html.H4("CDAC app"),
                                 ],
                                 className="product",
                             ),
@@ -137,12 +137,12 @@ def create_layout(app, df_metafiles_xenocanto):
                                     dcc.Slider(0, 20000, id="roi_min_f", value=100, tooltip={
                                                "placement": "bottom", "always_visible": True}),
 
-                                    html.Button('PLOT SPECTROGRAM', id='plot_spectro', n_clicks=0, style={
+                                    html.Button('SAVE PARAMETERS', id='save_params', n_clicks=0, style={
                                         'marginLeft': '30px'}),
                                     html.Br(),
-                                    html.Button('PLOT ROI', id='plot_ROI', n_clicks=0, style={
+                                    html.Button('BATCH ANALYSE', id='plot_ROI', n_clicks=0, style={
                                         'marginLeft': '30px'}),
-                                    html.Button('READ/PLOT ANNOTATION', id='read_annot', n_clicks=0, style={
+                                    html.Button('UPDATE ANNOTATIONS', id='read_annot', n_clicks=0, style={
                                         'marginLeft': '30px'}),
                                 ]),
                         ],
@@ -157,9 +157,9 @@ def create_layout(app, df_metafiles_xenocanto):
                     dcc.Store(id='datastore_spectro_ext',
                               storage_type='local'),
                     dcc.Store(id='datastore_ROI_centroid',
-                              storage_type='session'),
+                              storage_type='memory'),
                     dcc.Store(id='datastore_annot',
-                              storage_type='session'),
+                              storage_type='memory'),
                     html.Div([
                     ],
                         className="twelve columns")
@@ -275,9 +275,8 @@ def compute_and_update_ROI_datastore(spectro, fn, tn, ext, param1, param2, mode_
                Input('datastore_annot', 'data'),
 
                Input('roi_max_f', 'value'),
-               Input('roi_min_f', 'value'),
-               Input('plot_spectro', 'n_clicks')])
-def plot_spectrogram_and_ROI_and_annot(spectro, fn, tn, ext, centroid, annot, roi_max_f, roi_min_f, n_clicks):
+               Input('roi_min_f', 'value')])
+def plot_spectrogram_and_ROI_and_annot(spectro, fn, tn, ext, centroid, annot, roi_max_f, roi_min_f):
     if spectro:
         Sxxt = pd.DataFrame.from_dict(spectro).to_numpy()
         fn = pd.DataFrame.from_dict(fn)['fn'].to_numpy()
@@ -311,7 +310,6 @@ def plot_spectrogram_and_ROI_and_annot(spectro, fn, tn, ext, centroid, annot, ro
             filtered_centroids = filtered_centroids[filtered_centroids['min_f'] < roi_max_f]
             filtered_centroids = filtered_centroids[filtered_centroids['max_f'] > roi_min_f]
             filtered_centroids = filtered_centroids.reset_index(drop=True)
-
 
             for i in range(0, len(filtered_centroids), 1):
                 fig.add_shape(type='rect', x0=filtered_centroids.min_t[i], x1=filtered_centroids.max_t[i], y0=filtered_centroids.min_f[i], y1=filtered_centroids.max_f[i], line=dict(

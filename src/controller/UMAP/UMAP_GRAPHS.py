@@ -9,9 +9,9 @@ from plotly.express.colors import sample_colorscale
 from sklearn.cluster import KMeans
 
 
-GENERIC_FEATURES = ['min_t', 'max_t', 'min_f', 'max_f',
+GENERIC_FEATURES = ['min_f', 'max_f',
                     'dt', 'df', 'centroid_f',
-                    'centroid_t', 'duration_t', 'bandwidth_f', 'area_tf']
+                    'duration_t', 'bandwidth_f', 'area_tf']
 
 SHAPE_FEATURES = ['shp_002', 'shp_003', 'shp_004', 'shp_005', 'shp_006', 'shp_007',
                   'shp_008', 'shp_009', 'shp_010', 'shp_011', 'shp_012', 'shp_013',
@@ -22,9 +22,8 @@ SHAPE_FEATURES = ['shp_002', 'shp_003', 'shp_004', 'shp_005', 'shp_006', 'shp_00
                   'shp_038', 'shp_039', 'shp_040', 'shp_041', 'shp_042', 'shp_043',
                   'shp_044', 'shp_045', 'shp_046', 'shp_047', 'shp_048']
 
-
 SPECTRAL_FEATURES = ['MEANf', 'VARf', 'SKEWf', 'KURTf', 'NBPEAKS', 'LEQf',
-                     'ENRf', 'BGNf', 'SNRf', 'Hf', 'EAS', 'ECU', 'ECV', 'EPS', 'EPS_KURT', 'EPS_SKEW', 'ACI',
+                     'ENRf', 'BGNf', 'SNRf', 'Hf', 'EAS', 'ECU', 'ECV', 'EPS', 'EPS_KURT', 'EPS_SKEW',
                      'NDSI', 'ROU']
 
 TEMPORAL_FEATURES = ['ZCR', 'MEANt', 'VARt',
@@ -84,12 +83,5 @@ def plot_umap(df_ROI_final, features_options='basic', color='species', n_compone
                                                     "Biotope: %{customdata[5]}",
                                                     ])
                          )
-    # # Train and make predictions
-    # clusters = kmeans.fit_predict(scaled_data)
-    # # Cluster centers
-    # centroids = kmeans.cluster_centers_
-    # centroids_umap = umap_2d.transform(centroids)
-
-    # fig_2d.add_trace(px.scatter(x=centroids_umap[:,0],y=centroids_umap[:,1]))
 
     return fig_2d
