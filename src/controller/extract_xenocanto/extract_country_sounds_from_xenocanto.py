@@ -13,3 +13,11 @@ def extract_country_sounds_from_xenocanto(cnt="Mozambique", download=False, outp
 
     return df_metafiles
 
+def get_metadata():
+    return df_metadata
+
+def save_filtered_metadata():
+    return
+
+def download_filtered_metadata():
+    return

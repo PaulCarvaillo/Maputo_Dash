@@ -26,19 +26,6 @@ def create_layout(app, df_ROI_final):
             html.Div(
                 [
                     # Row 3
-                    html.Div(
-                        [
-                            html.Div(
-                                [
-                                    html.H4("CDAC App"),
-                                ],
-                                className="product",
-                            ),
-                            html.Div([utils.get_menu()]),
-                            html.Br([]),
-                        ],
-                        className="row",
-                    ),
                     html.Br(),
                     html.Br(),
                     html.Br(),
@@ -56,9 +43,8 @@ def create_layout(app, df_ROI_final):
                                         'marginLeft': '30px'}),
 
                                     dcc.Graph(id='PCA'),
-                                    dcc.Graph(id='PCA_features'),
-                                    dcc.Graph(id='loadings'),
                                     dcc.Graph(id='sunburst1'),
+                                    dcc.Graph(id='PCA_features'),
 
                                 ]),
                         ],
@@ -100,6 +86,7 @@ def create_layout(app, df_ROI_final):
                                     ),
                                     dcc.Input(id="dimensions", type="number", value=2, placeholder="dimensions", style={
                                               'marginLeft': '30px'}),
+                                    dcc.Graph(id='loadings'),
                                 ]),
                         ],
                         className="three columns",

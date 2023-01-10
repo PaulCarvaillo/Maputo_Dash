@@ -1,4 +1,3 @@
-
 import pandas as pd
 from glob import glob
 from pathlib import Path
@@ -6,6 +5,9 @@ import maad
 import librosa
 import soundfile as sf
 import numpy as np
+import warnings
+warnings.filterwarnings(action='ignore')
+
 
 # convert excel to csv
 df_annot_excel = pd.read_excel(

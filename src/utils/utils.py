@@ -38,6 +38,23 @@ def get_header(app):
                 ],
                 className="column",
             ),
+             html.Div(
+                [
+                    # Row 3
+                    html.Div(
+                        [
+                            html.Div(
+                                [
+                                    html.H4("CDAC app"),
+                                ],
+                                className="product",
+                            ),
+                            html.Div([get_menu()]),
+                            html.Br([]),
+                        ],
+                        className="row",
+                    ),])
+
         ],
         className="row",
     )

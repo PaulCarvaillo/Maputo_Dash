@@ -1,10 +1,11 @@
-import pexpect
+import os
+from sre_parse import State
 from utils import utils
 from app import app
-
+import xenopy as xeno
 import pandas as pd
 
-from dash import dash_table, dcc, html
+from dash import dash_table, dcc, html, State
 from dash import dcc, callback_context
 from dash.dependencies import Input, Output
 from dash.exceptions import PreventUpdate
@@ -23,30 +24,13 @@ def create_layout(app, df_metafiles_xenocanto):
             # page 1
             html.Div(
                 [
-                    # Row 3
-                    html.Div(
-                        [
-                            html.Div(
-                                [
-                                    html.H4("CDAC app"),
-                                ],
-                                className="product",
-                            ),
-                            html.Div([utils.get_menu()]),
-                            html.Br([]),
-                        ],
-                        className="row",
-                    ),
-                    html.Br(),
-                    html.Br(),
-                    html.Br(),
                     html.H5(
                         ["Query Xenocanto"], style={
                             'marginLeft': '30px'}
                     ),
-                    dcc.Input(value="cnt=Mozambique", placeholder='query text', id='XC_query', type='text', style={
+                    dcc.Input(value="cnt:mozambique", placeholder='query_text', id='XC_query', type='text', style={
                         'marginLeft': '30px'}),
-                    html.Button('Query Xeno-Canto', id='query', n_clicks=0, style={
+                    html.Button('Query Xeno-Canto', id='query_button', n_clicks=0, style={
                         'marginLeft': '30px'}),
 
                     dash_table.DataTable(id='datatable-interactivity',
@@ -73,6 +57,15 @@ def create_layout(app, df_metafiles_xenocanto):
                         id="save_button"),
                     html.Button('Add additional categorical data', id='add_data', n_clicks=0, style={
                         'marginLeft': '30px'}),
+                    html.Button(
+                        "Download .wav files",
+                        id="download_button", style={
+                            'marginLeft': '30px'}),
+                    dcc.Checklist(id='overwrite',
+                                  options=['overwrite'],
+                                  value=['overwrite'], inline=True, style={
+                                      'marginLeft': '590px'}
+                                  ),
                     html.Br(),
                     html.Br(),
                     html.Br(),
@@ -108,12 +101,18 @@ def create_layout(app, df_metafiles_xenocanto):
 # callbacks
 
 
-# @app.callback(Output('metadata_storage', 'data'),
-#               Input('query', 'n_clicks'))
-# def save_data(n):
-#     data=df_metafiles_xenocanto
-#     if n:
-#         return data.to_dict('records')
+@app.callback(
+    Output('datatable-interactivity', 'data'),
+    Output('datatable-interactivity', 'columns'),
+    Input('metadata_storage', 'data')
+)
+def update_metadata_table(data):
+    metadata = data
+    df_metafiles_xenocanto = pd.DataFrame.from_dict(data)
+    columns = [{"name": i, "id": i, "deletable": True, "selectable": True}
+               for i in df_metafiles_xenocanto.columns]
+    return metadata, columns
+
 
 @app.callback(Output('datatable-interactivity', 'style_data_conditional'),
               Input('datatable-interactivity', 'selected_columns'))
@@ -143,11 +142,11 @@ def update_graphs(rows, derived_virtual_selected_rows, n):
 
     if n:
         dff.to_csv(
-            '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df_new.csv')
+            '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv')
 
     return [dl.Map([dl.TileLayer(), dl.GeoJSON(data=geojson_birds, id="geojson", zoomToBounds=True, cluster=True)],
                    style={"width": "600px",
-                          "height": "400px"}), html.H6('Number of .wav files: ' + str(dff.id.count()), style={'marginLeft': '30px'}),
+                          "height": "750px"}), html.H6('Number of .wav files: ' + str(dff.id.count()), style={'marginLeft': '30px'}),
             html.H6('Number of recorders: ' + str(dff['rec'].nunique()), style={'marginLeft': '30px'}), ]
 
 
@@ -180,5 +179,25 @@ def generate_graphs(data):
 
     # save figures in a dictionary for sending to the dcc.Store
     return scatter, sunburst, bar
+
+
+@app.callback(Output("metadata_storage", "data"),
+              Input("query_button", "n_clicks"), State('XC_query', 'value'))
+def query_xeno_button(n, user_query):
+    tables_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables'
+    if n:
+        q = xeno.Query(user_query)
+        metadata = q.retrieve_meta(verbose=True)
+        df_metafiles = pd.DataFrame(metadata['recordings'])
+        df_metafiles.to_csv(tables_path+'/metafiles_xenocanto.csv')
+        print('Metadata saved')
+        # # retrieve recordings
+        # datapath_wav='/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/project'
+        # q.retrieve_recordings(multiprocess=True, nproc=10, attempts=10, outdir=datapath_wav)
+    else:
+        raise PreventUpdate
+
+    return df_metafiles.to_dict('records')
+
 
 # %%

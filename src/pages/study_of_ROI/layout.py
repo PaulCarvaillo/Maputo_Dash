@@ -31,23 +31,6 @@ def create_layout(app, df_metafiles_xenocanto):
             # page 1
             html.Div(
                 [
-                    # Row 3
-                    html.Div(
-                        [
-                            html.Div(
-                                [
-                                    html.H4("CDAC app"),
-                                ],
-                                className="product",
-                            ),
-                            html.Div([utils.get_menu()]),
-                            html.Br([]),
-                        ],
-                        className="row",
-                    ),
-                    html.Br(),
-                    html.Br(),
-                    html.Br(),
                     # Row 4
                     html.Div(
                         [
