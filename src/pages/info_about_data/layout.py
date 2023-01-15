@@ -13,6 +13,7 @@ from dash.exceptions import PreventUpdate
 import dash_leaflet as dl
 import dash_leaflet.express as dlx
 import plotly_express as px
+from controller.extract_xenocanto.xenocanto_utils import download_files
 from loaded_data import df_metafiles_xenocanto
 
 
@@ -61,11 +62,12 @@ def create_layout(app, df_metafiles_xenocanto):
                         "Download .wav files",
                         id="download_button", style={
                             'marginLeft': '30px'}),
-                    dcc.Checklist(id='overwrite',
-                                  options=['overwrite'],
-                                  value=['overwrite'], inline=True, style={
-                                      'marginLeft': '590px'}
-                                  ),
+                    dcc.Loading(id="loading-1", children=[
+                        # elements of your app that should be displayed during the download process
+                    ], type="default"),
+                    dcc.Textarea(id='error-log', placeholder='Error Log',
+                                 readOnly=True, style={'width': '100%'}),
+
                     html.Br(),
                     html.Br(),
                     html.Br(),
@@ -200,4 +202,47 @@ def query_xeno_button(n, user_query):
     return df_metafiles.to_dict('records')
 
 
+# @app.callback(Output("download_button", "children"),
+#               Input("download_button", "n_clicks"), State('XC_query', 'value'))
+# def download_filtered_metadata_to_wav_directory(n, user_query):
+
+#     wav_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_dash/datasets/wav/xenocanto2/'
+#     filtered_dataset_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv'
+
+#     if n:
+#         q = xeno.Query(user_query)
+#         cur_dir = os.getcwd()
+#         os.chdir(wav_path)
+#         q.filtered__multi_dl(input_csv=filtered_dataset_path,
+#                              nproc=10, attempts=10, outdir=wav_path)
+#         # q.retrieve_recordings(multiprocess=True, nproc=10, attempts=10, outdir=datapath_wav)
+#         os.chdir(cur_dir)
+
+#         return 'Downloaded files to wav/xenocanto/'
+#     return 'Click to download'
 # %%
+@app.callback(Output("loading-1", "children"), [Input("download_button", "n_clicks")], [State("loading-1", "children")])
+def download_files_and_update_loading_state(n_clicks, children):
+    if n_clicks:
+        df_recordings = pd.read_csv(
+            '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv')
+        try:
+            download_files(df_recordings=df_recordings,root_dir='/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/wav/TEST')
+        except Exception as e:
+            return children, e
+    return children
+
+
+@app.callback(Output('error-log', 'value'), [Input("loading-1", "children"), Input('download_button', 'n_clicks')])
+def update_error_log(children, n_clicks):
+    if n_clicks:
+        df_recordings = pd.read_csv(
+            '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv')
+        try:
+            download_files(df_recordings=df_recordings,root_dir='/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/wav/TEST')
+            return ''
+        except Exception as e:
+            return str(e)
+
+# df_recordings = pd.read_csv('/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv')
+# download_files(df_recordings=df_recordings,root_dir='/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/wav/TEST')

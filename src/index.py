@@ -16,7 +16,7 @@ from loaded_data import df_metafiles_xenocanto, df_ROI_final
 
 # --------------------Layout of first page, links to different pages---
 df_metafiles_xenocanto_reduced = df_metafiles_xenocanto.loc[:, [
-    'id','rec','loc', 'gen', 'sp', 'lat', 'lng', 'alt', 'type', 'q', 'length', 'bird-seen']]
+    'id', 'rec', 'loc', 'gen', 'sp', 'lat', 'lng', 'alt', 'type', 'q', 'length', 'bird-seen', 'file','en']]
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
