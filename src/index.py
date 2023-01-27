@@ -24,7 +24,6 @@ app.layout = html.Div([
 ])
 # -------------------Callback used to change page on click ------------
 
-
 @app.callback(Output('page-content', 'children'),
               Input('url', 'pathname'))
 def display_page(pathname):

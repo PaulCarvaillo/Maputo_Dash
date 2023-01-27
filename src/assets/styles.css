@@ -153,9 +153,10 @@ body {
   
   .product {
     position: relative;
+    text-align: center;
     height: 15%;
     padding: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-left: 10px;
     border-radius: 1px;
     background: #2a08c4d0;
@@ -236,7 +237,7 @@ body {
   
   .tab {
     border-style: solid;
-    border-color: rgb(0, 0, 0, 0.2);
+    border-color: rgba(24, 36, 209, 0.2);
     border-bottom-style: none;
     border-top-style: none;
     border-right-style: none;
@@ -256,7 +257,7 @@ body {
   
   .tablast {
     border-style: solid;
-    border-color: rgb(0, 0, 0, 0.2);
+    border-color: rgba(24, 36, 209, 0.2);
     border-bottom-style: none;
     border-top-style: none;
     color: black;

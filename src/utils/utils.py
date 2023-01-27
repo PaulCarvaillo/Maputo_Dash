@@ -1,6 +1,11 @@
 from dash import html
 from dash import dcc
 from dash import dash_table
+import dash_leaflet as dl
+import dash_leaflet.express as dlx
+
+columns_visible_to_user = ['id', 'rec', 'loc', 'gen', 'sp',
+                           'lat', 'lng', 'alt', 'type', 'q', 'length', 'bird-seen', 'en']
 
 
 def Header(app):
@@ -38,7 +43,7 @@ def get_header(app):
                 ],
                 className="column",
             ),
-             html.Div(
+            html.Div(
                 [
                     # Row 3
                     html.Div(
@@ -50,10 +55,9 @@ def get_header(app):
                                 className="product",
                             ),
                             html.Div([get_menu()]),
-                            html.Br([]),
                         ],
                         className="row",
-                    ),])
+                    ), ])
 
         ],
         className="row",
@@ -92,10 +96,10 @@ def get_menu():
             dcc.Link(
                 "UMAPS",
                 href="/pages/UMAPs",
-                className="tab",
+                className="tablast",
             ),
         ],
-        className="column",
+        className="all-tabs",
     )
     return menu
 
@@ -112,23 +116,43 @@ def make_dash_table(df):
     return table
 
 
-def interactive_datatable(df):
+def get_interactive_datatable(df_metafiles_xenocanto):
     return dash_table.DataTable(id='datatable-interactivity',
                                 columns=[
-                                    {"name": i, "id": i, "deletable": True, "selectable": True} for i in df.columns
+                                    {"name": i, "id": i, "deletable": False, "selectable": False} for i in columns_visible_to_user
                                 ],
-                                data=df.to_dict(
+                                data=df_metafiles_xenocanto.to_dict(
                                     'records'),
                                 editable=True,
                                 filter_action="native",
                                 sort_action="native",
                                 sort_mode="multi",
-                                column_selectable="single",
+                                column_selectable=False,
                                 row_selectable="multi",
                                 row_deletable=True,
                                 selected_columns=[],
                                 selected_rows=[],
                                 page_action="native",
                                 page_current=0,
-                                page_size=5,
-                                ),
+                                page_size=10
+                                )
+
+
+def get_leaflet_map(dff, heigth=750):
+
+    # Creating a geojson from the input points
+    birds_positions = dff.loc[:, ['gen', 'lat', 'lng']]
+    birds_positions.columns = ['name', 'lat', 'lon']
+    birds_positions = birds_positions.to_dict('records')
+    geojson_birds = dlx.dicts_to_geojson(
+        [{**bird, **dict(tooltip=bird['name'])} for bird in birds_positions])
+
+    return [
+        html.H6('Current number of .wav files in dataset: ' + str(dff.id.count()),
+                style={'marginLeft': '30px'}),
+        dl.Map([dl.TileLayer(),
+                dl.GeoJSON(data=geojson_birds, id="geojson", zoomToBounds=True, cluster=True)],
+               style={"width": '100%',
+                      "height": f"{heigth}px"}),
+
+    ]
