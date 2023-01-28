@@ -4,6 +4,7 @@ import os
 import requests
 from tqdm import tqdm
 
+
 def download_files(df_recordings, root_dir='.', overwrite=True):
     for index, row in df_recordings.iterrows():
         directory = os.path.join(root_dir, row["gen"] + '_' + row["sp"])
@@ -23,4 +24,3 @@ def download_files(df_recordings, root_dir='.', overwrite=True):
                 os.remove(file_path)
             print("An error occurred while processing: " + row["file"])
             print("Error: ", e)
-            

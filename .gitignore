@@ -5,3 +5,4 @@ venv/
 
 src/controller/tests_in_progress/
 datasets/old/
+notebooks

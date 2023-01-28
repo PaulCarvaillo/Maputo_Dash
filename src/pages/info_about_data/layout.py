@@ -15,6 +15,7 @@ from controller.extract_xenocanto.xenocanto_utils import download_files
 table_visible_columns = ['id', 'rec', 'loc', 'gen', 'sp', 'lat',
                          'lng', 'alt', 'type', 'q', 'length', 'bird-seen', 'file', 'en']
 
+datasets_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/'
 tables_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables'
 metafiles_xenocanto_csv_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/metafiles_xenocanto.csv'
 metafiles_xenocanto_csv_path_filtered = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv'
@@ -31,14 +32,17 @@ def create_layout(app, df_metafiles_xenocanto):
         html.Div(
             [
                 html.H5(
-                    ["Create Project"], style={
+                    ["Create / Select Project"], style={
                         'marginLeft': '30px'}
                 ),
                 dcc.Input(value="my_project_name", placeholder='projectname', id='project_name', type='text', style={
                     'marginLeft': '30px'}),
 
-                html.Button('Create project and set directory path', title='Creates a folder in : ../datasets/projectname/', id='new_project_button', n_clicks=0, style={
+                html.Button('Create project directory', title='Creates a folder in : ../datasets/projectname/', id='new_project_button', n_clicks=0, style={
                     'marginLeft': '30px'}),
+
+                dcc.Dropdown(id='project_selector', placeholder='Select project...', options=[], value='',
+                             style={'width': '40%', 'marginLeft': '15px'}),
 
                 html.H5(
                     ["Query Xenocanto"], style={
@@ -60,8 +64,10 @@ def create_layout(app, df_metafiles_xenocanto):
                         style={"margin-left": "30px", 'marginBottom': '30px'},
                     ),
                     href="https://xeno-canto.org/help/search",
-                    title="https://xeno-canto.org/help/search"
+                    title="https://xeno-canto.org/help/search",
+                    target="_blank"
                 ),
+
                 html.Br(),
 
                 dcc.Input(value="cnt:mozambique", placeholder='query_text', id='XC_query', type='text', style={
@@ -135,10 +141,17 @@ def create_layout(app, df_metafiles_xenocanto):
             ])
     ]),
 
-
 # callbacks
-@app.callback(
-    Output('new_project_button', 'n_clicks'),
+
+
+def get_project_options():
+    options = [{'label': project, 'value': os.path.join(datasets_path, project)}
+               for project in os.listdir(datasets_path) if os.path.isdir(os.path.join(datasets_path, project))]
+    return options
+
+
+@ app.callback(
+    Output('project_selector', 'options'),
     [Input('new_project_button', 'n_clicks')],
     [State('project_name', 'value')])
 def create_project_directory(n_clicks, project_name):
@@ -149,11 +162,16 @@ def create_project_directory(n_clicks, project_name):
         os.makedirs(path, exist_ok=True)
         os.makedirs(path2, exist_ok=True)
         os.makedirs(path3, exist_ok=True)
+    # Add the project to the options list
+    options = [{'label': project_name, 'value': project_name}]
+    options = get_project_options()
+
+    return options
 
 
-@app.callback(Output("metadata_storage", "data"), Output("loading-1", "children"), Output("query_log", "value"),
-              Input("query_button", "n_clicks"), State('XC_query', 'value'), [State("loading-1", "children")])
-def query_xeno_button(n, user_query, children):
+@ app.callback(Output("metadata_storage", "data"), Output("loading-1", "children"), Output("query_log", "value"),
+               Input("query_button", "n_clicks"), State('XC_query', 'value'), [State("loading-1", "children"), State('project_selector', 'value')])
+def query_xeno_button(n, user_query, children, projectdir_path):
 
     if n:
         q = xeno.Query(user_query)
@@ -165,7 +183,8 @@ def query_xeno_button(n, user_query, children):
         if metadata != []:
             df_metafiles = pd.DataFrame(metadata['recordings'])
             df_metafiles = df_metafiles.loc[:, table_visible_columns]
-            df_metafiles.to_csv(metafiles_xenocanto_csv_path)
+            df_metafiles.to_csv(os.path.join(
+                projectdir_path, 'tables/metadata_raw.csv'))
             print('Metadata saved')
             log = f'Successfully queried Xenocanto, there are {len(df_metafiles)} recordings'
         else:
@@ -177,7 +196,7 @@ def query_xeno_button(n, user_query, children):
     return df_metafiles.to_dict('records'), children, log
 
 
-@app.callback(
+@ app.callback(
     Output('datatable-interactivity', 'data'),
     Output('datatable-interactivity', 'columns'),
     Input('metadata_storage', 'data')
@@ -190,8 +209,8 @@ def update_metadata_table(data):
     return metadata, columns
 
 
-@app.callback(Output('datatable-interactivity', 'style_data_conditional'),
-              Input('datatable-interactivity', 'selected_columns'))
+@ app.callback(Output('datatable-interactivity', 'style_data_conditional'),
+               Input('datatable-interactivity', 'selected_columns'))
 def update_styles(selected_columns):
     return [{
         'if': {'column_id': i},
@@ -199,23 +218,32 @@ def update_styles(selected_columns):
     } for i in selected_columns]
 
 
-@app.callback(Output('recordings_leaflet_map', "children"),
-              Input('datatable-interactivity', "derived_virtual_data"),
-              Input('datatable-interactivity',
-                    "derived_virtual_selected_rows"),
-              Input("save_button", "n_clicks"))
-def update_graphs(rows, derived_virtual_selected_rows, n):
+@ app.callback(Output('recordings_leaflet_map', "children"),
+               Input('datatable-interactivity', "derived_virtual_data"),
+               Input('datatable-interactivity',
+                     "derived_virtual_selected_rows"),
+               Input("save_button", "n_clicks"),
+               State("project_selector", "value"),
+               )
+def update_graphs(rows, derived_virtual_selected_rows, n, projectdir_path):
+    if projectdir_path == '':
+        raise PreventUpdate
+
     if derived_virtual_selected_rows is None:
         derived_virtual_selected_rows = []
 
     df_metafiles_xenocanto = pd.read_csv(
-        metafiles_xenocanto_csv_path)
+        os.path.join(
+            projectdir_path, 'tables/metadata_raw.csv')
+    )
 
     dff = df_metafiles_xenocanto if rows is None else pd.DataFrame(rows)
 
     if n:  # save filtered data on click
         dff.to_csv(
-            metafiles_xenocanto_csv_path_filtered)
+            os.path.join(
+                projectdir_path, 'tables/metadata_filtered.csv')
+        )
 
     return utils.get_leaflet_map(dff, heigth=500)
 
@@ -245,32 +273,41 @@ def generate_graphs(data):
         scatter = px.scatter(data, x='file_length', facet_col='q', labels={'file_length': 'file length (s)', 'y': 'ID of file'},
                              title='Length and quality of files', category_orders={"q": ["A", "B", "C", "D", "E"]})
         bar = px.bar(data, barmode='group', x='rec', labels={
-                     'rec': 'Recorder Name', 'count': 'Number of recordings'})
+            'rec': 'Recorder Name', 'count': 'Number of recordings'})
     else:
         raise PreventUpdate
 
     return scatter, sunburst, bar
 
 
-@app.callback(Output("loading-2", "children"), [Input("download_button", "n_clicks")], [State("loading-2", "children")])
-def download_files_and_update_loading_state(n_clicks, children):
+@ app.callback(
+    Output("loading-2", "children"),
+    [Input("download_button", "n_clicks")],
+    [State("loading-2", "children"), State('project_selector', 'value')
+     ])
+def download_files_and_update_loading_state(n_clicks, children, projectdir_path):
     if n_clicks:
-        df_recordings = pd.read_csv(metafiles_xenocanto_csv_path_filtered)
+        df_recordings = pd.read_csv(os.path.join(
+            projectdir_path, 'tables/metadata_filtered.csv'))
         try:
             download_files(df_recordings=df_recordings,
-                           root_dir=project_sounds_root_dir)
+                           root_dir=os.path.join(
+                               projectdir_path, 'wav'))
         except Exception as e:
             return children, e
     return children
 
 
-@app.callback(Output('error-log2', 'value'), [Input("loading-2", "children"), Input('download_button', 'n_clicks')])
-def update_error_log(children, n_clicks):
+@ app.callback(Output('error-log2', 'value'), [Input("loading-2", "children"), Input('download_button', 'n_clicks'), State('project_selector', 'value')])
+def update_error_log(children, n_clicks, projectdir_path):
+
     if n_clicks:
-        df_recordings = pd.read_csv(metafiles_xenocanto_csv_path_filtered)
+        df_recordings = pd.read_csv(os.path.join(
+            projectdir_path, 'tables/metadata_filtered.csv'))
         try:
             download_files(df_recordings=df_recordings,
-                           root_dir=project_sounds_root_dir)
+                           root_dir=os.path.join(
+                               projectdir_path, 'wav'))
             return ''
         except Exception as e:
             return str(e)

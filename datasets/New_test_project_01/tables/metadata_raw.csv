@@ -1,0 +1,346 @@
+,id,rec,loc,gen,sp,lat,lng,alt,type,q,length,bird-seen,file,en
+0,652467,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Guttera,pucherani,-22.149,35.4783,30,call,C,2:26,yes,https://xeno-canto.org/652467/download,Crested Guineafowl
+1,185643,Niall Perrins,"Cheringoma, Sofala",Dendroperdix,sephaena,-18.2455,35.2542,280,song,B,0:24,no,https://xeno-canto.org/185643/download,Crested Francolin
+2,304235,Alan Collett,"Chibabava, Sofala",Dendroperdix,sephaena,-20.9507,33.9082,80,call,C,0:57,no,https://xeno-canto.org/304235/download,Crested Francolin
+3,347179,David C. Moyer,"Mecula, Niassa",Pternistis,hildebrandti,-12.1789,37.5548,600,song,C,0:53,no,https://xeno-canto.org/347179/download,Hildebrandt's Spurfowl
+4,346596,David Moyer,"Mbatamila, Mecula, Niassa",Pternistis,afer,-12.1839,37.5501,480,song,B,0:25,yes,https://xeno-canto.org/346596/download,Red-necked Spurfowl
+5,59746,Bram Piot,Inhaca island,Pternistis,afer,-26.023,32.907,10,call,C,0:35,yes,https://xeno-canto.org/59746/download,Red-necked Spurfowl
+6,651558,Nature sounds by Simply Birding,"Pafuri, Chicualacuala, Gaza",Caprimulgus,pectoralis,-22.4501,31.3213,200,song,A,1:19,yes,https://xeno-canto.org/651558/download,Fiery-necked Nightjar
+7,705357,Olivier Hamerlynck,"Lopes, Matutuíne District, Maputo Province",Caprimulgus,pectoralis,-26.8025,32.8737,20,song,B,0:31,no,https://xeno-canto.org/705357/download,Fiery-necked Nightjar
+8,652455,Niall Perrins,"San Sebastian, Vilankulo, Inhambane Province",Caprimulgus,pectoralis,-22.1357,35.4449,0,"dawn song, song",B,1:21,no,https://xeno-canto.org/652455/download,Fiery-necked Nightjar
+9,563702,Gabriel A. Jamie,Mount Chitagal,Caprimulgus,poliocephalus,-12.5925,35.2503,1800,song,C,0:55,no,https://xeno-canto.org/563702/download,Montane Nightjar
+10,688818,Ken Behrens,"Camacho, Marromeu, Sofala",Neafrapus,boehmi,-18.1845,35.3714,180,call,D,0:28,yes,https://xeno-canto.org/688818/download,Böhm's Spinetail
+11,543748,Etienne Marais,"Inhassoro, Inhassoro, Inhambane",Apus,berliozi,-21.5068,35.1882,20,"call, flight call, flight calls",C,0:39,yes,https://xeno-canto.org/543748/download,Forbes-Watson's Swift
+12,761330,Antonio Xeira,"Ponta do Ouro, Matutuíne",Tauraco,porphyreolophus,-26.8452,32.8925,0,call,B,0:29,yes,https://xeno-canto.org/761330/download,Purple-crested Turaco
+13,761336,Antonio Xeira,"Ponta do Ouro, Matutuíne",Tauraco,porphyreolophus,-26.8452,32.8925,0,call,C,0:29,no,https://xeno-canto.org/761336/download,Purple-crested Turaco
+14,761338,Antonio Xeira,"Ponta do Ouro, Matutuíne",Centropus,burchellii,-26.8452,32.8925,0,song,C,0:06,no,https://xeno-canto.org/761338/download,Burchell's Coucal
+15,710790,Olivier Hamerlynck,"Marracuene District, Marracuene District, Maputo Province",Centropus,grillii,-25.7283,32.6992,0,song,B,0:43,unknown,https://xeno-canto.org/710790/download,Black Coucal
+16,457592,Gary Allport,"Marracuene, Maputo",Centropus,grillii,-25.7331,32.709,10,song,C,0:06,no,https://xeno-canto.org/457592/download,Black Coucal
+17,520132,Lynette Rudman,"Cheringoma, Sofala",Ceuthmochares,australis,-18.0402,35.2022,90,song,B,0:37,yes,https://xeno-canto.org/520132/download,Green Malkoha
+18,610358,Thomas Bruneau,"Siane, Inharrime, Inhambane Province",Ceuthmochares,australis,-24.4384,35.2477,40,uncertain,C,0:26,no,https://xeno-canto.org/610358/download,Green Malkoha
+19,452899,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Chrysococcyx,caprius,-25.9061,32.6335,10,song,B,0:04,no,https://xeno-canto.org/452899/download,Diederik Cuckoo
+20,448614,Antonio Xeira,Inhaca island,Chrysococcyx,klaas,-26.023,32.907,50,song,B,1:49,yes,https://xeno-canto.org/448614/download,Klaas's Cuckoo
+21,524395,Lynette Rudman,"Cheringoma, Sofala",Chrysococcyx,cupreus,-18.2328,35.2385,260,song,B,0:10,yes,https://xeno-canto.org/524395/download,African Emerald Cuckoo
+22,524394,Lynette Rudman,"Cheringoma, Sofala",Chrysococcyx,cupreus,-18.0142,35.2014,100,song,B,0:48,yes,https://xeno-canto.org/524394/download,African Emerald Cuckoo
+23,207012,Niall Perrins,"Chinde, Zambezia Province",Cercococcyx,montanus,-18.187,36.3709,0,"call, song",B,1:48,yes,https://xeno-canto.org/207012/download,Barred Long-tailed Cuckoo
+24,524431,Lynette Rudman,"Cheringoma, Sofala",Cuculus,clamosus,-18.2439,35.2414,280,song,C,0:06,no,https://xeno-canto.org/524431/download,Black Cuckoo
+25,524534,Lynette Rudman,"Cheringoma, Sofala",Cuculus,solitarius,-18.0018,35.1525,50,song,B,0:22,no,https://xeno-canto.org/524534/download,Red-chested Cuckoo
+26,207013,Niall Perrins,"Gorongosa, Sofala",Columba,delegorguei,-18.4665,34.0504,1100,song,C,1:06,yes,https://xeno-canto.org/207013/download,Eastern Bronze-naped Pigeon
+27,100465,Rory Nefdt,"Caia, Sofala",Streptopelia,semitorquata,-17.843,35.327,30,song,C,0:09,unknown,https://xeno-canto.org/100465/download,Red-eyed Dove
+28,100464,Rory Nefdt,"Caia, Sofala",Streptopelia,semitorquata,-17.843,35.327,30,song,C,0:07,unknown,https://xeno-canto.org/100464/download,Red-eyed Dove
+29,445134,Antonio Xeira,Inhaca island,Streptopelia,capicola,-26.023,32.907,50,song,A,0:12,no,https://xeno-canto.org/445134/download,Ring-necked Dove
+30,524535,Lynette Rudman,"Cheringoma, Sofala",Turtur,tympanistria,-18.2426,35.2456,280,song,C,1:06,no,https://xeno-canto.org/524535/download,Tambourine Dove
+31,104019,Bram Piot,Inhaca island,Treron,calvus,-26.0228,32.907,20,call,B,0:15,yes,https://xeno-canto.org/104019/download,African Green Pigeon
+32,345949,Gabriel A. Jamie,"Lago, Niassa",Sarothrura,elegans,-12.8268,35.1897,1800,song,C,2:23,no,https://xeno-canto.org/345949/download,Buff-spotted Flufftail
+33,454045,Barnaby,"Golf Course, Maputo, Maputo",Sarothrura,rufa,-25.9367,32.616,10,call,C,0:05,unknown,https://xeno-canto.org/454045/download,Red-chested Flufftail
+34,399267,Gary Allport,"Marracuene, Maputo",Rallus,caerulescens,-25.7331,32.709,10,call,B,0:09,no,https://xeno-canto.org/399267/download,African Rail
+35,713095,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Amaurornis,flavirostra,-25.7331,32.703,0,uncertain,C,0:50,yes,https://xeno-canto.org/713095/download,Black Crake
+36,453374,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Amaurornis,flavirostra,-25.9061,32.6335,10,song,C,0:05,no,https://xeno-canto.org/453374/download,Black Crake
+37,708429,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Porzana,pusilla,-25.7331,32.703,0,uncertain,B,0:46,unknown,https://xeno-canto.org/708429/download,Baillon's Crake
+38,708425,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Porzana,pusilla,-25.7331,32.703,0,uncertain,B,1:19,no,https://xeno-canto.org/708425/download,Baillon's Crake
+39,407075,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Paragallinula,angulata,-25.8197,32.689,0,"call, flight call",A,1:37,yes,https://xeno-canto.org/407075/download,Lesser Moorhen
+40,403523,Gary Allport,"Maputo, Cidade de Maputo",Paragallinula,angulata,-25.8959,32.6574,10,"call, song",D,0:58,yes,https://xeno-canto.org/403523/download,Lesser Moorhen
+41,701253,Antonio Xeira,Inhaca island,Burhinus,vermiculatus,-26.023,32.907,50,alarm call,B,0:07,yes,https://xeno-canto.org/701253/download,Water Thick-knee
+42,411262,Gary Allport,"Marracuene, Maputo",Vanellus,lugubris,-25.7331,32.709,10,song,D,1:08,yes,https://xeno-canto.org/411262/download,Senegal Lapwing
+43,394493,Gary Allport,Maputo,Vanellus,lugubris,-25.962,32.599,50,flight call,D,0:25,no,https://xeno-canto.org/394493/download,Senegal Lapwing
+44,646336,Nature sounds by Simply Birding,"Carinde, Zumbo, Tete",Actophilornis,africanus,-15.6373,30.52,320,call,A,0:09,yes,https://xeno-canto.org/646336/download,African Jacana
+45,524427,Lynette Rudman,"Cheringoma, Sofala",Actophilornis,africanus,-18.0013,35.1541,50,call,C,0:21,yes,https://xeno-canto.org/524427/download,African Jacana
+46,524426,Lynette Rudman,"Cheringoma, Sofala",Actophilornis,africanus,-18.0011,35.154,50,call,C,0:46,yes,https://xeno-canto.org/524426/download,African Jacana
+47,524424,Lynette Rudman,"Cheringoma, Sofala",Actophilornis,africanus,-18.0011,35.154,50,call,C,0:25,yes,https://xeno-canto.org/524424/download,African Jacana
+48,386969,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Numenius,phaeopus,-25.8197,32.689,0,call,B,0:08,yes,https://xeno-canto.org/386969/download,Eurasian Whimbrel
+49,386790,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Numenius,phaeopus,-25.8197,32.689,0,call,B,0:16,yes,https://xeno-canto.org/386790/download,Eurasian Whimbrel
+50,385131,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,call,B,0:11,yes,https://xeno-canto.org/385131/download,Eurasian Whimbrel
+51,334803,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,"alarm call, call, 'tittering' call; alarm call",B,0:23,yes,https://xeno-canto.org/334803/download,Eurasian Whimbrel
+52,308218,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,"call, song, 'bubbling' call, aggression",B,0:06,yes,https://xeno-canto.org/308218/download,Eurasian Whimbrel
+53,334801,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,"call, 'tittering' call",C,0:27,yes,https://xeno-canto.org/334801/download,Eurasian Whimbrel
+54,308217,Gary Allport,"Maputo, Cidade de Maputo",Numenius,phaeopus,-25.9346,32.6313,0,call,C,0:11,yes,https://xeno-canto.org/308217/download,Eurasian Whimbrel
+55,701493,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Gallinago,nigripennis,-25.7331,32.703,0,song,B,0:41,yes,https://xeno-canto.org/701493/download,African Snipe
+56,415839,Gary Allport,"Marracuene, Maputo",Gallinago,nigripennis,-25.7331,32.709,10,call,B,1:45,no,https://xeno-canto.org/415839/download,African Snipe
+57,649458,Niall Perrins,"San Sebastien Sanctuary, Vilankulo, Inhambane Province",Sternula,saundersi,-22.1343,35.5389,0,call,C,1:39,yes,https://xeno-canto.org/649458/download,Saunders's Tern
+58,524531,Lynette Rudman,"Cheringoma, Sofala",Bostrychia,hagedash,-18.0009,35.1527,50,call,B,0:05,yes,https://xeno-canto.org/524531/download,Hadada Ibis
+59,59742,Bram Piot,Inhaca island,Bostrychia,hagedash,-26.023,32.907,5,flight call,B,0:17,yes,https://xeno-canto.org/59742/download,Hadada Ibis
+60,399254,Gary Allport,"Marracuene, Maputo",Ixobrychus,minutus,-25.7331,32.709,10,"call, the barking repeated call",C,2:47,no,https://xeno-canto.org/399254/download,Little Bittern
+61,59739,Bram Piot,Inhaca island,Ardea,cinerea,-26.023,32.907,5,call,B,0:06,yes,https://xeno-canto.org/59739/download,Grey Heron
+62,520536,Lynette Rudman,"Cheringoma, Sofala",Circaetus,fasciolatus,-18.0251,35.1764,110,song,C,0:12,no,https://xeno-canto.org/520536/download,Southern Banded Snake Eagle
+63,520535,Lynette Rudman,"Cheringoma, Sofala",Circaetus,fasciolatus,-18.0212,35.1725,120,call,C,0:28,no,https://xeno-canto.org/520535/download,Southern Banded Snake Eagle
+64,652454,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Accipiter,tachiro,-22.1722,35.458,20,call,B,0:55,yes,https://xeno-canto.org/652454/download,African Goshawk
+65,646327,Nature sounds by Simply Birding,"Goinha, Muanza, Sofala Province",Haliaeetus,vocifer,-18.8708,34.497,20,duet,A,1:05,yes,https://xeno-canto.org/646327/download,African Fish Eagle
+66,646324,Nature sounds by Simply Birding,"Goinha, Muanza, Sofala Province",Haliaeetus,vocifer,-18.8669,34.486,20,duet,A,1:05,yes,https://xeno-canto.org/646324/download,African Fish Eagle
+67,616079,Nature sounds by Simply Birding,"Goinha, Gorongosa, Sofala Province",Haliaeetus,vocifer,-18.8163,34.4959,20,duet,A,1:05,yes,https://xeno-canto.org/616079/download,African Fish Eagle
+68,616044,Nature sounds by Simply Birding,"Goinha, Gorongosa, Sofala Province",Haliaeetus,vocifer,-18.8163,34.4959,20,duet,A,1:05,yes,https://xeno-canto.org/616044/download,African Fish Eagle
+69,301912,Teet Sirotkin,"Blue Maria, Gorongosa, Sofala",Bubo,africanus,-18.982,34.1775,80,song,A,0:06,no,https://xeno-canto.org/301912/download,Spotted Eagle-Owl
+70,651902,Nature sounds by Simply Birding,"Pafuri, Chicualacuala, Gaza",Strix,woodfordii,-22.4501,31.3213,200,duet,A,0:23,yes,https://xeno-canto.org/651902/download,African Wood Owl
+71,651901,Nature sounds by Simply Birding,"Pafuri, Chicualacuala, Gaza",Strix,woodfordii,-22.4501,31.3213,200,duet,A,1:03,yes,https://xeno-canto.org/651901/download,African Wood Owl
+72,696776,Olivier Hamerlynck,"Lipilichi Wilderness, Main Camp, Pauila, Sanga, Niassa",Strix,woodfordii,-12.1477,35.5236,750,duet,B,2:17,no,https://xeno-canto.org/696776/download,African Wood Owl
+73,301911,Teet Sirotkin,"Blue Maria, Gorongosa, Sofala",Strix,woodfordii,-18.982,34.1775,80,song,B,0:06,no,https://xeno-canto.org/301911/download,African Wood Owl
+74,256486,Niall Perrins,"Gorongosa, Sofala",Strix,woodfordii,-18.9633,34.1692,130,call,B,1:18,no,https://xeno-canto.org/256486/download,African Wood Owl
+75,685451,Olivier Hamerlynck,"Marracuene District, Marracuene, Maputo",Asio,capensis,-25.7062,32.7041,0,flight call,B,3:27,yes,https://xeno-canto.org/685451/download,Marsh Owl
+76,347183,David Moyer,"Mbatamila, Mecula, Niassa",Apaloderma,narina,-12.1836,37.5507,480,song,B,2:55,no,https://xeno-canto.org/347183/download,Narina Trogon
+77,347182,David Moyer,"Mbatamila, Mecula, Niassa",Apaloderma,narina,-12.1836,37.5507,480,song,B,0:07,yes,https://xeno-canto.org/347182/download,Narina Trogon
+78,646330,Nature sounds by Simply Birding,"Goinha, Gorongosa, Sofala Province",Upupa,africana,-18.8163,34.4959,20,song,A,0:52,yes,https://xeno-canto.org/646330/download,African Hoopoe
+79,646329,Nature sounds by Simply Birding,"Goinha, Gorongosa, Sofala Province",Upupa,africana,-18.8163,34.4959,20,song,A,0:42,yes,https://xeno-canto.org/646329/download,African Hoopoe
+80,59751,Bram Piot,Inhaca island,Upupa,africana,-26.023,32.907,10,song,B,0:26,yes,https://xeno-canto.org/59751/download,African Hoopoe
+81,652461,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Rhinopomastus,cyanomelas,-22.1274,35.4593,20,call,C,0:22,yes,https://xeno-canto.org/652461/download,Common Scimitarbill
+82,541188,Paweł Szymański,"Chitengo, Gorongosa, Sofala",Lophoceros,alboterminatus,-18.979,34.355,40,song,A,1:34,yes,https://xeno-canto.org/541188/download,Crowned Hornbill
+83,520228,Niall Perrins,"Panda, Inhambane",Coracias,spatulatus,-24.1287,34.6265,120,,no score,0:58,unknown,https://xeno-canto.org/520228/download,Racket-tailed Roller
+84,521824,Lynette Rudman,"Panda, Inhambane Province",Coracias,spatulatus,-23.9975,34.6116,130,song,B,0:34,yes,https://xeno-canto.org/521824/download,Racket-tailed Roller
+85,524396,Lynette Rudman,"Cheringoma, Sofala",Eurystomus,glaucurus,-18.2413,35.2333,280,song,B,0:56,yes,https://xeno-canto.org/524396/download,Broad-billed Roller
+86,400926,Barnaby,"Marracuene, Maputo",Halcyon,chelicuti,-25.7638,32.7396,5,song,B,0:13,yes,https://xeno-canto.org/400926/download,Striped Kingfisher
+87,652459,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Halcyon,chelicuti,-22.1272,35.46,20,call,C,0:40,yes,https://xeno-canto.org/652459/download,Striped Kingfisher
+88,520470,Lynette Rudman,"Cheringoma, Sofala",Halcyon,senegaloides,-18.2395,35.2143,260,song,A,0:13,yes,https://xeno-canto.org/520470/download,Mangrove Kingfisher
+89,520469,Lynette Rudman,"Cheringoma, Sofala",Halcyon,senegaloides,-18.0402,35.2022,90,song,A,0:55,yes,https://xeno-canto.org/520469/download,Mangrove Kingfisher
+90,520471,Lynette Rudman,"Cheringoma, Sofala",Halcyon,senegaloides,-18.2449,35.2196,280,song,B,0:31,yes,https://xeno-canto.org/520471/download,Mangrove Kingfisher
+91,216425,Niall Perrins,"Cheringoma, Sofala",Halcyon,senegaloides,-18.2722,35.2451,300,call,B,1:17,yes,https://xeno-canto.org/216425/download,Mangrove Kingfisher
+92,100466,Rory Nefdt,"Caia, Sofala",Merops,persicus,-17.843,35.327,30,song,B,0:10,unknown,https://xeno-canto.org/100466/download,Blue-cheeked Bee-eater
+93,201464,Niall Perrins,"Matutuíne District, Maputo",Merops,superciliosus,-26.2374,32.8682,0,"call, flight call",B,1:12,yes,https://xeno-canto.org/201464/download,Olive Bee-eater
+94,185984,Niall Perrins,"Massinga, Inhambane",Pogoniulus,simplex,-23.0644,35.1643,90,call,B,0:49,yes,https://xeno-canto.org/185984/download,Green Tinkerbird
+95,185982,Niall Perrins,"Massinga, Inhambane",Pogoniulus,simplex,-23.0627,35.1729,90,call,B,1:01,yes,https://xeno-canto.org/185982/download,Green Tinkerbird
+96,303340,Alan Collett,"Massinga, Inhambane",Pogoniulus,simplex,-22.4895,34.9345,110,call,C,0:13,yes,https://xeno-canto.org/303340/download,Green Tinkerbird
+97,31658,Bram Piot,"Bilene, Gaza Province",Pogoniulus,bilineatus,-25.294992,33.253555,20,song,B,0:34,unknown,https://xeno-canto.org/31658/download,Yellow-rumped Tinkerbird
+98,524530,Lynette Rudman,"Cheringoma, Sofala",Indicator,indicator,-18.2448,35.23,280,"call, guiding call",B,0:45,yes,https://xeno-canto.org/524530/download,Greater Honeyguide
+99,473981,Maitane C.A.,"Majune, Niassa Province",Indicator,indicator,-12.7826,36.6094,300,call,B,1:57,yes,https://xeno-canto.org/473981/download,Greater Honeyguide
+100,524529,Lynette Rudman,"Cheringoma, Sofala",Indicator,indicator,-18.2427,35.2272,280,"call, guiding call",C,0:11,yes,https://xeno-canto.org/524529/download,Greater Honeyguide
+101,350087,Niall Perrins,"Cheringoma, Sofala",Campethera,cailliautii,-18.2438,35.2641,280,call,B,0:03,yes,https://xeno-canto.org/350087/download,Green-backed Woodpecker
+102,346979,David Moyer,"Mbatamila, Mecula, Niassa",Campethera,cailliautii,-12.1735,37.5381,480,call,B,0:04,yes,https://xeno-canto.org/346979/download,Green-backed Woodpecker
+103,345955,Gabriel A. Jamie,"Lago, Niassa",Dendropicos,fuscescens,-12.8268,35.1897,1800,call,B,0:26,no,https://xeno-canto.org/345955/download,Cardinal Woodpecker
+104,688814,Ken Behrens,Dunes de Dovela Ecolodge www.dunesdedovela.com/,Falco,cuvierii,-24.4332,35.2505,50,call,C,0:10,yes,https://xeno-canto.org/688814/download,African Hobby
+105,346111,David Moyer,"Mbatamila, Mecula, Niassa",Falco,fasciinucha,-12.1782,37.5477,600,call,B,0:39,yes,https://xeno-canto.org/346111/download,Taita Falcon
+106,346110,David Moyer,"Mbatamila, Mecula, Niassa",Falco,fasciinucha,-12.1782,37.5477,600,call,C,0:12,yes,https://xeno-canto.org/346110/download,Taita Falcon
+107,103956,Bram Piot,Maputo,Poicephalus,cryptoxanthus,-25.962,32.599,30,call,B,0:56,unknown,https://xeno-canto.org/103956/download,Brown-headed Parrot
+108,201484,Niall Perrins,"Matutuíne District, Maputo",Smithornis,capensis,-26.2121,32.9387,40,flight call,B,1:36,yes,https://xeno-canto.org/201484/download,African Broadbill
+109,436634,Alan Collett,"Chibabava, Sofala",Smithornis,capensis,-20.9507,33.9082,80,call,C,1:01,yes,https://xeno-canto.org/436634/download,African Broadbill
+110,184021,Niall Perrins,"Cheringoma, Sofala",Smithornis,capensis,-18.2457,35.2091,260,song,D,0:19,unknown,https://xeno-canto.org/184021/download,African Broadbill
+111,189925,Niall Perrins,"Coutadas, Sofala",Pitta,angolensis,-18.2447,35.2188,260,call,B,0:49,yes,https://xeno-canto.org/189925/download,African Pitta
+112,520080,Lynette Rudman,"Cheringoma, Sofala",Pitta,angolensis,-18.2142,35.3094,260,,C,0:05,no,https://xeno-canto.org/520080/download,African Pitta
+113,201450,Niall Perrins,"Matutuíne District, Maputo",Batis,fratrum,-26.1856,32.8951,30,call,B,0:40,yes,https://xeno-canto.org/201450/download,Woodward's Batis
+114,104063,Bram Piot,Inhaca island,Batis,molitor,-26.0228,32.907,20,song,B,0:16,unknown,https://xeno-canto.org/104063/download,Chinspot Batis
+115,104062,Bram Piot,Inhaca island,Batis,molitor,-26.0228,32.907,20,call,B,0:27,unknown,https://xeno-canto.org/104062/download,Chinspot Batis
+116,59741,Bram Piot,Inhaca island,Batis,molitor,-26.023,32.907,10,call,C,0:45,yes,https://xeno-canto.org/59741/download,Chinspot Batis
+117,347181,David Moyer,"Mbatamila, Mecula, Niassa",Batis,soror,-12.1697,37.5481,500,call,A,0:12,yes,https://xeno-canto.org/347181/download,Pale Batis
+118,347180,David Moyer,"Mbatamila, Mecula, Niassa",Batis,soror,-12.1697,37.5481,500,call,A,1:08,yes,https://xeno-canto.org/347180/download,Pale Batis
+119,652460,Niall Perrins,"Mahoa, Vilankulo, Inhambane Province",Batis,soror,-22.1276,35.4577,10,call,C,0:52,yes,https://xeno-canto.org/652460/download,Pale Batis
+120,652456,Niall Perrins,"San Sebastian, Vilankulo, Inhambane Province",Batis,soror,-22.1357,35.4449,0,call,C,0:11,yes,https://xeno-canto.org/652456/download,Pale Batis
+121,652457,Niall Perrins,"San Sebastian, Vilankulo, Inhambane Province",Platysteira,peltata,-22.1341,35.4488,10,call,A,2:24,yes,https://xeno-canto.org/652457/download,Black-throated Wattle-eye
+122,104021,Bram Piot,Inhaca island,Chlorophoneus,olivaceus,-26.023,32.907,20,alarm call,A,0:09,unknown,https://xeno-canto.org/104021/download,Olive Bushshrike
+123,652447,Niall Perrins,"San Sebastian, Vilanculos, Inhambane Province",Telophorus,viridis,-22.1517,35.4641,20,song,A,1:48,no,https://xeno-canto.org/652447/download,Gorgeous Bushshrike
+124,59750,Bram Piot,Inhaca island,Telophorus,viridis,-26.023,32.907,10,song,B,0:26,unknown,https://xeno-canto.org/59750/download,Gorgeous Bushshrike
+125,578868,Samuel J. Tacuana,"Inharrime, Inhambane Province",Telophorus,viridis,-24.4363,35.2341,30,song,D,0:39,yes,https://xeno-canto.org/578868/download,Gorgeous Bushshrike
+126,347144,David Moyer,"Mbatamila, Mecula, Niassa",Tchagra,senegalus,-12.1845,37.5486,480,song,B,0:53,no,https://xeno-canto.org/347144/download,Black-crowned Tchagra
+127,100471,Rory Nefdt,"Caia, Sofala",Tchagra,senegalus,-17.843,35.327,30,alarm call,B,0:47,unknown,https://xeno-canto.org/100471/download,Black-crowned Tchagra
+128,31661,Bram Piot,"Bilene, Gaza Province",Tchagra,senegalus,-25.294992,33.253555,1,song,B,0:30,yes,https://xeno-canto.org/31661/download,Black-crowned Tchagra
+129,59745,Bram Piot,Inhaca island,Dryoscopus,cubla,-26.023,32.907,10,call,B,0:13,yes,https://xeno-canto.org/59745/download,Black-backed Puffback
+130,524432,Lynette Rudman,"Cheringoma, Sofala",Dryoscopus,cubla,-18.2211,35.2614,280,call,C,0:14,yes,https://xeno-canto.org/524432/download,Black-backed Puffback
+131,100519,Rory Nefdt,"Caia, Sofala",Laniarius,major,-17.843,35.327,30,"call, contact call",B,0:29,unknown,https://xeno-canto.org/100519/download,Tropical Boubou
+132,100520,Rory Nefdt,"Caia, Sofala",Laniarius,major,-17.843,35.327,30,song,C,0:14,unknown,https://xeno-canto.org/100520/download,Tropical Boubou
+133,520128,Lynette Rudman,"Cheringoma, Sofala",Bias,musicus,-18.2441,35.2407,280,song,B,0:02,yes,https://xeno-canto.org/520128/download,Black-and-white Shrike-flycatcher
+134,615911,Lynette Rudman,"Coutadas, Sofala",Bias,musicus,-18.2447,35.2188,260,song,C,0:11,yes,https://xeno-canto.org/615911/download,Black-and-white Shrike-flycatcher
+135,346938,David Moyer,"Mbatamila, Mecula, Niassa",Campephaga,flava,-12.1735,37.5381,480,call,B,0:35,yes,https://xeno-canto.org/346938/download,Black Cuckooshrike
+136,301910,Teet Sirotkin,"Gorongosa, Sofala",Oriolus,chlorocephalus,-18.4653,34.0521,1100,song,B,0:50,yes,https://xeno-canto.org/301910/download,Green-headed Oriole
+137,540578,Paweł Szymański,"Chitengo, Gorongosa, Sofala",Oriolus,larvatus,-18.9799,34.3576,40,song,A,0:35,yes,https://xeno-canto.org/540578/download,Black-headed Oriole
+138,652469,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Dicrurus,ludwigii,-22.1523,35.4801,20,call,A,1:04,yes,https://xeno-canto.org/652469/download,Common Square-tailed Drongo
+139,59749,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,A,0:27,yes,https://xeno-canto.org/59749/download,Common Square-tailed Drongo
+140,104060,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.0228,32.907,20,song,B,0:59,yes,https://xeno-canto.org/104060/download,Common Square-tailed Drongo
+141,104059,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.0228,32.907,20,song,B,0:27,yes,https://xeno-canto.org/104059/download,Common Square-tailed Drongo
+142,59748,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,B,0:39,yes,https://xeno-canto.org/59748/download,Common Square-tailed Drongo
+143,59747,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,B,0:33,yes,https://xeno-canto.org/59747/download,Common Square-tailed Drongo
+144,541185,Paweł Szymański,"Chitengo, Gorongosa, Sofala",Dicrurus,adsimilis,-18.9752,34.3578,30,song,A,1:12,yes,https://xeno-canto.org/541185/download,Fork-tailed Drongo
+145,201448,Niall Perrins,"Matutuíne District, Maputo",Trochocercus,cyanomelas,-26.1856,32.8951,30,song,B,0:44,yes,https://xeno-canto.org/201448/download,Blue-mantled Crested Flycatcher
+146,615986,Nature sounds by Simply Birding,"Goinha, Gorongosa, Sofala Province",Terpsiphone,viridis,-18.8163,34.4959,20,song,A,0:56,yes,https://xeno-canto.org/615986/download,African Paradise Flycatcher
+147,721755,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Corvus,splendens,-25.9061,32.6335,0,call,B,0:16,yes,https://xeno-canto.org/721755/download,House Crow
+148,519656,Lynette Rudman,"Beira, Beira, Sofala",Corvus,splendens,-19.846,34.8946,10,call,B,0:46,yes,https://xeno-canto.org/519656/download,House Crow
+149,104058,Bram Piot,Inhaca island,Corvus,splendens,-26.0228,32.907,10,call,B,0:14,unknown,https://xeno-canto.org/104058/download,House Crow
+150,100529,Rory Nefdt,"Caia, Sofala",Corvus,albus,-17.843,35.327,30,song,B,0:18,unknown,https://xeno-canto.org/100529/download,Pied Crow
+151,100521,Rory Nefdt,"Caia, Sofala",Corvus,albus,-17.843,35.327,30,song,B,0:10,unknown,https://xeno-canto.org/100521/download,Pied Crow
+152,652445,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Nicator,gularis,-22.1442,35.4753,30,call,A,1:49,yes,https://xeno-canto.org/652445/download,Eastern Nicator
+153,520532,Lynette Rudman,"Cheringoma, Sofala",Nicator,gularis,-18.0242,35.1757,120,song,B,1:00,no,https://xeno-canto.org/520532/download,Eastern Nicator
+154,185644,Niall Perrins,"Cheringoma, Sofala",Nicator,gularis,-18.2457,35.2091,260,song,B,0:56,yes,https://xeno-canto.org/185644/download,Eastern Nicator
+155,185641,Niall Perrins,"Panda, Inhambane",Calendulauda,africanoides,-24.0321,34.4198,80,"flight call, song",A,0:48,yes,https://xeno-canto.org/185641/download,Fawn-colored Lark
+156,449420,Gary Allport,"Matutuíne District, Maputo Province",Calendulauda,africanoides,-26.3424,32.4675,50,song,B,0:13,yes,https://xeno-canto.org/449420/download,Fawn-colored Lark
+157,346035,David Moyer,"Mbatamila, Mecula, Niassa",Mirafra,africana,-12.168,37.5462,480,"flight call, song",B,0:56,yes,https://xeno-canto.org/346035/download,Rufous-naped Lark
+158,519653,Lynette Rudman,"Beira, Sofala",Mirafra,rufocinnamomea,-19.7489,34.9212,10,wing flapping sound,B,0:20,yes,https://xeno-canto.org/519653/download,Flappet Lark
+159,721751,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Pycnonotus,barbatus,-25.9061,32.6335,0,song,A,0:21,no,https://xeno-canto.org/721751/download,Common Bulbul
+160,524526,Lynette Rudman,"Cheringoma, Sofala",Pycnonotus,tricolor,-18.0402,35.2022,90,,B,0:38,no,https://xeno-canto.org/524526/download,Dark-capped Bulbul
+161,524525,Lynette Rudman,"Cheringoma, Sofala",Pycnonotus,tricolor,-18.0403,35.202,90,song,C,0:54,no,https://xeno-canto.org/524525/download,Dark-capped Bulbul
+162,523243,Lynette Rudman,"Marracuene, Maputo",Pycnonotus,tricolor,-25.7582,32.7301,10,song,C,0:39,no,https://xeno-canto.org/523243/download,Dark-capped Bulbul
+163,523234,Lynette Rudman,"Marracuene, Maputo",Pycnonotus,tricolor,-25.7604,32.7306,10,song,C,1:05,yes,https://xeno-canto.org/523234/download,Dark-capped Bulbul
+164,774315,Ehren Eksteen,"Mariano, Inhambane",Andropadus,importunus,-21.8639,35.4126,10,call,A,0:22,yes,https://xeno-canto.org/774315/download,Sombre Greenbul
+165,652451,Niall Perrins,"San Sebastian, Vilankulo, Inhambane Province",Andropadus,importunus,-22.1357,35.4449,0,"dawn song, song",A,1:23,no,https://xeno-canto.org/652451/download,Sombre Greenbul
+166,392008,Tom Wulf,"Gala Gala Eco Resort, Ponta do Ouro",Andropadus,importunus,-26.8533,32.8879,30,song,A,1:02,yes,https://xeno-canto.org/392008/download,Sombre Greenbul
+167,216433,Niall Perrins,"Cheringoma, Sofala",Andropadus,importunus,-18.2454,35.2392,280,call,A,0:56,yes,https://xeno-canto.org/216433/download,Sombre Greenbul
+168,104020,Bram Piot,Inhaca island,Andropadus,importunus,-26.0228,32.907,20,call,A,0:26,no,https://xeno-canto.org/104020/download,Sombre Greenbul
+169,104018,Bram Piot,Inhaca island,Andropadus,importunus,-26.0228,32.907,20,song,A,1:32,yes,https://xeno-canto.org/104018/download,Sombre Greenbul
+170,31659,Bram Piot,"Bilene, Gaza Province",Andropadus,importunus,-25.294992,33.253555,20,song,A,1:06,yes,https://xeno-canto.org/31659/download,Sombre Greenbul
+171,761339,Antonio Xeira,"Ponta do Ouro, Matutuíne",Andropadus,importunus,-26.8452,32.8925,0,song,B,0:13,no,https://xeno-canto.org/761339/download,Sombre Greenbul
+172,521829,Lynette Rudman,"Beira, Sofala Province",Andropadus,importunus,-19.718,34.7114,10,song,B,0:41,yes,https://xeno-canto.org/521829/download,Sombre Greenbul
+173,201449,Niall Perrins,"Matutuíne District, Maputo",Andropadus,importunus,-26.1856,32.8951,30,song,B,0:56,yes,https://xeno-canto.org/201449/download,Sombre Greenbul
+174,59737,Bram Piot,Inhaca island,Andropadus,importunus,-26.023,32.907,10,song,B,0:39,unknown,https://xeno-canto.org/59737/download,Sombre Greenbul
+175,100468,Rory Nefdt,"Caia, Sofala",Andropadus,importunus,-17.843,35.327,30,song,C,0:34,unknown,https://xeno-canto.org/100468/download,Sombre Greenbul
+176,100467,Rory Nefdt,"Caia, Sofala",Andropadus,importunus,-17.843,35.327,30,song,C,0:31,unknown,https://xeno-canto.org/100467/download,Sombre Greenbul
+177,652425,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Chlorocichla,flaviventris,-22.1628,35.4607,10,call,B,0:35,unknown,https://xeno-canto.org/652425/download,Yellow-bellied Greenbul
+178,430249,Alan Collett,"Cheringoma, Sofala",Chlorocichla,flaviventris,-17.9694,35.2911,50,call,B,0:18,yes,https://xeno-canto.org/430249/download,Yellow-bellied Greenbul
+179,104014,Bram Piot,Inhaca island,Phyllastrephus,terrestris,-26.023,32.907,20,call,B,0:59,unknown,https://xeno-canto.org/104014/download,Terrestrial Brownbul
+180,59752,Bram Piot,Inhaca island,Phyllastrephus,terrestris,-26.023,32.907,10,call,C,0:38,unknown,https://xeno-canto.org/59752/download,Terrestrial Brownbul
+181,104016,Bram Piot,Inhaca island,Phyllastrephus,terrestris,-26.023,32.907,20,call,D,0:37,unknown,https://xeno-canto.org/104016/download,Terrestrial Brownbul
+182,346112,David Moyer,"Mbatamila, Mecula, Niassa",Phyllastrephus,cerviniventris,-12.1786,37.5475,600,song,C,2:25,yes,https://xeno-canto.org/346112/download,Grey-olive Greenbul
+183,520539,Lynette Rudman,"Cheringoma, Sofala",Phyllastrephus,debilis,-18.0238,35.1757,120,song,B,0:21,yes,https://xeno-canto.org/520539/download,Lowland Tiny Greenbul
+184,520538,Lynette Rudman,"Cheringoma, Sofala",Phyllastrephus,debilis,-18.0242,35.1766,110,song,B,0:06,yes,https://xeno-canto.org/520538/download,Lowland Tiny Greenbul
+185,520537,Lynette Rudman,"Cheringoma, Sofala",Phyllastrephus,debilis,-18.0245,35.1763,110,song,C,0:21,yes,https://xeno-canto.org/520537/download,Lowland Tiny Greenbul
+186,430248,Alan Collett,"Chibabava, Sofala",Phyllastrephus,debilis,-20.5913,34.3745,60,call,D,0:28,yes,https://xeno-canto.org/430248/download,Lowland Tiny Greenbul
+187,256487,Niall Perrins,"Cheringoma, Sofala",Phyllastrephus,debilis,-18.2726,35.2395,300,call,D,0:48,yes,https://xeno-canto.org/256487/download,Lowland Tiny Greenbul
+188,59740,Bram Piot,Inhaca island,Pseudhirundo,griseopyga,-26.023,32.907,5,call,C,0:14,unknown,https://xeno-canto.org/59740/download,Grey-rumped Swallow
+189,475668,Gary Allport,"Marracuene, Maputo",Phedina,borbonica,-25.7331,32.709,10,call,C,0:06,yes,https://xeno-canto.org/475668/download,Mascarene Martin
+190,312037,Niall Perrins,"Murraca, Caia, Sofala",Melocichla,mentalis,-17.7051,35.2286,30,song,B,0:31,yes,https://xeno-canto.org/312037/download,Moustached Grass Warbler
+191,520472,Lynette Rudman,"Marromeu, Sofala",Melocichla,mentalis,-17.8602,35.334,50,song,C,0:11,yes,https://xeno-canto.org/520472/download,Moustached Grass Warbler
+192,520227,Niall Perrins,"Cheringoma, Sofala",Melocichla,mentalis,-18.114,34.9796,30,song,C,0:32,yes,https://xeno-canto.org/520227/download,Moustached Grass Warbler
+193,381697,Warren McCleland,"Quiterajo, Cabo Delgado",Macrosphenus,kretschmeri,-11.77,40.3951,100,song,A,0:34,yes,https://xeno-canto.org/381697/download,Kretschmer's Longbill
+194,494651,Barnaby,"Palma, Cabo Delgado Province",Sylvietta,whytii,-10.8438,40.5355,20,call,A,0:08,no,https://xeno-canto.org/494651/download,Red-faced Crombec
+195,520534,Lynette Rudman,"Coutadas, Sofala",Sylvietta,whytii,-18.2447,35.2188,260,song,C,0:08,no,https://xeno-canto.org/520534/download,Red-faced Crombec
+196,346854,David Moyer,"Mbatamila, Mecula, Niassa",Sylvietta,whytii,-12.1735,37.5381,480,song,C,0:38,no,https://xeno-canto.org/346854/download,Red-faced Crombec
+197,346560,David Moyer,"Mbatamila, Mecula, Niassa",Erythrocercus,livingstonei,-12.1835,37.5516,460,"call, song",B,0:33,yes,https://xeno-canto.org/346560/download,Livingstone's Flycatcher
+198,346558,David Moyer,"Mbatamila, Mecula, Niassa",Erythrocercus,livingstonei,-12.1835,37.5516,460,"call, song",B,1:25,yes,https://xeno-canto.org/346558/download,Livingstone's Flycatcher
+199,346559,David Moyer,"Mbatamila, Mecula, Niassa",Erythrocercus,livingstonei,-12.1835,37.5516,460,"call, song",C,0:49,yes,https://xeno-canto.org/346559/download,Livingstone's Flycatcher
+200,183951,Niall Perrins,"Cheringoma, Sofala",Acrocephalus,griseldis,-18.114,34.9796,30,song,C,1:19,yes,https://xeno-canto.org/183951/download,Basra Reed Warbler
+201,452902,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Acrocephalus,gracilirostris,-25.9061,32.6335,10,song,B,0:06,no,https://xeno-canto.org/452902/download,Lesser Swamp Warbler
+202,433951,Gary Allport,"Marracuene, Maputo",Acrocephalus,gracilirostris,-25.7331,32.709,10,song,B,0:39,no,https://xeno-canto.org/433951/download,Lesser Swamp Warbler
+203,201497,Niall Perrins,"Matutuíne District, Maputo",Acrocephalus,gracilirostris,-26.237,32.9233,0,call,B,0:26,yes,https://xeno-canto.org/201497/download,Lesser Swamp Warbler
+204,524528,Lynette Rudman,"Marromeu, Sofala",Acrocephalus,arundinaceus,-17.863,35.3217,30,song,C,0:14,yes,https://xeno-canto.org/524528/download,Great Reed Warbler
+205,453372,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Acrocephalus,baeticatus,-25.9061,32.6335,10,song,B,0:12,yes,https://xeno-canto.org/453372/download,African Reed Warbler
+206,432684,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:29,yes,https://xeno-canto.org/432684/download,African Reed Warbler
+207,432681,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:28,yes,https://xeno-canto.org/432681/download,African Reed Warbler
+208,432472,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:29,no,https://xeno-canto.org/432472/download,African Reed Warbler
+209,432471,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:28,no,https://xeno-canto.org/432471/download,African Reed Warbler
+210,432469,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,B,0:27,no,https://xeno-canto.org/432469/download,African Reed Warbler
+211,432682,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,C,0:24,yes,https://xeno-canto.org/432682/download,African Reed Warbler
+212,432680,Gary Allport,"Maputo, Maputo",Acrocephalus,baeticatus,-25.8982,32.6648,0,song,C,0:56,yes,https://xeno-canto.org/432680/download,African Reed Warbler
+213,216211,Niall Perrins,"Gorongosa, Sofala",Iduna,natalensis,-18.4796,34.0375,900,call,B,0:34,yes,https://xeno-canto.org/216211/download,African Yellow Warbler
+214,346564,David Moyer,"Mbatamila, Mecula, Niassa",Cisticola,aberrans,-12.1819,37.5427,600,alarm call,B,1:09,yes,https://xeno-canto.org/346564/download,Lazy Cisticola
+215,346563,David Moyer,"Mbatamila, Mecula, Niassa",Cisticola,aberrans,-12.1819,37.5427,600,song,B,0:22,yes,https://xeno-canto.org/346563/download,Lazy Cisticola
+216,346562,David Moyer,"Mbatamila, Mecula, Niassa",Cisticola,aberrans,-12.1838,37.5424,600,song,B,0:15,yes,https://xeno-canto.org/346562/download,Lazy Cisticola
+217,696213,Olivier Hamerlynck,"Miombo Woodland, Nkwichi Lodge, Aldeia Mala, Lago, Niassa",Cisticola,chiniana,-12.1985,34.7093,650,uncertain,A,0:43,no,https://xeno-canto.org/696213/download,Rattling Cisticola
+218,444840,Antonio Xeira,"Reserva Maputo, Maputo",Cisticola,chiniana,-26.5048,32.7156,10,song,B,0:08,yes,https://xeno-canto.org/444840/download,Rattling Cisticola
+219,100470,Rory Nefdt,"Caia, Sofala",Cisticola,chiniana,-17.843,35.327,30,alarm call,B,0:20,unknown,https://xeno-canto.org/100470/download,Rattling Cisticola
+220,100469,Rory Nefdt,"Caia, Sofala",Cisticola,chiniana,-17.843,35.327,30,song,B,0:54,unknown,https://xeno-canto.org/100469/download,Rattling Cisticola
+221,521828,Lynette Rudman,"Panda, Inhambane Province",Cisticola,chiniana,-23.9733,34.6571,130,alarm call,C,0:14,no,https://xeno-canto.org/521828/download,Rattling Cisticola
+222,201332,Niall Perrins,"Matutuíne District, Maputo",Cisticola,galactotes,-26.1802,32.9001,20,call,A,0:48,yes,https://xeno-canto.org/201332/download,Rufous-winged Cisticola
+223,710853,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Cisticola,galactotes,-25.9061,32.6335,0,call,B,0:10,no,https://xeno-canto.org/710853/download,Rufous-winged Cisticola
+224,452901,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Cisticola,galactotes,-25.9061,32.6335,10,song,B,0:21,no,https://xeno-canto.org/452901/download,Rufous-winged Cisticola
+225,704993,Antonio Xeira,"Hotel Cardoso, Maputo",Prinia,subflava,-25.9782,32.586,60,song,B,0:06,no,https://xeno-canto.org/704993/download,Tawny-flanked Prinia
+226,444823,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Prinia,subflava,-25.9061,32.6335,10,song,E,0:20,yes,https://xeno-canto.org/444823/download,Tawny-flanked Prinia
+227,540575,Paweł Szymański,"Chitengo, Gorongosa, Sofala",Prinia,erythroptera,-18.979,34.355,40,song,A,0:42,yes,https://xeno-canto.org/540575/download,Red-winged Prinia
+228,646282,Nature sounds by Simply Birding,"Nansua, Gurue, Zambezia Province",Apalis,lynesi,-15.3667,37.0333,1900,duet,A,0:24,yes,https://xeno-canto.org/646282/download,Namuli Apalis
+229,201315,Niall Perrins,"Matutuíne District, Maputo",Apalis,ruddi,-26.2134,32.9386,40,call,B,1:06,yes,https://xeno-canto.org/201315/download,Rudd's Apalis
+230,346114,David Moyer,"Mbatamila, Mecula, Niassa",Apalis,flavida,-12.1786,37.5475,600,"imitation, song",B,0:18,yes,https://xeno-canto.org/346114/download,Yellow-breasted Apalis
+231,725709,Olivier Hamerlynck,"Miombo Woodland, Nkwichi Lodge, Aldeia Mala, Lago, Niassa",Apalis,flavida,-12.1985,34.7093,650,uncertain,C,1:09,unknown,https://xeno-canto.org/725709/download,Yellow-breasted Apalis
+232,213613,Niall Perrins,Inhamitanga,Apalis,melanocephala,-18.1843,35.3724,180,call,B,0:47,yes,https://xeno-canto.org/213613/download,Black-headed Apalis
+233,520131,Lynette Rudman,"Cheringoma, Sofala",Apalis,melanocephala,-18.224,35.2827,280,song,C,0:14,no,https://xeno-canto.org/520131/download,Black-headed Apalis
+234,520130,Lynette Rudman,"Cheringoma, Sofala",Apalis,melanocephala,-18.22,35.2642,280,song,C,0:14,no,https://xeno-canto.org/520130/download,Black-headed Apalis
+235,646273,Nature sounds by Simply Birding,"Goinha, Gorongosa, Sofala Province",Apalis,chirindensis,-18.8163,34.4959,20,duet,A,0:52,yes,https://xeno-canto.org/646273/download,Chirinda Apalis
+236,761326,Antonio Xeira,"Ponta do Ouro, Matutuíne",Camaroptera,brachyura,-26.8452,32.8925,0,call,B,0:42,no,https://xeno-canto.org/761326/download,Green-backed Camaroptera
+237,721734,Antonio Xeira,"Ponta do Ouro, Matutuíne",Camaroptera,brachyura,-26.8452,32.8925,0,call,B,0:42,no,https://xeno-canto.org/721734/download,Green-backed Camaroptera
+238,59744,Bram Piot,Inhaca island,Camaroptera,brachyura,-26.023,32.907,10,call,B,0:32,yes,https://xeno-canto.org/59744/download,Green-backed Camaroptera
+239,453382,Antonio Xeira,"Ponta do Ouro, Matutuíne",Camaroptera,brachyura,-26.8452,32.8925,10,song,C,0:28,yes,https://xeno-canto.org/453382/download,Green-backed Camaroptera
+240,524433,Lynette Rudman,"Cheringoma, Sofala",Camaroptera,brevicaudata,-18.2316,35.273,280,call,C,1:11,no,https://xeno-canto.org/524433/download,Grey-backed Camaroptera
+241,345935,Samuel Jones,"Mount Sanga, Niassa",Artisornis,moreaui,-12.3874,35.3408,1700,alarm call,A,0:13,yes,https://xeno-canto.org/345935/download,Long-billed Forest Warbler
+242,345933,Samuel Jones,"Mount Sanga, Niassa",Artisornis,moreaui,-12.3874,35.3408,1700,alarm call,A,0:13,yes,https://xeno-canto.org/345933/download,Long-billed Forest Warbler
+243,345932,Samuel Jones,"Mount Sanga, Niassa",Artisornis,moreaui,-12.3874,35.3408,1700,song,A,0:27,yes,https://xeno-canto.org/345932/download,Long-billed Forest Warbler
+244,345931,Samuel Jones,"Mount Sanga, Niassa",Artisornis,moreaui,-12.3874,35.3408,1600,song,A,0:45,yes,https://xeno-canto.org/345931/download,Long-billed Forest Warbler
+245,345929,Samuel Jones,Mount Chitagal,Artisornis,moreaui,-12.5925,35.2503,1750,song,A,0:11,yes,https://xeno-canto.org/345929/download,Long-billed Forest Warbler
+246,345928,Samuel Jones,Mount Chitagal,Artisornis,moreaui,-12.5925,35.2503,1450,song,A,0:35,yes,https://xeno-canto.org/345928/download,Long-billed Forest Warbler
+247,345941,Gabriel A. Jamie,"Sanga, Niassa",Artisornis,moreaui,-12.3874,35.3408,1600,song,B,0:13,yes,https://xeno-canto.org/345941/download,Long-billed Forest Warbler
+248,345939,Gabriel A. Jamie,"Lago, Niassa",Artisornis,moreaui,-12.8268,35.1897,1800,song,B,0:06,yes,https://xeno-canto.org/345939/download,Long-billed Forest Warbler
+249,345936,Gabriel A. Jamie,Mount Chitagal,Artisornis,moreaui,-12.5925,35.2503,1800,song,B,0:48,yes,https://xeno-canto.org/345936/download,Long-billed Forest Warbler
+250,345934,Gabriel A. Jamie,Mount Chitagal,Artisornis,moreaui,-12.5925,35.2503,1800,song,B,0:43,yes,https://xeno-canto.org/345934/download,Long-billed Forest Warbler
+251,652462,Niall Perrins,"San Sebastian, Vilanculos, Inhambane",Eremomela,scotops,-22.1274,35.4593,20,call,B,1:22,yes,https://xeno-canto.org/652462/download,Green-capped Eremomela
+252,346037,David Moyer,"Mbatamila, Mecula, Niassa",Turdoides,jardineii,-12.168,37.5462,480,call,B,0:38,yes,https://xeno-canto.org/346037/download,Arrow-marked Babbler
+253,345337,Gabriel A. Jamie,"Lago, Niassa",Pseudoalcippe,abyssinica,-12.8268,35.1897,1800,song,B,0:50,yes,https://xeno-canto.org/345337/download,African Hill Babbler
+254,345336,Gabriel A. Jamie,"Lago, Niassa",Pseudoalcippe,abyssinica,-12.8268,35.1897,1800,call,C,1:21,yes,https://xeno-canto.org/345336/download,African Hill Babbler
+255,104017,Bram Piot,Inhaca island,Zosterops,anderssoni,-26.0228,32.907,20,call,B,0:20,yes,https://xeno-canto.org/104017/download,Southern Yellow White-eye
+256,256466,Niall Perrins,"Panda, Inhambane",Hyliota,australis,-24.1287,34.619,110,call,B,0:47,yes,https://xeno-canto.org/256466/download,Southern Hyliota
+257,761337,Antonio Xeira,"Ponta do Ouro, Matutuíne",Notopholia,corusca,-26.8452,32.8925,0,song,B,0:36,no,https://xeno-canto.org/761337/download,Black-bellied Starling
+258,444708,Antonio Xeira,"Ponta do Ouro, Matutuíne",Notopholia,corusca,-26.8452,32.8925,10,song,B,0:39,yes,https://xeno-canto.org/444708/download,Black-bellied Starling
+259,646388,Nature sounds by Simply Birding,"Gorongosa, Gorongosa, Sofala",Turdus,libonyana,-18.6871,34.0725,380,song,A,1:51,yes,https://xeno-canto.org/646388/download,Kurrichane Thrush
+260,704997,Antonio Xeira,"Hotel Cardoso, Maputo",Turdus,libonyana,-25.9782,32.586,60,song,B,0:52,no,https://xeno-canto.org/704997/download,Kurrichane Thrush
+261,444789,Antonio Xeira,"Hotel Cardoso, Maputo",Turdus,libonyana,-25.9782,32.586,60,song,B,0:45,yes,https://xeno-canto.org/444789/download,Kurrichane Thrush
+262,704996,Antonio Xeira,"Hotel Cardoso, Maputo",Turdus,libonyana,-25.9782,32.586,60,song,C,0:14,no,https://xeno-canto.org/704996/download,Kurrichane Thrush
+263,346036,David Moyer,"Mbatamila, Mecula, Niassa",Cercotrichas,quadrivirgata,-12.1794,37.5462,650,song,A,2:11,yes,https://xeno-canto.org/346036/download,Bearded Scrub Robin
+264,524408,Lynette Rudman,"Cheringoma, Sofala",Cercotrichas,quadrivirgata,-18.2418,35.2142,260,song,C,0:25,no,https://xeno-canto.org/524408/download,Bearded Scrub Robin
+265,761331,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cercotrichas,signata,-26.8452,32.8925,0,song,B,0:05,no,https://xeno-canto.org/761331/download,Brown Scrub Robin
+266,705358,Olivier Hamerlynck,"Lopes, Matutuíne District, Maputo Province",Cercotrichas,signata,-26.8025,32.8737,20,song,B,0:29,no,https://xeno-canto.org/705358/download,Brown Scrub Robin
+267,511386,Barnaby Briggs,"Matutuíne, Maputo",Cercotrichas,signata,-26.5048,32.7157,10,song,B,0:40,yes,https://xeno-canto.org/511386/download,Brown Scrub Robin
+268,444704,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cercotrichas,signata,-26.8452,32.8925,10,song,B,1:04,yes,https://xeno-canto.org/444704/download,Brown Scrub Robin
+269,201495,Niall Perrins,"Matutuíne District, Maputo",Cercotrichas,signata,-26.2007,32.9423,30,song,B,0:54,yes,https://xeno-canto.org/201495/download,Brown Scrub Robin
+270,696348,Olivier Hamerlynck,"Miombo Woodland, Nkwichi Lodge, Aldeia Mala, Lago, Niassa",Muscicapa,caerulescens,-12.1985,34.7093,650,uncertain,B,3:51,no,https://xeno-canto.org/696348/download,Ashy Flycatcher
+271,345339,Gabriel A. Jamie,"Sanga, Niassa",Muscicapa,caerulescens,-12.3874,35.3408,1600,song,B,0:30,yes,https://xeno-canto.org/345339/download,Ashy Flycatcher
+272,59743,Bram Piot,Inhaca island,Muscicapa,adusta,-26.023,32.907,5,call,B,0:25,unknown,https://xeno-canto.org/59743/download,African Dusky Flycatcher
+273,185632,Niall Perrins,"Cheringoma, Sofala",Chamaetylas,fuelleborni,-18.2447,35.2615,280,song,A,0:57,yes,https://xeno-canto.org/185632/download,White-chested Alethe
+274,774938,Niall Perrins,"Inhamitanga, Cheringoma, Sofala Province",Chamaetylas,fuelleborni,-18.2552,35.2094,280,duet,B,0:53,no,https://xeno-canto.org/774938/download,White-chested Alethe
+275,520125,Lynette Rudman,"Coutadas, Sofala",Chamaetylas,fuelleborni,-18.2447,35.2188,260,call,B,0:16,no,https://xeno-canto.org/520125/download,White-chested Alethe
+276,652429,Niall Perrins,"San Sebastian, Vilankulo, Inhambane Province",Cossypha,humeralis,-22.1357,35.4449,0,song,A,1:09,unknown,https://xeno-canto.org/652429/download,White-throated Robin-Chat
+277,400928,Barnaby,"Marracuene, Maputo",Cossypha,humeralis,-25.7638,32.7396,5,song,A,0:25,yes,https://xeno-canto.org/400928/download,White-throated Robin-Chat
+278,761328,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cossypha,natalensis,-26.8452,32.8925,0,call,B,0:28,no,https://xeno-canto.org/761328/download,Red-capped Robin-Chat
+279,346113,David Moyer,"Mbatamila, Mecula, Niassa",Cossypha,natalensis,-12.1786,37.5475,600,"imitation, song",B,1:51,no,https://xeno-canto.org/346113/download,Red-capped Robin-Chat
+280,370805,Gary Allport,Maputo,Cossypha,natalensis,-25.962,32.599,50,song,E,1:42,no,https://xeno-canto.org/370805/download,Red-capped Robin-Chat
+281,520120,Lynette Rudman,"Cheringoma, Sofala",Sheppardia,gunningi,-18.2082,35.3241,240,song,B,0:11,yes,https://xeno-canto.org/520120/download,East Coast Akalat
+282,72936,Etienne Marais,Inhamitanga,Sheppardia,gunningi,-18.252,35.203,190,song,B,0:25,unknown,https://xeno-canto.org/72936/download,East Coast Akalat
+283,184019,Niall Perrins,"Muanza, Sofala",Sheppardia,gunningi,-19.0013,35.0388,130,song,C,0:47,unknown,https://xeno-canto.org/184019/download,East Coast Akalat
+284,590261,Niall Perrins,"Caia, Sofala",Cichladusa,arquata,-18.1115,34.9706,30,song,B,1:17,yes,https://xeno-canto.org/590261/download,Collared Palm Thrush
+285,345338,Gabriel A. Jamie,"Lago, Niassa",Saxicola,torquatus,-12.8268,35.1897,1800,call,B,0:59,yes,https://xeno-canto.org/345338/download,African Stonechat
+286,201496,Niall Perrins,"Matutuíne District, Maputo",Anthreptes,reichenowi,-26.199,32.9403,30,song,B,1:05,yes,https://xeno-canto.org/201496/download,Plain-backed Sunbird
+287,652464,Niall Perrins,"San Sebastian, Vilankulo, Inhambane Province",Hedydipna,collaris,-22.1357,35.4449,0,call,A,0:27,yes,https://xeno-canto.org/652464/download,Collared Sunbird
+288,705003,Antonio Xeira,"Tunduru Botanical Gardens (near  Maputo), Maputo",Hedydipna,collaris,-25.9711,32.5736,20,"call, song",C,0:10,yes,https://xeno-canto.org/705003/download,Collared Sunbird
+289,721728,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cyanomitra,olivacea,-26.8452,32.8925,0,call,B,0:13,yes,https://xeno-canto.org/721728/download,Olive Sunbird
+290,761335,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cyanomitra,olivacea,-26.8452,32.8925,0,call,C,0:23,no,https://xeno-canto.org/761335/download,Olive Sunbird
+291,761333,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cyanomitra,olivacea,-26.8452,32.8925,0,song,C,0:30,no,https://xeno-canto.org/761333/download,Olive Sunbird
+292,201314,Niall Perrins,"Matutuíne District, Maputo",Cyanomitra,veroxii,-26.5253,32.6955,40,call,B,0:34,yes,https://xeno-canto.org/201314/download,Grey Sunbird
+293,652450,Niall Perrins,"San Sebastian, Vilankulo, Inhambane Province",Chalcomitra,senegalensis,-22.1357,35.4449,0,call,A,0:41,yes,https://xeno-canto.org/652450/download,Scarlet-chested Sunbird
+294,721748,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Chalcomitra,senegalensis,-25.9061,32.6335,0,call,C,0:10,yes,https://xeno-canto.org/721748/download,Scarlet-chested Sunbird
+295,708641,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Chalcomitra,senegalensis,-25.9061,32.6335,0,call,C,0:17,yes,https://xeno-canto.org/708641/download,Scarlet-chested Sunbird
+296,520072,Lynette Rudman,"Marracuene, Maputo",Cinnyris,bifasciatus,-25.77,32.7368,10,song,B,0:53,no,https://xeno-canto.org/520072/download,Purple-banded Sunbird
+297,520069,Lynette Rudman,"Marracuene, Maputo",Cinnyris,bifasciatus,-25.77,32.7368,10,song,B,1:39,no,https://xeno-canto.org/520069/download,Purple-banded Sunbird
+298,100530,Rory Nefdt,"Caia, Sofala",Passer,domesticus,-17.843,35.327,30,song,A,1:00,unknown,https://xeno-canto.org/100530/download,House Sparrow
+299,100531,Rory Nefdt,"Caia, Sofala",Passer,domesticus,-17.843,35.327,30,song,B,0:36,unknown,https://xeno-canto.org/100531/download,House Sparrow
+300,540577,Paweł Szymański,"Chitengo, Gorongosa, Sofala",Passer,diffusus,-18.9791,34.352,40,call,A,0:43,no,https://xeno-canto.org/540577/download,Southern Grey-headed Sparrow
+301,399256,Gary Allport,"Marracuene, Maputo",Ploceus,xanthopterus,-25.7331,32.709,10,"call, nasal twanging note",B,0:59,yes,https://xeno-canto.org/399256/download,Southern Brown-throated Weaver
+302,451700,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Ploceus,velatus,-25.9061,32.6335,10,song,B,2:37,yes,https://xeno-canto.org/451700/download,Southern Masked Weaver
+303,391200,Gary Allport,"Maputo, Cidade de Maputo",Quelea,erythrops,-25.9346,32.6313,0,call,B,0:05,yes,https://xeno-canto.org/391200/download,Red-headed Quelea
+304,391097,Gary Allport,"Maputo, Cidade de Maputo",Quelea,erythrops,-25.9389,32.6248,10,call,B,0:08,yes,https://xeno-canto.org/391097/download,Red-headed Quelea
+305,453373,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Euplectes,orix,-25.9061,32.6335,10,song,C,0:14,yes,https://xeno-canto.org/453373/download,Southern Red Bishop
+306,100533,Rory Nefdt,"Caia, Sofala",Euplectes,orix,-17.843,35.327,30,song,C,0:42,unknown,https://xeno-canto.org/100533/download,Southern Red Bishop
+307,100532,Rory Nefdt,"Caia, Sofala",Euplectes,orix,-17.843,35.327,30,song,C,0:31,unknown,https://xeno-canto.org/100532/download,Southern Red Bishop
+308,100534,Rory Nefdt,"Caia, Sofala",Uraeginthus,angolensis,-17.843,35.327,30,song,B,0:28,unknown,https://xeno-canto.org/100534/download,Blue Waxbill
+309,104057,Bram Piot,Inhaca island,Estrilda,astrild,-26.0228,32.907,5,song,B,0:35,yes,https://xeno-canto.org/104057/download,Common Waxbill
+310,316699,Jude Allport,"Maputo, Marracuene, Cidade de Maputo",Ortygospiza,atricollis,-25.8197,32.689,0,song,B,0:49,yes,https://xeno-canto.org/316699/download,Quailfinch
+311,449457,Gary Allport,"Matutuíne District, Maputo Province",Vidua,funerea,-26.3424,32.4675,50,song,B,0:32,yes,https://xeno-canto.org/449457/download,Dusky Indigobird
+312,100518,Rory Nefdt,"Caia, Sofala",Motacilla,aguimp,-17.843,35.327,30,song,B,0:15,unknown,https://xeno-canto.org/100518/download,African Pied Wagtail
+313,100472,Rory Nefdt,"Caia, Sofala",Motacilla,aguimp,-17.843,35.327,30,alarm call,B,0:17,unknown,https://xeno-canto.org/100472/download,African Pied Wagtail
+314,453958,Barnaby,"Marracuene, Maputo",Macronyx,croceus,-25.7638,32.7396,10,song,B,0:21,unknown,https://xeno-canto.org/453958/download,Yellow-throated Longclaw
+315,452897,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Macronyx,croceus,-25.9061,32.6335,10,song,B,0:08,no,https://xeno-canto.org/452897/download,Yellow-throated Longclaw
+316,452898,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Macronyx,croceus,-25.9061,32.6335,10,call,C,0:24,yes,https://xeno-canto.org/452898/download,Yellow-throated Longclaw
+317,316658,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Macronyx,ameliae,-25.8197,32.689,0,song,D,0:32,yes,https://xeno-canto.org/316658/download,Rosy-throated Longclaw
+318,316661,Gary Allport,"Maputo, Marracuene, Cidade de Maputo",Macronyx,ameliae,-25.8197,32.689,0,song,E,0:17,yes,https://xeno-canto.org/316661/download,Rosy-throated Longclaw
+319,346109,David Moyer,"Mbatamila, Mecula, Niassa",Anthus,lineiventris,-12.1848,37.543,550,song,B,0:44,yes,https://xeno-canto.org/346109/download,Striped Pipit
+320,395992,Samuel Jones,"Vilanculos, Vilankulo, Inhambane Province",Crithagra,citrinipectus,-22.0046,35.3213,10,"call, song",B,0:25,yes,https://xeno-canto.org/395992/download,Lemon-breasted Canary
+321,395991,Samuel Jones,"Vilanculos, Vilankulo, Inhambane Province",Crithagra,citrinipectus,-22.0046,35.3213,10,song,B,1:59,yes,https://xeno-canto.org/395991/download,Lemon-breasted Canary
+322,100536,Rory Nefdt,"Caia, Sofala",Crithagra,mozambica,-17.843,35.327,30,song,B,0:16,unknown,https://xeno-canto.org/100536/download,Yellow-fronted Canary
+323,31660,Bram Piot,"Bilene, Gaza Province",Crithagra,sulphurata,-25.294992,33.253555,1,call,C,0:23,unknown,https://xeno-canto.org/31660/download,Brimstone Canary
+324,521819,Lynette Rudman,"Panda, Inhambane",Emberiza,flaviventris,-24.0878,34.7486,140,call,C,0:08,yes,https://xeno-canto.org/521819/download,Golden-breasted Bunting
+325,741113,Etienne Marais,"Camacho, Marromeu, Sofala",Mystery,mystery,-18.1845,35.3714,180,uncertain,A,0:40,unknown,https://xeno-canto.org/741113/download,Identity unknown
+326,741112,Etienne Marais,"Camacho, Marromeu, Sofala",Mystery,mystery,-18.1845,35.3714,180,uncertain,A,0:37,no,https://xeno-canto.org/741112/download,Identity unknown
+327,696625,Olivier Hamerlynck,"Miombo Woodland, Nkwichi Lodge, Aldeia Mala, Lago, Niassa",Mystery,mystery,-12.1985,34.7093,650,uncertain,A,0:56,no,https://xeno-canto.org/696625/download,Identity unknown
+328,696347,Olivier Hamerlynck,"Miombo Woodland, Nkwichi Lodge, Aldeia Mala, Lago, Niassa",Mystery,mystery,-12.1985,34.7093,650,uncertain,A,4:24,no,https://xeno-canto.org/696347/download,Identity unknown
+329,453378,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,song,A,0:15,yes,https://xeno-canto.org/453378/download,Identity unknown
+330,453377,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,call,A,0:22,yes,https://xeno-canto.org/453377/download,Identity unknown
+331,453375,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,call,A,0:15,yes,https://xeno-canto.org/453375/download,Identity unknown
+332,697858,Olivier Hamerlynck,"Sanga, Niassa",Mystery,mystery,-12.3874,35.3408,1600,uncertain,B,0:46,unknown,https://xeno-canto.org/697858/download,Identity unknown
+333,697857,Olivier Hamerlynck,"Sanga, Niassa",Mystery,mystery,-12.3874,35.3408,1400,uncertain,B,0:42,unknown,https://xeno-canto.org/697857/download,Identity unknown
+334,697856,Olivier Hamerlynck,"Sanga, Niassa",Mystery,mystery,-12.3874,35.3408,1600,uncertain,B,0:39,unknown,https://xeno-canto.org/697856/download,Identity unknown
+335,696792,Olivier Hamerlynck,"Lipilichi Wilderness, Main Camp, Pauila, Sanga, Niassa",Mystery,mystery,-12.1477,35.5236,750,uncertain,B,1:00,no,https://xeno-canto.org/696792/download,Identity unknown
+336,696791,Olivier Hamerlynck,"Lipilichi Wilderness, Main Camp, Pauila, Sanga, Niassa",Mystery,mystery,-12.1477,35.5236,750,song,B,1:00,unknown,https://xeno-canto.org/696791/download,Identity unknown
+337,696788,Olivier Hamerlynck,"Lipilichi Wilderness, Main Camp, Pauila, Sanga, Niassa",Mystery,mystery,-12.1477,35.5236,750,uncertain,B,0:32,unknown,https://xeno-canto.org/696788/download,Identity unknown
+338,456528,Gary Allport/ Olivier Vilaca ,"Maputo, Maputo",Mystery,mystery,-25.9315,32.6179,10,song,B,4:12,no,https://xeno-canto.org/456528/download,Identity unknown
+339,452910,Antonio Xeira,"Dona Alice - Costa do Sol, Maputo",Mystery,mystery,-25.9061,32.6335,10,song,B,0:07,no,https://xeno-canto.org/452910/download,Identity unknown
+340,757704,Antonio Xeira,"Ponta do Ouro, Matutuíne",Mystery,mystery,-26.8452,32.8925,0,uncertain,C,1:45,no,https://xeno-canto.org/757704/download,Identity unknown
+341,697504,Olivier Hamerlynck,"First Wetland Zone 4, Macaneta, Incomati Delta, Marracuene District, Maputo Province",Mystery,mystery,-25.7331,32.703,0,call,C,0:21,unknown,https://xeno-canto.org/697504/download,Identity unknown
+342,296616,Teet Sirotkin,"Gorongosa, Sofala",Mystery,mystery,-18.4653,34.0521,1100,song,C,0:23,no,https://xeno-canto.org/296616/download,Identity unknown
+343,723790,Olivier Hamerlynck,"Miombo Woodland, Nkwichi Lodge, Aldeia Mala, Lago, Niassa",Mystery,mystery,-12.1985,34.7093,650,uncertain,D,1:09,unknown,https://xeno-canto.org/723790/download,Identity unknown
+344,652992,Olivier Hamerlynck,"Marracuene District, Marracuene, Maputo",Mystery,mystery,-25.7062,32.7041,0,song,E,23:39,unknown,https://xeno-canto.org/652992/download,Identity unknown
