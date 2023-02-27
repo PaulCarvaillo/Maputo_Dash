@@ -1,26 +1,27 @@
-import matplotlib.pyplot as plt
+import base64
+from pyparsing import And
 from utils import utils
 from app import app
 import pandas as pd
-from dash import dash_table, dcc, html
-from dash import dcc, callback_context
-from dash.dependencies import Input, Output
+from dash import dcc, html
+from dash import dcc
+from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
-import plotly.tools as tls
-from plotly import optional_imports
-from controller.ROI.ROI import ROI_and_centroid, find_ROIs_soundfile, compute_Sxx_dB_nonoise_smooth
+from controller.ROI.ROI import ROI_and_centroid, compute_Sxx_dB_nonoise_smooth
 import plotly_express as px
 import plotly.graph_objects as go
-import base64
 from pathlib import Path
 from loaded_data import df_annot_final
+import os
 
 import matplotlib
 matplotlib.use('Agg')
 
 centroids_annot = df_annot_final
-df_data = pd.read_csv(
-    '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_datapaths.csv')
+datasets_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/'
+# df_data = pd.read_csv(
+#     '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_datapaths.csv')
+# df_data=pd.DataFrame()
 
 
 def create_layout(app, df_metafiles_xenocanto):
@@ -30,36 +31,88 @@ def create_layout(app, df_metafiles_xenocanto):
             html.Div([utils.get_header(app)]),
             # page 1
             html.Div(
-                [
+                [  # FILEPATH/SPECIES/FREQUENCY SELECTOR PARAMETERS:
+                    html.H5(
+                        ["1. Find dataset and visualize file"], style={
+                            'marginLeft': '0px'}
+                    ),
+                    html.H6(
+                        ["Select project:"], className="subtitle padded", style={
+                            'marginLeft': '30px'}
+                    ),
+                    dcc.Dropdown(
+                        id='project_selector', placeholder='Select project...',
+                        options=[{'label': project, 'value': os.path.join(datasets_path, project)}
+                                 for project in os.listdir(datasets_path) if os.path.isdir(os.path.join(datasets_path, project))],
+                        value='',
+                        style={'width': '40%',
+                               'marginLeft': '30px'}
+                    ),
+
+                    html.H6(
+                        ["Select gen:"], className="subtitle padded", style={
+                            'marginLeft': '30px'}
+                    ),
+                    dcc.Dropdown(
+                        id='gen_dropdown', placeholder='GEN SELECTION', searchable=True, style={'width': '40%',
+                                                                                                'marginLeft': '30px'}),
+                    html.H6(
+                        ["Select species:"], className="subtitle padded", style={
+                            'marginLeft': '30px'}
+                    ),
+                    dcc.Dropdown(
+                        id='species_dropdown', placeholder='SPECIES SELECTION', style={'width': '40%', 'marginLeft': '30px'}),
+                    html.H6(
+                        ["Select file:"], className="subtitle padded", style={
+                            'marginLeft': '30px'}
+                    ),
+                    dcc.Dropdown(id='wav_dropdown', value=[
+                    ], placeholder='.wav SELECTION', style={'width': '40%', 'marginLeft': '30px'}),
+                    html.H5(
+                        ["2 .Create a normalized dataset for event detection"], style={
+                            'marginLeft': '0px'},
+                    ),
+                    html.H6(
+                        ["As all recordings are not at same distance, and birds dont vocalize at same level, we try to normalize sound level around the frequency band of interest. That way we can apply the same detection parameters to our whole dataset. Note that these processings modify the signal and loses information such as perceived loudness. The results should not be interpreted in terms of level, perceived loudness..."], style={
+                            'marginLeft': '30px'},
+                    ),
+                    html.Br(),
+                    html.H6(
+                        ["Birds of interest frequency range"], className="subtitle padded", style={
+                            'marginLeft': '30px'}
+                    ),
+                    dcc.RangeSlider(0, 20000, marks=None, value=[
+                        0, 20000], id='frequency_selection', tooltip={"placement": "bottom", "always_visible": True}),
+                    html.Button('Equalize dataset level', id='save_params', n_clicks=0, style={
+                        'marginLeft': '30px'}),
+                    html.H6(
+                        ["Smoothing coefficient (0.5 -- 3):"], className="subtitle padded", style={
+                            'marginLeft': '30px'}
+                    ),
+                    dcc.Slider(0.5, 3, marks=None,
+                               value=0.5, id='smoothing', tooltip={"placement": "bottom", "always_visible": True}),
+                    html.H5(
+                        ["3. Define bird event detection parameters"], style={
+                            'marginLeft': '0px'}
+                    ),
+                    html.H6(
+                        ["Hysteresis thresholding binarization. The method is based on two dB thresholds: the high threshold selects high intensity pixels while the low threshold groups neighbor pixels."], style={
+                            'marginLeft': '30px'}, className="subtitle padded"
+                    ),
+
                     # Row 4
                     html.Div(
                         [
                             html.Div(
                                 [
-                                    # FILEPATH/SPECIES/FREQUENCY SELECTOR PARAMETERS:
+
+
                                     html.H5(
-                                        ["Find .wav to analyze"], style={
+                                        ["Spectrogram"], style={
                                             'marginLeft': '30px'}
                                     ),
-
-                                    html.H6(
-                                        ["Select gen:"], className="subtitle padded"
-                                    ),
-                                    dcc.Dropdown(df_data.gen.unique(
-                                    ), id='gen_dropdown', placeholder='GEN SELECTION', searchable=True),
-                                    html.H6(
-                                        ["Select species:"], className="subtitle padded"
-                                    ),
-                                    dcc.Dropdown(df_data.species.unique(
-                                    ), id='species_dropdown', placeholder='SPECIES SELECTION'),
-                                    html.H6(
-                                        ["Select file:"], className="subtitle padded"
-                                    ),
-                                    dcc.Dropdown(df_data.fullfilename.unique(
-                                    ), id='wav_dropdown', value=[], placeholder='.wav SELECTION'),
-
                                     dcc.Graph(id='spectrogram'),
-                                    html.Audio(id='audio', controls=True)
+                                    html.Div(id='audio-player-container')
 
                                 ]),
                         ],
@@ -69,30 +122,20 @@ def create_layout(app, df_metafiles_xenocanto):
                         [
                             html.Div(
                                 [
+
                                     # ROI PARAMETERS:
+
                                     html.H5(
-                                        ["ROI detection params"], style={
+                                        ["Mask parameters:"], style={
                                             'marginLeft': '30px'}
                                     ),
-                                    html.H6(
-                                        ["Select frequency band:"], style={
-                                            'marginLeft': '30px'}, className="subtitle padded"
-                                    ),
-                                    dcc.RangeSlider(0, 20000, marks=None, value=[
-                                                    0, 20000], id='frequency_selection', tooltip={"placement": "bottom", "always_visible": True}),
                                     html.H6(
                                         ["Bin mode :"], style={
                                             'marginLeft': '30px'}, className="subtitle padded"
                                     ),
                                     dcc.Dropdown(
                                         ['relative', 'absolute'], value='relative', id='mode_bin', style={
-                                            'marginLeft': '10px'}),
-                                    html.H6(
-                                        ["Smoothing coefficient (0.5 -- 3):"], className="subtitle padded", style={
-                                            'marginLeft': '30px'}
-                                    ),
-                                    dcc.Slider(0.5, 3, marks=None,
-                                               value=0.5, id='smoothing', tooltip={"placement": "bottom", "always_visible": True}),
+                                            'marginLeft': '10px'}, className="subtitle padded"),
 
                                     html.H6(
                                         ["Mask threshold: Values above certain dB selected"], className="subtitle padded", style={
@@ -111,7 +154,7 @@ def create_layout(app, df_metafiles_xenocanto):
                                         ["Max frequency of ROI (dashed line)"], className="subtitle padded", style={
                                             'marginLeft': '30px'}
                                     ),
-                                    dcc.Slider(0, 20000, id="roi_max_f", value=20000, tooltip={
+                                    dcc.Slider(0, 20000, id="roi_max_f", value=8000, tooltip={
                                                "placement": "bottom", "always_visible": True}),
                                     html.H6(
                                         ["Min frequency of ROI (blue line)"], className="subtitle padded", style={
@@ -120,8 +163,6 @@ def create_layout(app, df_metafiles_xenocanto):
                                     dcc.Slider(0, 20000, id="roi_min_f", value=100, tooltip={
                                                "placement": "bottom", "always_visible": True}),
 
-                                    html.Button('SAVE PARAMETERS', id='save_params', n_clicks=0, style={
-                                        'marginLeft': '30px'}),
                                     html.Br(),
                                     html.Button('BATCH ANALYSE', id='plot_ROI', n_clicks=0, style={
                                         'marginLeft': '30px'}),
@@ -131,7 +172,7 @@ def create_layout(app, df_metafiles_xenocanto):
                         ],
                         className="three columns",
                     ),
-                    dcc.Store(id='datastore', storage_type='local'),
+                    dcc.Store(id='datastore_info', storage_type='local'),
                     dcc.Store(id='datastore_spectro', storage_type='memory'),
                     dcc.Store(id='datastore_spectro_fn',
                               storage_type='local'),
@@ -149,7 +190,41 @@ def create_layout(app, df_metafiles_xenocanto):
                 ])
         ]),
 # callbacks
-# callbacks
+
+
+@ app.callback(Output('datastore_info', 'data'),
+              Output('gen_dropdown', 'options'),
+              Input('project_selector', 'value'))
+def get_project_data_and_update_gen_drowpowns(projectdir_path):
+
+    if projectdir_path == '':
+        raise PreventUpdate
+    elif projectdir_path != '':
+        csv_path=os.path.join(
+            projectdir_path, 'tables/df_soundfiles_paths.csv')
+        df_datapaths = pd.read_csv(csv_path)
+        options = [{'label': gen, 'value': gen}
+                   for gen in df_datapaths['gen'].unique()]
+
+    return df_datapaths.to_dict('records'), options
+
+
+@ app.callback(Output('species_dropdown', 'options'), [Input('gen_dropdown', 'value'), Input('datastore_info', 'data')])
+def filter_data_by_gen(gen_dropdown, stored_info_data):
+    df_data = pd.DataFrame.from_dict(stored_info_data)
+    data = df_data[df_data['gen'] == gen_dropdown]
+    options = [{'label': species, 'value': species}
+               for species in data['species'].unique()]
+    return options
+
+
+@ app.callback(Output('wav_dropdown', 'options'), [State('gen_dropdown', 'value'), Input('species_dropdown', 'value'), Input('datastore_info', 'data')])
+def filter_data_by_gen_and_species(genus, species, stored_info_data):
+    df_data = pd.DataFrame.from_dict(stored_info_data)
+    data = df_data[(df_data['gen'] == genus) & (df_data['species'] == species)]
+    options = [{'label': os.path.split(fullfilename)[-1], 'value': fullfilename}
+               for fullfilename in data['fullfilename'].unique()]
+    return options
 
 
 @ app.callback(Output('datastore_spectro', 'data'),
@@ -188,37 +263,6 @@ def get_annot__data(wav_dropdown):
     else:
         PreventUpdate
     return centroids_annot_dff.to_dict('records')
-
-
-@ app.callback(Output('datastore', 'data'), [Input('gen_dropdown', 'value')])
-def filter_data_by_gen(gen_dropdown):
-    data = df_data[df_data['gen'] == gen_dropdown]
-    return data.to_dict('records')
-
-
-@ app.callback(Output('species_dropdown', 'options'), Output('species_dropdown', 'value'), Input('datastore', 'data'))
-def species_dropdown_update(data):
-    if data:
-        dff = pd.DataFrame.from_dict(data)
-        options = dff.species.unique()
-        values = dff.fullfilename
-    else:
-        values = []
-        options = []
-    return options, values
-
-
-@ app.callback(Output('wav_dropdown', 'options'), Output('wav_dropdown', 'value'), [Input('datastore', 'data'), Input('species_dropdown', 'value')])
-def wav_dropdown_update(data, species_dropdown):
-    if data:
-        dff = pd.DataFrame.from_dict(data)
-        dff = dff[dff['species'] == species_dropdown]
-        options = dff.fullfilename.unique()
-        values = dff.fullfilename
-    else:
-        values = []
-        options = []
-    return options, values
 
 
 @ app.callback(Output('datastore_ROI_centroid', 'data'),
@@ -269,7 +313,7 @@ def plot_spectrogram_and_ROI_and_annot(spectro, fn, tn, ext, centroid, annot, ro
 
         fig_kwargs = {'vmax': Sxxt.max(),
                       'vmin': -20,
-                      'figsize': (4, 13),
+                      'figsize': (9, 13),
                       'xlabel': 'Time [sec]',
                       'ylabel': 'Frequency [Hz]',
                       'cmap': 'viridis'
@@ -277,6 +321,7 @@ def plot_spectrogram_and_ROI_and_annot(spectro, fn, tn, ext, centroid, annot, ro
         fig = px.imshow(Sxxt, color_continuous_scale='viridis', origin='lower',
                         labels=dict(x="Time (sec)",
                                     y="Frequency (Hz)", color="Level (dB"),
+                        height=600,
                         x=tn,
                         y=fn,
                         aspect='auto')
@@ -321,6 +366,23 @@ def plot_spectrogram_and_ROI_and_annot(spectro, fn, tn, ext, centroid, annot, ro
     return [go.Figure(data=fig)]
 
 
+@app.callback(
+    Output('audio-player-container', 'children'),
+    [Input('wav_dropdown', 'value')]
+)
+def update_audio_player(fullfilename):
+    if fullfilename:
+        encoded_sound = base64.b64encode(open(fullfilename, 'rb').read())
+        return html.Audio(id='audioplayer', src='data:audio/mpeg;base64,{}'.format(encoded_sound.decode()),
+                          controls=True,
+                          autoPlay=False, style={"width": "100%"}
+                          ),
+    else:
+        return ''
+
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
 # @app.callback([Output('audio', 'children')],
 #               [Input('wav_dropdown', 'value')])
 # def load_audio(wav_dropdown):

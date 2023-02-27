@@ -60,11 +60,7 @@ def find_ROIs_soundfile(path=wavfilepath, display=False, mode_bin='relative', pa
     # Load using Maad, compute spectro
     dB_max = 96
     s, fs = maad.sound.load('tmp.wav')
-
-    # if filterband:
-    #     s = maad.sound.select_bandwidth(s, fs, fcut=(
-    #         fmin, fmax), forder=5, fname='butter', ftype='bandpass')
-
+    
     maxAmp = np.abs(s).max()  # used to normalize
     Sxx_power, tn, fn, ext = maad.sound.spectrogram(
         s/maxAmp, fs, flims=(fmin, fmax), display=False)

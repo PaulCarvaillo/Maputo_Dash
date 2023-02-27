@@ -1,0 +1,55 @@
+,id,rec,loc,gen,sp,lat,lng,alt,type,q,length,bird-seen,file,en
+0,705357,Olivier Hamerlynck,"Lopes, Matutuíne District, Maputo Province",Caprimulgus,pectoralis,-26.8025,32.8737,20,song,B,0:31,no,https://xeno-canto.org/705357/download,Fiery-necked Nightjar
+1,761330,Antonio Xeira,"Ponta do Ouro, Matutuíne",Tauraco,porphyreolophus,-26.8452,32.8925,0,call,B,0:29,yes,https://xeno-canto.org/761330/download,Purple-crested Turaco
+2,448614,Antonio Xeira,Inhaca island,Chrysococcyx,klaas,-26.023,32.907,50,song,B,1:49,yes,https://xeno-canto.org/448614/download,Klaas's Cuckoo
+3,445134,Antonio Xeira,Inhaca island,Streptopelia,capicola,-26.023,32.907,50,song,A,0:12,no,https://xeno-canto.org/445134/download,Ring-necked Dove
+4,104019,Bram Piot,Inhaca island,Treron,calvus,-26.0228,32.907,20,call,B,0:15,yes,https://xeno-canto.org/104019/download,African Green Pigeon
+5,701253,Antonio Xeira,Inhaca island,Burhinus,vermiculatus,-26.023,32.907,50,alarm call,B,0:07,yes,https://xeno-canto.org/701253/download,Water Thick-knee
+6,59742,Bram Piot,Inhaca island,Bostrychia,hagedash,-26.023,32.907,5,flight call,B,0:17,yes,https://xeno-canto.org/59742/download,Hadada Ibis
+7,59739,Bram Piot,Inhaca island,Ardea,cinerea,-26.023,32.907,5,call,B,0:06,yes,https://xeno-canto.org/59739/download,Grey Heron
+8,59751,Bram Piot,Inhaca island,Upupa,africana,-26.023,32.907,10,song,B,0:26,yes,https://xeno-canto.org/59751/download,African Hoopoe
+9,201464,Niall Perrins,"Matutuíne District, Maputo",Merops,superciliosus,-26.2374,32.8682,0,"call, flight call",B,1:12,yes,https://xeno-canto.org/201464/download,Olive Bee-eater
+10,201484,Niall Perrins,"Matutuíne District, Maputo",Smithornis,capensis,-26.2121,32.9387,40,flight call,B,1:36,yes,https://xeno-canto.org/201484/download,African Broadbill
+11,201450,Niall Perrins,"Matutuíne District, Maputo",Batis,fratrum,-26.1856,32.8951,30,call,B,0:40,yes,https://xeno-canto.org/201450/download,Woodward's Batis
+12,104063,Bram Piot,Inhaca island,Batis,molitor,-26.0228,32.907,20,song,B,0:16,unknown,https://xeno-canto.org/104063/download,Chinspot Batis
+13,104062,Bram Piot,Inhaca island,Batis,molitor,-26.0228,32.907,20,call,B,0:27,unknown,https://xeno-canto.org/104062/download,Chinspot Batis
+14,104021,Bram Piot,Inhaca island,Chlorophoneus,olivaceus,-26.023,32.907,20,alarm call,A,0:09,unknown,https://xeno-canto.org/104021/download,Olive Bushshrike
+15,59750,Bram Piot,Inhaca island,Telophorus,viridis,-26.023,32.907,10,song,B,0:26,unknown,https://xeno-canto.org/59750/download,Gorgeous Bushshrike
+16,59745,Bram Piot,Inhaca island,Dryoscopus,cubla,-26.023,32.907,10,call,B,0:13,yes,https://xeno-canto.org/59745/download,Black-backed Puffback
+17,59749,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,A,0:27,yes,https://xeno-canto.org/59749/download,Common Square-tailed Drongo
+18,104060,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.0228,32.907,20,song,B,0:59,yes,https://xeno-canto.org/104060/download,Common Square-tailed Drongo
+19,104059,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.0228,32.907,20,song,B,0:27,yes,https://xeno-canto.org/104059/download,Common Square-tailed Drongo
+20,59748,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,B,0:39,yes,https://xeno-canto.org/59748/download,Common Square-tailed Drongo
+21,59747,Bram Piot,Inhaca island,Dicrurus,ludwigii,-26.023,32.907,10,call,B,0:33,yes,https://xeno-canto.org/59747/download,Common Square-tailed Drongo
+22,201448,Niall Perrins,"Matutuíne District, Maputo",Trochocercus,cyanomelas,-26.1856,32.8951,30,song,B,0:44,yes,https://xeno-canto.org/201448/download,Blue-mantled Crested Flycatcher
+23,104058,Bram Piot,Inhaca island,Corvus,splendens,-26.0228,32.907,10,call,B,0:14,unknown,https://xeno-canto.org/104058/download,House Crow
+24,449420,Gary Allport,"Matutuíne District, Maputo Province",Calendulauda,africanoides,-26.3424,32.4675,50,song,B,0:13,yes,https://xeno-canto.org/449420/download,Fawn-colored Lark
+25,392008,Tom Wulf,"Gala Gala Eco Resort, Ponta do Ouro",Andropadus,importunus,-26.8533,32.8879,30,song,A,1:02,yes,https://xeno-canto.org/392008/download,Sombre Greenbul
+26,104020,Bram Piot,Inhaca island,Andropadus,importunus,-26.0228,32.907,20,call,A,0:26,no,https://xeno-canto.org/104020/download,Sombre Greenbul
+27,104018,Bram Piot,Inhaca island,Andropadus,importunus,-26.0228,32.907,20,song,A,1:32,yes,https://xeno-canto.org/104018/download,Sombre Greenbul
+28,761339,Antonio Xeira,"Ponta do Ouro, Matutuíne",Andropadus,importunus,-26.8452,32.8925,0,song,B,0:13,no,https://xeno-canto.org/761339/download,Sombre Greenbul
+29,201449,Niall Perrins,"Matutuíne District, Maputo",Andropadus,importunus,-26.1856,32.8951,30,song,B,0:56,yes,https://xeno-canto.org/201449/download,Sombre Greenbul
+30,59737,Bram Piot,Inhaca island,Andropadus,importunus,-26.023,32.907,10,song,B,0:39,unknown,https://xeno-canto.org/59737/download,Sombre Greenbul
+31,104014,Bram Piot,Inhaca island,Phyllastrephus,terrestris,-26.023,32.907,20,call,B,0:59,unknown,https://xeno-canto.org/104014/download,Terrestrial Brownbul
+32,201497,Niall Perrins,"Matutuíne District, Maputo",Acrocephalus,gracilirostris,-26.237,32.9233,0,call,B,0:26,yes,https://xeno-canto.org/201497/download,Lesser Swamp Warbler
+33,444840,Antonio Xeira,"Reserva Maputo, Maputo",Cisticola,chiniana,-26.5048,32.7156,10,song,B,0:08,yes,https://xeno-canto.org/444840/download,Rattling Cisticola
+34,201332,Niall Perrins,"Matutuíne District, Maputo",Cisticola,galactotes,-26.1802,32.9001,20,call,A,0:48,yes,https://xeno-canto.org/201332/download,Rufous-winged Cisticola
+35,201315,Niall Perrins,"Matutuíne District, Maputo",Apalis,ruddi,-26.2134,32.9386,40,call,B,1:06,yes,https://xeno-canto.org/201315/download,Rudd's Apalis
+36,761326,Antonio Xeira,"Ponta do Ouro, Matutuíne",Camaroptera,brachyura,-26.8452,32.8925,0,call,B,0:42,no,https://xeno-canto.org/761326/download,Green-backed Camaroptera
+37,721734,Antonio Xeira,"Ponta do Ouro, Matutuíne",Camaroptera,brachyura,-26.8452,32.8925,0,call,B,0:42,no,https://xeno-canto.org/721734/download,Green-backed Camaroptera
+38,59744,Bram Piot,Inhaca island,Camaroptera,brachyura,-26.023,32.907,10,call,B,0:32,yes,https://xeno-canto.org/59744/download,Green-backed Camaroptera
+39,104017,Bram Piot,Inhaca island,Zosterops,anderssoni,-26.0228,32.907,20,call,B,0:20,yes,https://xeno-canto.org/104017/download,Southern Yellow White-eye
+40,761337,Antonio Xeira,"Ponta do Ouro, Matutuíne",Notopholia,corusca,-26.8452,32.8925,0,song,B,0:36,no,https://xeno-canto.org/761337/download,Black-bellied Starling
+41,444708,Antonio Xeira,"Ponta do Ouro, Matutuíne",Notopholia,corusca,-26.8452,32.8925,10,song,B,0:39,yes,https://xeno-canto.org/444708/download,Black-bellied Starling
+42,761331,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cercotrichas,signata,-26.8452,32.8925,0,song,B,0:05,no,https://xeno-canto.org/761331/download,Brown Scrub Robin
+43,705358,Olivier Hamerlynck,"Lopes, Matutuíne District, Maputo Province",Cercotrichas,signata,-26.8025,32.8737,20,song,B,0:29,no,https://xeno-canto.org/705358/download,Brown Scrub Robin
+44,511386,Barnaby Briggs,"Matutuíne, Maputo",Cercotrichas,signata,-26.5048,32.7157,10,song,B,0:40,yes,https://xeno-canto.org/511386/download,Brown Scrub Robin
+45,444704,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cercotrichas,signata,-26.8452,32.8925,10,song,B,1:04,yes,https://xeno-canto.org/444704/download,Brown Scrub Robin
+46,201495,Niall Perrins,"Matutuíne District, Maputo",Cercotrichas,signata,-26.2007,32.9423,30,song,B,0:54,yes,https://xeno-canto.org/201495/download,Brown Scrub Robin
+47,59743,Bram Piot,Inhaca island,Muscicapa,adusta,-26.023,32.907,5,call,B,0:25,unknown,https://xeno-canto.org/59743/download,African Dusky Flycatcher
+48,761328,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cossypha,natalensis,-26.8452,32.8925,0,call,B,0:28,no,https://xeno-canto.org/761328/download,Red-capped Robin-Chat
+49,201496,Niall Perrins,"Matutuíne District, Maputo",Anthreptes,reichenowi,-26.199,32.9403,30,song,B,1:05,yes,https://xeno-canto.org/201496/download,Plain-backed Sunbird
+50,721728,Antonio Xeira,"Ponta do Ouro, Matutuíne",Cyanomitra,olivacea,-26.8452,32.8925,0,call,B,0:13,yes,https://xeno-canto.org/721728/download,Olive Sunbird
+51,201314,Niall Perrins,"Matutuíne District, Maputo",Cyanomitra,veroxii,-26.5253,32.6955,40,call,B,0:34,yes,https://xeno-canto.org/201314/download,Grey Sunbird
+52,104057,Bram Piot,Inhaca island,Estrilda,astrild,-26.0228,32.907,5,song,B,0:35,yes,https://xeno-canto.org/104057/download,Common Waxbill
+53,449457,Gary Allport,"Matutuíne District, Maputo Province",Vidua,funerea,-26.3424,32.4675,50,song,B,0:32,yes,https://xeno-canto.org/449457/download,Dusky Indigobird

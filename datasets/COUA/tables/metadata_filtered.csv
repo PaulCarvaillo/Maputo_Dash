@@ -1,0 +1,64 @@
+,id,rec,loc,gen,sp,lat,lng,alt,type,q,length,bird-seen,file,en
+0,762687,Peter Boesman,"Ankarafantsika NP, Mahajanga",Coua,cristata,-16.3004,46.8124,?,call,A,0:36,unknown,https://xeno-canto.org/762687/download,Crested Coua
+1,660180,Ken Behrens,Northeast Montagne des Français,Coua,cristata,-12.3346,49.3545,140,call,A,0:15,yes,https://xeno-canto.org/660180/download,Crested Coua
+2,649365,Nature sounds by Simply Birding,"Betakilotra, Ambato-Boina, Mahajanga Province",Coua,cristata,-16.9176,45.9463,220,song,A,0:18,yes,https://xeno-canto.org/649365/download,Crested Coua
+3,625294,Ken Behrens,"Amoronjia-Orangéa, Diana, Antsiranana Province",Coua,cristata,-12.2646,49.3747,50,song,A,0:41,yes,https://xeno-canto.org/625294/download,Crested Coua
+4,624029,Ken Behrens,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov.",Coua,cristata,-16.3051,46.812,70,song,A,0:13,yes,https://xeno-canto.org/624029/download,Crested Coua
+5,624006,Ken Behrens,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov.",Coua,cristata,-16.3051,46.812,70,call,A,0:24,yes,https://xeno-canto.org/624006/download,Crested Coua
+6,603794,Ken Behrens,Bobangira Forest,Coua,cristata,-13.7474,50.1134,3,call,A,0:16,no,https://xeno-canto.org/603794/download,Crested Coua
+7,493590,Cin-Ty Lee,Berenty Private Reserve,Coua,cristata,-25.0089,46.3081,30,call,A,1:07,unknown,https://xeno-canto.org/493590/download,Crested Coua
+8,295125,Bernard BOUSQUET,"Belon'i Tsiribihina, Toliara",Coua,cristata,-19.7013,44.9931,20,call,A,0:49,yes,https://xeno-canto.org/295125/download,Crested Coua
+9,26704,Daniel Lane,"Berenty Reserve, Toliara Prov. ",Coua,cristata,-25.059,46.3028,30,call,A,0:24,unknown,https://xeno-canto.org/26704/download,Crested Coua
+10,26703,Daniel Lane,"Berenty Reserve, Toliara Prov. ",Coua,cristata,-25.059,46.3028,30,call,A,0:15,unknown,https://xeno-canto.org/26703/download,Crested Coua
+11,26702,Daniel Lane,"Berenty Reserve, Toliara Prov. ",Coua,cristata,-25.059,46.3028,30,call,A,0:18,unknown,https://xeno-canto.org/26702/download,Crested Coua
+12,622816,Ken Behrens,"Bemanevika, Bealanana District, Mahajanga Province",Coua,caerulea,-14.336,48.5955,1600,song,A,0:08,no,https://xeno-canto.org/622816/download,Blue Coua
+13,622573,Ken Behrens,"Antsirabe, Sambava, Antsiranana Province",Coua,caerulea,-14.4376,49.7757,480,call,A,0:27,yes,https://xeno-canto.org/622573/download,Blue Coua
+14,622570,Ken Behrens,"Antsirabe, Sambava, Antsiranana Province",Coua,caerulea,-14.4376,49.7757,480,call,A,0:15,yes,https://xeno-canto.org/622570/download,Blue Coua
+15,418943,Ross Gallardy,"Alaotra-Mangoro, Toamasina Province",Coua,caerulea,-19.0352,48.418,1100,call,A,0:48,yes,https://xeno-canto.org/418943/download,Blue Coua
+16,154932,Hans Matheve,Masoala National Park,Coua,caerulea,-15.6978,49.9631,150,call,A,0:37,yes,https://xeno-canto.org/154932/download,Blue Coua
+17,624021,Ken Behrens,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov.",Coua,ruficeps,-16.3051,46.812,70,"song, bill snaps",A,0:07,yes,https://xeno-canto.org/624021/download,Red-capped Coua
+18,624020,Ken Behrens,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov.",Coua,ruficeps,-16.3051,46.812,70,"call, bill snaps",A,0:36,yes,https://xeno-canto.org/624020/download,Red-capped Coua
+19,624003,Ken Behrens,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov.",Coua,ruficeps,-16.3051,46.812,70,call,A,0:18,yes,https://xeno-canto.org/624003/download,Red-capped Coua
+20,624002,Ken Behrens,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov.",Coua,ruficeps,-16.3051,46.812,70,"call, bill snaps",A,0:55,yes,https://xeno-canto.org/624002/download,Red-capped Coua
+21,423589,Barry Edmonston,La Table National Park,Coua,ruficeps,-23.4131,43.8077,140,call,A,0:33,yes,https://xeno-canto.org/423589/download,Red-capped Coua
+22,26421,Daniel Lane,"Ifaty (Mossa park), ca 26 km N of Toliara, Toliara Prov. ",Coua,ruficeps,-23.1137,43.632,30,"call, song",A,1:41,unknown,https://xeno-canto.org/26421/download,Red-capped Coua
+23,762703,Peter Boesman,"Ranomafana National Park, Fianarantsoa",Coua,reynaudii,-21.4326,47.3978,?,call,A,0:17,unknown,https://xeno-canto.org/762703/download,Red-fronted Coua
+24,762701,Peter Boesman,"Ranomafana National Park, Fianarantsoa",Coua,reynaudii,-21.4326,47.3978,?,call,A,0:18,unknown,https://xeno-canto.org/762701/download,Red-fronted Coua
+25,762700,Peter Boesman,"Ranomafana National Park, Fianarantsoa",Coua,reynaudii,-21.4326,47.3978,?,call,A,1:40,unknown,https://xeno-canto.org/762700/download,Red-fronted Coua
+26,762699,Peter Boesman,"Bemanevika, Mahajanga",Coua,reynaudii,-14.363,48.5873,?,call,A,1:43,unknown,https://xeno-canto.org/762699/download,Red-fronted Coua
+27,622515,Ken Behrens,"Antsirabe, Sambava, Antsiranana Province",Coua,reynaudii,-14.4376,49.7757,480,call,A,0:19,yes,https://xeno-canto.org/622515/download,Red-fronted Coua
+28,536970,Dries Van de Loock,"Iaroka Forest, Moramanga District, Toamasina Province",Coua,reynaudii,-19.0278,48.4494,1100,call,A,0:03,yes,https://xeno-canto.org/536970/download,Red-fronted Coua
+29,536749,Dries Van de Loock,Ranomafana National Park,Coua,reynaudii,-21.26,47.42,950,song,A,0:07,yes,https://xeno-canto.org/536749/download,Red-fronted Coua
+30,418930,Ross Gallardy,"Alaotra-Mangoro, Toamasina Province",Coua,reynaudii,-19.0352,48.418,1100,call,A,0:42,yes,https://xeno-canto.org/418930/download,Red-fronted Coua
+31,418929,Ross Gallardy,"Alaotra-Mangoro, Toamasina Province",Coua,reynaudii,-19.0352,48.418,1100,call,A,0:36,yes,https://xeno-canto.org/418929/download,Red-fronted Coua
+32,418928,Ross Gallardy,"Alaotra-Mangoro, Toamasina Province",Coua,reynaudii,-19.0352,48.418,1100,call,A,0:36,yes,https://xeno-canto.org/418928/download,Red-fronted Coua
+33,624015,Ken Behrens,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov.",Coua,coquereli,-16.3051,46.812,70,"call, bill snaps",A,0:15,no,https://xeno-canto.org/624015/download,Coquerel's Coua
+34,590227,Maarten Hotting,"Sakaraha, Toliara Province",Coua,coquereli,-22.8864,44.6937,800,song,A,0:09,yes,https://xeno-canto.org/590227/download,Coquerel's Coua
+35,419019,Ross Gallardy,Zombitse-Vohibasia National Park,Coua,coquereli,-22.8835,44.6939,800,call,A,0:29,yes,https://xeno-canto.org/419019/download,Coquerel's Coua
+36,295343,Bernard BOUSQUET,"Morondava, Toliara",Coua,coquereli,-20.0741,44.6594,50,call,A,0:25,yes,https://xeno-canto.org/295343/download,Coquerel's Coua
+37,154940,Hans Matheve,"Ankarafantsika Nature Reserve, plateau",Coua,coquereli,-16.3179,46.8111,150,call,A,0:10,yes,https://xeno-canto.org/154940/download,Coquerel's Coua
+38,154939,Hans Matheve,"Ankarafantsika Nature Reserve, plateau",Coua,coquereli,-16.3179,46.8111,150,call,A,0:24,yes,https://xeno-canto.org/154939/download,Coquerel's Coua
+39,26432,Daniel Lane,"Ampijoroa Station, Ankarafonsika NP, Mahajanga Prov. ",Coua,coquereli,-16.3051,46.812,80,call,A,1:10,unknown,https://xeno-canto.org/26432/download,Coquerel's Coua
+40,419008,Ross Gallardy,"Spiny Forest, Mangily, Toliara",Coua,cursor,-23.121,43.6213,10,song,A,0:18,yes,https://xeno-canto.org/419008/download,Running Coua
+41,155294,Hans Matheve,"Andohahela National Park, Mangatsiaka area",Coua,cursor,-24.968,46.5534,80,song,A,0:30,yes,https://xeno-canto.org/155294/download,Running Coua
+42,91700,Charles Hesse,"Ifaty (Mossa park), ca 26 km N of Toliara, Toliara Prov.",Coua,cursor,-23.1137,43.632,20,call,A,0:17,unknown,https://xeno-canto.org/91700/download,Running Coua
+43,762696,Peter Boesman,"Zombitse-Vohibasia National Park, Toliara",Coua,gigas,-22.8835,44.6939,?,song,A,0:57,unknown,https://xeno-canto.org/762696/download,Giant Coua
+44,762695,Peter Boesman,"Zombitse-Vohibasia National Park, Toliara",Coua,gigas,-22.8835,44.6939,?,song,A,1:07,unknown,https://xeno-canto.org/762695/download,Giant Coua
+45,762694,Peter Boesman,"Zombitse-Vohibasia National Park, Toliara",Coua,gigas,-22.8835,44.6939,?,song,A,1:40,unknown,https://xeno-canto.org/762694/download,Giant Coua
+46,418988,Ross Gallardy,"Berenty Private Reserve, spiny forest",Coua,gigas,-25.0336,46.2934,120,song,A,0:17,yes,https://xeno-canto.org/418988/download,Giant Coua
+47,418191,Ross Gallardy,Tsingy de Bemaraha,Coua,gigas,-18.0625,44.5302,340,call,A,0:15,yes,https://xeno-canto.org/418191/download,Giant Coua
+48,418190,Ross Gallardy,Tsingy de Bemaraha,Coua,gigas,-18.0625,44.5302,340,call,A,0:18,yes,https://xeno-canto.org/418190/download,Giant Coua
+49,295344,Bernard BOUSQUET,"Morondava, Toliara",Coua,gigas,-20.0741,44.6594,50,call,A,0:37,yes,https://xeno-canto.org/295344/download,Giant Coua
+50,154964,Hans Matheve,Berenty Private Reserve,Coua,gigas,-25.0089,46.3081,30,song,A,0:21,yes,https://xeno-canto.org/154964/download,Giant Coua
+51,91706,Charles Hesse,"Zombitse NP, Toliara Prov.",Coua,gigas,-22.8853,44.6926,800,song,A,0:33,unknown,https://xeno-canto.org/91706/download,Giant Coua
+52,68027,Frank Lambert,Zombitse Forest,Coua,gigas,-22.9,44.7,800,"call, song",A,2:56,unknown,https://xeno-canto.org/68027/download,Giant Coua
+53,762712,Peter Boesman,"Andasibe-Mantadia National Park, Toamasina",Coua,serriana,-18.791,48.4248,?,call,A,0:39,unknown,https://xeno-canto.org/762712/download,Red-breasted Coua
+54,762710,Peter Boesman,"Andasibe-Mantadia National Park, Toamasina",Coua,serriana,-18.791,48.4248,?,call,A,0:28,unknown,https://xeno-canto.org/762710/download,Red-breasted Coua
+55,762706,Peter Boesman,"Andasibe-Mantadia National Park, Toamasina",Coua,serriana,-18.791,48.4248,?,call,A,0:22,unknown,https://xeno-canto.org/762706/download,Red-breasted Coua
+56,295110,Bernard BOUSQUET,"Moramanga, Toamasina",Coua,serriana,-18.9315,48.4252,1000,call,A,1:03,yes,https://xeno-canto.org/295110/download,Red-breasted Coua
+57,294163,Patrik Åberg,"Toamasina Province; Andasibe-Mantadia National Park, Mantadia",Coua,serriana,-18.9,48.4,950,song,A,1:32,no,https://xeno-canto.org/294163/download,Red-breasted Coua
+58,162772,Mike Nelson,"Chez Arol, Masoala NP",Coua,serriana,-15.5803,49.9101,200,song,A,1:08,yes,https://xeno-canto.org/162772/download,Red-breasted Coua
+59,162771,Mike Nelson,"Chez Arol, Masoala NP",Coua,serriana,-15.5803,49.9101,200,song,A,0:33,yes,https://xeno-canto.org/162771/download,Red-breasted Coua
+60,155271,Hans Matheve,Masoala National Park,Coua,serriana,-15.717,49.963,20,call,A,0:23,yes,https://xeno-canto.org/155271/download,Red-breasted Coua
+61,147840,Johannes Fischer,"Sambava, Antsiranana",Coua,serriana,-14.4884,49.7495,750,call,A,0:11,yes,https://xeno-canto.org/147840/download,Red-breasted Coua
+62,86597,Charles Hesse,"Toamasina Province; Andasibe-Mantadia National Park, Mantadia",Coua,serriana,-18.9,48.4,950,call,A,0:16,unknown,https://xeno-canto.org/86597/download,Red-breasted Coua

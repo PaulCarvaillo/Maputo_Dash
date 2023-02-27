@@ -1,0 +1,190 @@
+,id,rec,loc,gen,sp,lat,lng,alt,type,q,length,bird-seen,file,en
+0,401682,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Nesoenas,picturatus,-21.3546,55.742,220,song,C,0:08,no,https://xeno-canto.org/401682/download,Malagasy Turtle Dove
+1,400865,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Nesoenas,picturatus,-21.2854,55.3882,10,song,C,0:16,no,https://xeno-canto.org/400865/download,Malagasy Turtle Dove
+2,400864,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Nesoenas,picturatus,-21.2854,55.3882,10,song,C,0:12,no,https://xeno-canto.org/400864/download,Malagasy Turtle Dove
+3,401681,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Nesoenas,picturatus,-21.3546,55.742,220,song,D,0:09,no,https://xeno-canto.org/401681/download,Malagasy Turtle Dove
+4,400874,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Geopelia,striata,-21.2186,55.4757,600,song,B,0:13,no,https://xeno-canto.org/400874/download,Zebra Dove
+5,400868,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,B,0:29,no,https://xeno-canto.org/400868/download,Common Moorhen
+6,400867,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,B,0:32,no,https://xeno-canto.org/400867/download,Common Moorhen
+7,400809,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,B,0:07,yes,https://xeno-canto.org/400809/download,Common Moorhen
+8,400808,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,alarm call,B,0:02,yes,https://xeno-canto.org/400808/download,Common Moorhen
+9,400804,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,B,0:09,yes,https://xeno-canto.org/400804/download,Common Moorhen
+10,400803,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,B,0:02,yes,https://xeno-canto.org/400803/download,Common Moorhen
+11,400869,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,C,0:23,no,https://xeno-canto.org/400869/download,Common Moorhen
+12,400866,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,C,0:06,no,https://xeno-canto.org/400866/download,Common Moorhen
+13,400811,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,C,0:03,no,https://xeno-canto.org/400811/download,Common Moorhen
+14,400810,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,C,0:02,yes,https://xeno-canto.org/400810/download,Common Moorhen
+15,400805,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,C,0:36,no,https://xeno-canto.org/400805/download,Common Moorhen
+16,400802,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,C,0:07,yes,https://xeno-canto.org/400802/download,Common Moorhen
+17,400797,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Gallinula,chloropus,-21.2854,55.3882,10,call,C,0:08,yes,https://xeno-canto.org/400797/download,Common Moorhen
+18,400859,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Butorides,striata,-21.2854,55.3882,10,flight call,A,0:04,yes,https://xeno-canto.org/400859/download,Striated Heron
+19,400858,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Butorides,striata,-21.2854,55.3882,10,flight call,B,0:03,yes,https://xeno-canto.org/400858/download,Striated Heron
+20,142512,Johannes Fischer,"Plaine de Chicots, Reunion",Circus,maillardi,-20.9667,55.4334,1400,call,B,0:10,yes,https://xeno-canto.org/142512/download,Reunion Harrier
+21,305041,Daniel Danckwerts,"Roche Ecrite trail, Reunion NP",Lalage,newtoni,-20.9623,55.4403,1400,song,A,0:58,yes,https://xeno-canto.org/305041/download,Reunion Cuckooshrike
+22,155394,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Lalage,newtoni,-20.9699,55.4407,1500,song,A,0:16,yes,https://xeno-canto.org/155394/download,Reunion Cuckooshrike
+23,155393,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Lalage,newtoni,-20.9699,55.4407,1500,call,A,0:06,yes,https://xeno-canto.org/155393/download,Reunion Cuckooshrike
+24,26218,Daniel Lane,"Roche Ecrite trail, Reunion NP",Lalage,newtoni,-20.9623,55.4403,1400,song,A,0:50,unknown,https://xeno-canto.org/26218/download,Reunion Cuckooshrike
+25,20836,George Sangster,"Plaine de Chicots, Reunion",Lalage,newtoni,-20.9667,55.4334,?,song,A,0:58,unknown,https://xeno-canto.org/20836/download,Reunion Cuckooshrike
+26,20761,George Sangster,"Plaine de Chicots, Reunion",Lalage,newtoni,-20.9667,55.4334,?,song,A,0:57,unknown,https://xeno-canto.org/20761/download,Reunion Cuckooshrike
+27,305037,Daniel Danckwerts,"Roche Ecrite trail, Reunion NP",Lalage,newtoni,-20.9623,55.4403,1400,song,B,0:43,yes,https://xeno-canto.org/305037/download,Reunion Cuckooshrike
+28,155395,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Lalage,newtoni,-20.9699,55.4407,1500,call,B,0:10,yes,https://xeno-canto.org/155395/download,Reunion Cuckooshrike
+29,148691,Johannes Fischer,"Plaine de Chicots, Reunion",Lalage,newtoni,-20.9667,55.4334,1400,call,B,0:05,yes,https://xeno-canto.org/148691/download,Reunion Cuckooshrike
+30,305040,Daniel Danckwerts,"Roche Ecrite trail, Reunion NP",Lalage,newtoni,-20.9623,55.4403,1400,song,C,0:43,yes,https://xeno-canto.org/305040/download,Reunion Cuckooshrike
+31,157030,Phil Gregory,"Roche Ecrite trail, Reunion NPm above Mamode camp",Lalage,newtoni,-20.9623,55.4403,1400,song,C,0:05,yes,https://xeno-canto.org/157030/download,Reunion Cuckooshrike
+32,148690,Johannes Fischer,"Plaine de Chicots, Reunion",Lalage,newtoni,-20.9667,55.4334,1400,song,C,0:04,yes,https://xeno-canto.org/148690/download,Reunion Cuckooshrike
+33,157028,Phil Gregory,"Roche Ecrite trail, Reunion NPm above Mamode camp",Lalage,newtoni,-20.9623,55.4403,1400,call,D,0:26,no,https://xeno-canto.org/157028/download,Reunion Cuckooshrike
+34,463219,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Terpsiphone,bourbonnensis,-20.9699,55.4407,1500,call,A,0:13,yes,https://xeno-canto.org/463219/download,Mascarene Paradise Flycatcher
+35,463218,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Terpsiphone,bourbonnensis,-20.9699,55.4407,1500,begging call,A,0:20,yes,https://xeno-canto.org/463218/download,Mascarene Paradise Flycatcher
+36,462821,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island, France, Réunion, France",Terpsiphone,bourbonnensis,-21.3648,55.7477,30,song,A,0:07,yes,https://xeno-canto.org/462821/download,Mascarene Paradise Flycatcher
+37,462818,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island, France, Réunion, France",Terpsiphone,bourbonnensis,-21.3648,55.7477,30,song,A,0:13,yes,https://xeno-canto.org/462818/download,Mascarene Paradise Flycatcher
+38,155362,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Terpsiphone,bourbonnensis,-20.9699,55.4407,1500,call,A,0:23,yes,https://xeno-canto.org/155362/download,Mascarene Paradise Flycatcher
+39,155361,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Terpsiphone,bourbonnensis,-20.9699,55.4407,1500,call,A,0:43,yes,https://xeno-canto.org/155361/download,Mascarene Paradise Flycatcher
+40,462820,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island, France, Réunion, France",Terpsiphone,bourbonnensis,-21.3648,55.7477,30,song,B,0:04,yes,https://xeno-canto.org/462820/download,Mascarene Paradise Flycatcher
+41,462819,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island, France, Réunion, France",Terpsiphone,bourbonnensis,-21.3648,55.7477,30,song,B,0:08,yes,https://xeno-canto.org/462819/download,Mascarene Paradise Flycatcher
+42,400971,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Terpsiphone,bourbonnensis,-21.3615,55.7438,70,call,B,0:11,yes,https://xeno-canto.org/400971/download,Mascarene Paradise Flycatcher
+43,305042,Daniel Danckwerts,"Roche Ecrite trail, Reunion NP",Terpsiphone,bourbonnensis,-20.9623,55.4403,1400,alarm call,B,0:28,yes,https://xeno-canto.org/305042/download,Mascarene Paradise Flycatcher
+44,462825,Cedric Mroczko,"Anciens Thermes, Cialos, Reunion Island",Terpsiphone,bourbonnensis,-21.1311,55.4709,1200,song,C,0:04,yes,https://xeno-canto.org/462825/download,Mascarene Paradise Flycatcher
+45,462796,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Terpsiphone,bourbonnensis,-21.3588,55.7461,130,call,C,0:27,yes,https://xeno-canto.org/462796/download,Mascarene Paradise Flycatcher
+46,462795,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Terpsiphone,bourbonnensis,-21.3588,55.7461,130,call,D,0:22,yes,https://xeno-canto.org/462795/download,Mascarene Paradise Flycatcher
+47,462813,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Pycnonotus,jocosus,-21.3554,55.7397,200,song,B,0:40,yes,https://xeno-canto.org/462813/download,Red-whiskered Bulbul
+48,462797,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Pycnonotus,jocosus,-21.3588,55.7461,130,call,B,0:10,yes,https://xeno-canto.org/462797/download,Red-whiskered Bulbul
+49,400982,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Pycnonotus,jocosus,-21.3615,55.7438,70,song,B,0:40,yes,https://xeno-canto.org/400982/download,Red-whiskered Bulbul
+50,400969,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Pycnonotus,jocosus,-21.3652,55.7437,30,song,B,0:15,yes,https://xeno-canto.org/400969/download,Red-whiskered Bulbul
+51,400967,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Pycnonotus,jocosus,-21.3652,55.7437,30,song,B,0:19,yes,https://xeno-canto.org/400967/download,Red-whiskered Bulbul
+52,400904,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Pycnonotus,jocosus,-20.9782,55.2837,10,song,B,3:36,yes,https://xeno-canto.org/400904/download,Red-whiskered Bulbul
+53,400857,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Pycnonotus,jocosus,-21.2854,55.3882,10,call,B,0:20,yes,https://xeno-canto.org/400857/download,Red-whiskered Bulbul
+54,26326,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Pycnonotus,jocosus,-20.9623,55.4403,1400,song,B,0:46,unknown,https://xeno-canto.org/26326/download,Red-whiskered Bulbul
+55,400923,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Pycnonotus,jocosus,-21.3652,55.7437,30,call,E,0:12,yes,https://xeno-canto.org/400923/download,Red-whiskered Bulbul
+56,463225,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,song,A,0:46,yes,https://xeno-canto.org/463225/download,Reunion Bulbul
+57,463224,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,"call, song",A,0:26,yes,https://xeno-canto.org/463224/download,Reunion Bulbul
+58,463216,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,song,A,1:02,yes,https://xeno-canto.org/463216/download,Reunion Bulbul
+59,463215,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,song,A,1:00,yes,https://xeno-canto.org/463215/download,Reunion Bulbul
+60,463022,Cedric Mroczko,"Le Bloc, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.1212,55.4844,1500,call,A,0:17,yes,https://xeno-canto.org/463022/download,Reunion Bulbul
+61,462932,Cedric Mroczko,"Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.1133,55.4926,1900,song,A,1:20,yes,https://xeno-canto.org/462932/download,Reunion Bulbul
+62,462920,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.1276,55.4828,1400,"call, duet, song",A,4:59,yes,https://xeno-canto.org/462920/download,Reunion Bulbul
+63,462868,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.126,55.482,1400,call,A,0:20,yes,https://xeno-canto.org/462868/download,Reunion Bulbul
+64,462807,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Hypsipetes,borbonicus,-21.3588,55.7461,130,song,A,1:16,yes,https://xeno-canto.org/462807/download,Reunion Bulbul
+65,401683,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Hypsipetes,borbonicus,-21.3546,55.742,220,call,A,0:12,yes,https://xeno-canto.org/401683/download,Reunion Bulbul
+66,462928,Cedric Mroczko,"Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.1133,55.4926,1900,song,B,0:03,yes,https://xeno-canto.org/462928/download,Reunion Bulbul
+67,462881,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.1276,55.4828,1400,song,B,0:58,yes,https://xeno-canto.org/462881/download,Reunion Bulbul
+68,462877,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.126,55.482,1400,song,B,3:44,no,https://xeno-canto.org/462877/download,Reunion Bulbul
+69,462855,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.126,55.482,1400,song,B,0:24,yes,https://xeno-canto.org/462855/download,Reunion Bulbul
+70,462817,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island, France, Réunion",Hypsipetes,borbonicus,-21.3593,55.7465,100,"call, cat call",B,1:27,yes,https://xeno-canto.org/462817/download,Reunion Bulbul
+71,462803,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Hypsipetes,borbonicus,-21.3588,55.7461,130,call,B,0:12,yes,https://xeno-canto.org/462803/download,Reunion Bulbul
+72,462801,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Hypsipetes,borbonicus,-21.3588,55.7461,130,call,B,0:43,yes,https://xeno-canto.org/462801/download,Reunion Bulbul
+73,462800,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Hypsipetes,borbonicus,-21.3588,55.7461,130,call,B,1:05,yes,https://xeno-canto.org/462800/download,Reunion Bulbul
+74,401680,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Hypsipetes,borbonicus,-21.3546,55.742,220,call,B,0:40,no,https://xeno-canto.org/401680/download,Reunion Bulbul
+75,401679,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Hypsipetes,borbonicus,-21.3546,55.742,220,call,B,0:15,no,https://xeno-canto.org/401679/download,Reunion Bulbul
+76,400979,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Hypsipetes,borbonicus,-21.3615,55.7438,70,call,B,0:35,yes,https://xeno-canto.org/400979/download,Reunion Bulbul
+77,155392,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,song,B,0:08,yes,https://xeno-canto.org/155392/download,Reunion Bulbul
+78,155391,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,song,B,1:01,yes,https://xeno-canto.org/155391/download,Reunion Bulbul
+79,155390,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,song,B,0:50,yes,https://xeno-canto.org/155390/download,Reunion Bulbul
+80,155389,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Hypsipetes,borbonicus,-20.9699,55.4407,1500,call,B,0:26,yes,https://xeno-canto.org/155389/download,Reunion Bulbul
+81,26318,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Hypsipetes,borbonicus,-20.9623,55.4403,1400,song,B,0:45,unknown,https://xeno-canto.org/26318/download,Reunion Bulbul
+82,26221,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Hypsipetes,borbonicus,-20.9623,55.4403,1400,call,B,0:26,unknown,https://xeno-canto.org/26221/download,Reunion Bulbul
+83,462934,Cedric Mroczko,"Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.1133,55.4926,1900,song,C,1:19,yes,https://xeno-canto.org/462934/download,Reunion Bulbul
+84,462878,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.126,55.482,1400,song,C,0:26,no,https://xeno-canto.org/462878/download,Reunion Bulbul
+85,462862,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Hypsipetes,borbonicus,-21.126,55.482,1400,call,C,0:23,yes,https://xeno-canto.org/462862/download,Reunion Bulbul
+86,462808,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Hypsipetes,borbonicus,-21.3554,55.7397,200,call,C,0:13,yes,https://xeno-canto.org/462808/download,Reunion Bulbul
+87,400963,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Hypsipetes,borbonicus,-21.3652,55.7437,30,call,C,0:10,yes,https://xeno-canto.org/400963/download,Reunion Bulbul
+88,26222,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Hypsipetes,borbonicus,-20.9623,55.4403,1400,"call, song",C,1:52,unknown,https://xeno-canto.org/26222/download,Reunion Bulbul
+89,400983,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Hypsipetes,borbonicus,-21.3615,55.7438,110,call,D,0:04,yes,https://xeno-canto.org/400983/download,Reunion Bulbul
+90,400806,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Phedina,borbonica,-21.2854,55.3882,10,flight call,C,0:03,yes,https://xeno-canto.org/400806/download,Mascarene Martin
+91,400807,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Phedina,borbonica,-21.2854,55.3882,10,flight call,D,0:21,yes,https://xeno-canto.org/400807/download,Mascarene Martin
+92,34778,Frank Lambert,Reunion Island,Zosterops,olivaceus,,,?,call,no score,0:02,unknown,https://xeno-canto.org/34778/download,Reunion Olive White-eye
+93,463227,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,olivaceus,-20.9699,55.4407,1500,"call, song",A,0:08,yes,https://xeno-canto.org/463227/download,Reunion Olive White-eye
+94,463226,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,olivaceus,-20.9699,55.4407,1500,call,A,0:18,yes,https://xeno-canto.org/463226/download,Reunion Olive White-eye
+95,203727,Cedric Mroczko,"Cilaos, Ile de la Réunion",Zosterops,olivaceus,-21.1311,55.4721,1200,call,A,0:54,yes,https://xeno-canto.org/203727/download,Reunion Olive White-eye
+96,155400,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,olivaceus,-20.9699,55.4407,1500,song,A,0:13,yes,https://xeno-canto.org/155400/download,Reunion Olive White-eye
+97,155399,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,olivaceus,-20.9699,55.4407,1500,song,A,0:25,yes,https://xeno-canto.org/155399/download,Reunion Olive White-eye
+98,462925,Cedric Mroczko,"Cilaos, Reunion Island",Zosterops,olivaceus,-21.1133,55.4926,2200,call,B,0:18,yes,https://xeno-canto.org/462925/download,Reunion Olive White-eye
+99,462867,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Zosterops,olivaceus,-21.126,55.482,1400,call,B,0:07,yes,https://xeno-canto.org/462867/download,Reunion Olive White-eye
+100,462815,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Zosterops,olivaceus,-21.3588,55.7461,120,call,B,0:06,yes,https://xeno-canto.org/462815/download,Reunion Olive White-eye
+101,26320,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Zosterops,olivaceus,-20.9623,55.4403,1400,call,B,0:38,unknown,https://xeno-canto.org/26320/download,Reunion Olive White-eye
+102,462927,Cedric Mroczko,"Cilaos, Reunion Island",Zosterops,olivaceus,-21.1133,55.4926,2200,call,C,0:21,yes,https://xeno-canto.org/462927/download,Reunion Olive White-eye
+103,462924,Cedric Mroczko,"Cilaos, Reunion Island",Zosterops,olivaceus,-21.1133,55.4926,2200,call,C,0:25,yes,https://xeno-canto.org/462924/download,Reunion Olive White-eye
+104,462922,Cedric Mroczko,"Cilaos, Reunion Island",Zosterops,olivaceus,-21.1133,55.4926,2200,call,C,0:30,yes,https://xeno-canto.org/462922/download,Reunion Olive White-eye
+105,462866,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Zosterops,olivaceus,-21.126,55.482,1400,"begging call, call",C,0:27,yes,https://xeno-canto.org/462866/download,Reunion Olive White-eye
+106,401676,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Zosterops,olivaceus,-21.3554,55.7397,200,call,C,0:04,yes,https://xeno-canto.org/401676/download,Reunion Olive White-eye
+107,401675,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Zosterops,olivaceus,-21.3554,55.7397,200,call,C,0:19,yes,https://xeno-canto.org/401675/download,Reunion Olive White-eye
+108,401674,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Zosterops,olivaceus,-21.3554,55.7397,200,call,C,0:22,yes,https://xeno-canto.org/401674/download,Reunion Olive White-eye
+109,463222,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,borbonicus,-20.9699,55.4407,1500,call,A,0:14,yes,https://xeno-canto.org/463222/download,Reunion Grey White-eye
+110,463221,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,borbonicus,-20.9699,55.4407,1500,call,A,0:51,yes,https://xeno-canto.org/463221/download,Reunion Grey White-eye
+111,155364,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,borbonicus,-20.9699,55.4407,1500,song,A,0:11,yes,https://xeno-canto.org/155364/download,Reunion Grey White-eye
+112,155363,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,borbonicus,-20.9699,55.4407,1500,song,A,0:11,yes,https://xeno-canto.org/155363/download,Reunion Grey White-eye
+113,463220,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,borbonicus,-20.9699,55.4407,1500,song,B,0:51,yes,https://xeno-canto.org/463220/download,Reunion Grey White-eye
+114,463016,Cedric Mroczko,"Cilaos, Reunion Island",Zosterops,borbonicus,-21.1133,55.4926,1900,call,B,0:24,yes,https://xeno-canto.org/463016/download,Reunion Grey White-eye
+115,462865,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Zosterops,borbonicus,-21.126,55.482,1400,call,B,0:19,yes,https://xeno-canto.org/462865/download,Reunion Grey White-eye
+116,462789,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Zosterops,borbonicus,-21.3611,55.7464,60,call,B,0:32,yes,https://xeno-canto.org/462789/download,Reunion Grey White-eye
+117,462788,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Zosterops,borbonicus,-21.3611,55.7464,60,call,B,0:14,yes,https://xeno-canto.org/462788/download,Reunion Grey White-eye
+118,400903,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Zosterops,borbonicus,-20.9782,55.2837,10,call,B,0:10,yes,https://xeno-canto.org/400903/download,Reunion Grey White-eye
+119,400902,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Zosterops,borbonicus,-20.9782,55.2837,10,call,B,0:12,yes,https://xeno-canto.org/400902/download,Reunion Grey White-eye
+120,400814,Cedric Mroczko,"Saint-Louis, Reunion Island",Zosterops,borbonicus,-21.2809,55.4058,40,song,B,1:01,yes,https://xeno-canto.org/400814/download,Reunion Grey White-eye
+121,400798,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Zosterops,borbonicus,-21.2854,55.3882,10,call,B,1:28,yes,https://xeno-canto.org/400798/download,Reunion Grey White-eye
+122,400796,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Zosterops,borbonicus,-21.2854,55.3882,10,call,B,0:13,yes,https://xeno-canto.org/400796/download,Reunion Grey White-eye
+123,400795,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Zosterops,borbonicus,-21.2854,55.3882,10,song,B,0:35,yes,https://xeno-canto.org/400795/download,Reunion Grey White-eye
+124,400794,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Zosterops,borbonicus,-21.2854,55.3882,10,song,B,2:30,yes,https://xeno-canto.org/400794/download,Reunion Grey White-eye
+125,155365,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Zosterops,borbonicus,-20.9699,55.4407,1500,song,B,0:35,yes,https://xeno-canto.org/155365/download,Reunion Grey White-eye
+126,26324,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Zosterops,borbonicus,-20.9623,55.4403,1400,call,B,0:20,unknown,https://xeno-canto.org/26324/download,Reunion Grey White-eye
+127,26322,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Zosterops,borbonicus,-20.9623,55.4403,1400,song,B,0:41,unknown,https://xeno-canto.org/26322/download,Reunion Grey White-eye
+128,20835,George Sangster,"above La Brule, Reunion",Zosterops,borbonicus,,,?,call,B,1:03,unknown,https://xeno-canto.org/20835/download,Reunion Grey White-eye
+129,462864,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Zosterops,borbonicus,-21.126,55.482,1400,call,C,0:23,yes,https://xeno-canto.org/462864/download,Reunion Grey White-eye
+130,462863,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Zosterops,borbonicus,-21.126,55.482,1400,call,C,0:15,yes,https://xeno-canto.org/462863/download,Reunion Grey White-eye
+131,400976,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Zosterops,borbonicus,-21.3615,55.7438,70,"call, song",C,0:22,yes,https://xeno-canto.org/400976/download,Reunion Grey White-eye
+132,400907,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Zosterops,borbonicus,-21.2854,55.3882,10,call,C,0:29,yes,https://xeno-canto.org/400907/download,Reunion Grey White-eye
+133,400901,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Zosterops,borbonicus,-20.9782,55.2837,10,call,C,0:32,yes,https://xeno-canto.org/400901/download,Reunion Grey White-eye
+134,34769,Frank Lambert,Reunion Island,Zosterops,borbonicus,,,?,pair calling whilst preening,D,0:22,unknown,https://xeno-canto.org/34769/download,Reunion Grey White-eye
+135,34767,Frank Lambert,Reunion Island,Zosterops,borbonicus,,,?,pair calling whilst feeding,D,0:23,unknown,https://xeno-canto.org/34767/download,Reunion Grey White-eye
+136,400882,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Acridotheres,tristis,-20.9782,55.2837,10,song,B,0:05,yes,https://xeno-canto.org/400882/download,Common Myna
+137,462880,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Saxicola,tectes,-21.1276,55.4828,1400,song,A,0:39,yes,https://xeno-canto.org/462880/download,Reunion Stonechat
+138,462812,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3554,55.7397,200,song,A,2:08,yes,https://xeno-canto.org/462812/download,Reunion Stonechat
+139,462811,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3554,55.7397,200,alarm call,A,0:05,yes,https://xeno-canto.org/462811/download,Reunion Stonechat
+140,462794,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Saxicola,tectes,-21.3588,55.7461,130,song,A,0:38,yes,https://xeno-canto.org/462794/download,Reunion Stonechat
+141,462793,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island, France",Saxicola,tectes,-21.3588,55.7461,130,song,A,0:11,yes,https://xeno-canto.org/462793/download,Reunion Stonechat
+142,462790,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3611,55.7464,60,song,A,0:37,yes,https://xeno-canto.org/462790/download,Reunion Stonechat
+143,400880,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Saxicola,tectes,-21.2186,55.4757,600,alarm call,A,0:31,yes,https://xeno-canto.org/400880/download,Reunion Stonechat
+144,155398,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Saxicola,tectes,-20.9699,55.4407,1500,song,A,1:05,yes,https://xeno-canto.org/155398/download,Reunion Stonechat
+145,155397,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Saxicola,tectes,-20.9699,55.4407,1500,song,A,0:14,yes,https://xeno-canto.org/155397/download,Reunion Stonechat
+146,34776,Frank Lambert,Reunion Island,Saxicola,tectes,,,?,call,A,0:24,unknown,https://xeno-canto.org/34776/download,Reunion Stonechat
+147,34772,Frank Lambert,Reunion Island,Saxicola,tectes,,,?,call,A,0:22,unknown,https://xeno-canto.org/34772/download,Reunion Stonechat
+148,26220,Daniel Lane,"Roche Ecrite trail, Reunion NP ",Saxicola,tectes,-20.9623,55.4403,1400,song,A,0:17,unknown,https://xeno-canto.org/26220/download,Reunion Stonechat
+149,20841,George Sangster,"La Brule, Reunion",Saxicola,tectes,,,?,song,A,1:23,unknown,https://xeno-canto.org/20841/download,Reunion Stonechat
+150,463028,Cedric Mroczko,"Le Bloc, Cilaos, Reunion Island",Saxicola,tectes,-21.1212,55.4844,1500,alarm call,B,0:13,yes,https://xeno-canto.org/463028/download,Reunion Stonechat
+151,462861,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Saxicola,tectes,-21.126,55.482,1400,song,B,0:41,yes,https://xeno-canto.org/462861/download,Reunion Stonechat
+152,462858,Cedric Mroczko,"Roche Merveilleuse, Cilaos, Reunion Island",Saxicola,tectes,-21.126,55.482,1400,song,B,0:14,yes,https://xeno-canto.org/462858/download,Reunion Stonechat
+153,462824,Cedric Mroczko,"Cilaos, Ile de la Réunion",Saxicola,tectes,-21.1311,55.4721,1200,call,B,3:23,yes,https://xeno-canto.org/462824/download,Reunion Stonechat
+154,401678,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3546,55.742,220,song,B,0:48,yes,https://xeno-canto.org/401678/download,Reunion Stonechat
+155,401677,Cedric Mroczko," Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3554,55.7397,200,song,B,0:37,yes,https://xeno-canto.org/401677/download,Reunion Stonechat
+156,401672,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3568,55.7404,180,song,B,1:59,yes,https://xeno-canto.org/401672/download,Reunion Stonechat
+157,401670,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3568,55.7404,180,song,B,0:52,yes,https://xeno-canto.org/401670/download,Reunion Stonechat
+158,400981,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3615,55.7438,70,song,B,0:09,yes,https://xeno-canto.org/400981/download,Reunion Stonechat
+159,400879,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Saxicola,tectes,-21.2186,55.4757,600,alarm call,B,0:12,yes,https://xeno-canto.org/400879/download,Reunion Stonechat
+160,400872,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Saxicola,tectes,-21.2186,55.4757,600,song,B,0:21,yes,https://xeno-canto.org/400872/download,Reunion Stonechat
+161,155396,Hans Matheve,"La Roche Ecrite Nature Reserve, Réunion",Saxicola,tectes,-20.9699,55.4407,1500,call,B,0:34,yes,https://xeno-canto.org/155396/download,Reunion Stonechat
+162,401671,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3568,55.7404,180,song,C,0:11,yes,https://xeno-canto.org/401671/download,Reunion Stonechat
+163,400984,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Saxicola,tectes,-21.3615,55.7438,120,song,C,0:30,yes,https://xeno-canto.org/400984/download,Reunion Stonechat
+164,400876,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Saxicola,tectes,-21.2186,55.4757,600,call,C,0:13,yes,https://xeno-canto.org/400876/download,Reunion Stonechat
+165,400873,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Saxicola,tectes,-21.2186,55.4757,600,song,C,0:04,yes,https://xeno-canto.org/400873/download,Reunion Stonechat
+166,400877,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Passer,domesticus,-21.2186,55.4757,600,call,C,0:34,yes,https://xeno-canto.org/400877/download,House Sparrow
+167,400896,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Ploceus,cucullatus,-20.9782,55.2837,10,song,A,0:08,yes,https://xeno-canto.org/400896/download,Village Weaver
+168,400895,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Ploceus,cucullatus,-20.9782,55.2837,10,song,A,0:16,yes,https://xeno-canto.org/400895/download,Village Weaver
+169,400892,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Ploceus,cucullatus,-20.9782,55.2837,10,call,B,0:02,yes,https://xeno-canto.org/400892/download,Village Weaver
+170,400891,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Ploceus,cucullatus,-20.9782,55.2837,10,song,B,0:59,yes,https://xeno-canto.org/400891/download,Village Weaver
+171,400862,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Ploceus,cucullatus,-21.2854,55.3882,10,song,B,0:18,yes,https://xeno-canto.org/400862/download,Village Weaver
+172,400861,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Ploceus,cucullatus,-21.2854,55.3882,10,song,B,0:29,yes,https://xeno-canto.org/400861/download,Village Weaver
+173,400860,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Ploceus,cucullatus,-21.2854,55.3882,10,song,B,0:31,yes,https://xeno-canto.org/400860/download,Village Weaver
+174,171769,Martin Riethmuller,Saint Pierre (La Réunion),Quelea,quelea,-21.34,55.4586,5,song,C,0:27,yes,https://xeno-canto.org/171769/download,Red-billed Quelea
+175,463217,Étienne Leroy,"La Roche Ecrite Nature Reserve, Réunion",Foudia,madagascariensis,-20.9699,55.4407,1500,,A,0:14,yes,https://xeno-canto.org/463217/download,Red Fody
+176,400863,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Foudia,madagascariensis,-21.2854,55.3882,10,song,A,2:06,yes,https://xeno-canto.org/400863/download,Red Fody
+177,400906,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Foudia,madagascariensis,-20.9782,55.2837,10,"call, alarm call?",B,2:02,yes,https://xeno-canto.org/400906/download,Red Fody
+178,400888,Cedric Mroczko,"Forêt Domaniale de Saint-Paul, Saint-Paul, Reunion Island",Foudia,madagascariensis,-20.9782,55.2837,10,call,B,0:02,yes,https://xeno-canto.org/400888/download,Red Fody
+179,400875,Cedric Mroczko,"Kiosques de Bras-Long, Entre-Deux, Reunion Island",Foudia,madagascariensis,-21.2186,55.4757,600,song,B,0:03,yes,https://xeno-canto.org/400875/download,Red Fody
+180,400801,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Foudia,madagascariensis,-21.2854,55.3882,10,song,B,0:40,yes,https://xeno-canto.org/400801/download,Red Fody
+181,400800,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Foudia,madagascariensis,-21.2854,55.3882,10,song,B,0:18,yes,https://xeno-canto.org/400800/download,Red Fody
+182,400799,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Foudia,madagascariensis,-21.2854,55.3882,10,call,B,0:02,yes,https://xeno-canto.org/400799/download,Red Fody
+183,400793,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Foudia,madagascariensis,-21.2854,55.3882,10,call,B,0:12,yes,https://xeno-canto.org/400793/download,Red Fody
+184,400792,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Foudia,madagascariensis,-21.2854,55.3882,10,song,B,2:31,yes,https://xeno-canto.org/400792/download,Red Fody
+185,400871,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Estrilda,astrild,-21.2854,55.3882,10,call,B,0:12,yes,https://xeno-canto.org/400871/download,Common Waxbill
+186,400870,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Estrilda,astrild,-21.2854,55.3882,10,call,B,0:55,yes,https://xeno-canto.org/400870/download,Common Waxbill
+187,400812,Cedric Mroczko,"Etang du Gol, Saint-Louis, Reunion Island",Estrilda,astrild,-21.2854,55.3882,10,"call, flight call",B,0:11,yes,https://xeno-canto.org/400812/download,Common Waxbill
+188,400908,Cedric Mroczko,"Forêt de Mare Longue, Saint-Philippe, Reunion Island",Sonus,naturalis,-21.3615,55.7438,70,"call, song",B,7:50,yes,https://xeno-canto.org/400908/download,Soundscape

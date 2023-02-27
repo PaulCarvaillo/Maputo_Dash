@@ -19,7 +19,6 @@ datasets_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/d
 tables_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables'
 metafiles_xenocanto_csv_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/metafiles_xenocanto.csv'
 metafiles_xenocanto_csv_path_filtered = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv'
-
 project_sounds_root_dir = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/wav/xenocanto'
 # Layout--------------------------------------------------------------------------------------------------------------------
 
@@ -170,8 +169,19 @@ def create_project_directory(n_clicks, project_name):
 
 
 @ app.callback(Output("metadata_storage", "data"), Output("loading-1", "children"), Output("query_log", "value"),
-               Input("query_button", "n_clicks"), State('XC_query', 'value'), [State("loading-1", "children"), State('project_selector', 'value')])
+               Input("query_button", "n_clicks"), State('XC_query', 'value'), [State("loading-1", "children"), Input('project_selector', 'value')])
 def query_xeno_button(n, user_query, children, projectdir_path):
+    if projectdir_path == '':
+        raise PreventUpdate
+    elif projectdir_path != '':
+        csv_path = os.path.join(
+            projectdir_path, 'tables/metadata_filtered.csv')
+        try:
+            df_metafiles = pd.read_csv(csv_path)
+            log = f'reading metadata from {projectdir_path}'
+            return df_metafiles.to_dict('records'), children, log
+        except:
+            log = f'New project: {projectdir_path}'
 
     if n:
         q = xeno.Query(user_query)
@@ -182,6 +192,9 @@ def query_xeno_button(n, user_query, children, projectdir_path):
 
         if metadata != []:
             df_metafiles = pd.DataFrame(metadata['recordings'])
+            df_metafiles.to_csv(os.path.join(
+                projectdir_path, 'tables/metadata_raw_all_columns.csv'))
+
             df_metafiles = df_metafiles.loc[:, table_visible_columns]
             df_metafiles.to_csv(os.path.join(
                 projectdir_path, 'tables/metadata_raw.csv'))
@@ -236,13 +249,22 @@ def update_graphs(rows, derived_virtual_selected_rows, n, projectdir_path):
         os.path.join(
             projectdir_path, 'tables/metadata_raw.csv')
     )
+    df_metafiles_all_col = pd.read_csv(
+        os.path.join(
+            projectdir_path, 'tables/metadata_raw_all_columns.csv')
+    )
 
     dff = df_metafiles_xenocanto if rows is None else pd.DataFrame(rows)
+    dff2 = df_metafiles_all_col if rows is None else pd.DataFrame(rows)
 
     if n:  # save filtered data on click
         dff.to_csv(
             os.path.join(
                 projectdir_path, 'tables/metadata_filtered.csv')
+        )
+        dff2.to_csv(
+            os.path.join(
+                projectdir_path, 'tables/metadata_filtered_all_columns.csv')
         )
 
     return utils.get_leaflet_map(dff, heigth=500)
@@ -280,34 +302,73 @@ def generate_graphs(data):
     return scatter, sunburst, bar
 
 
+prev_n_clicks = 0
+
+
 @ app.callback(
     Output("loading-2", "children"),
     [Input("download_button", "n_clicks")],
     [State("loading-2", "children"), State('project_selector', 'value')
      ])
 def download_files_and_update_loading_state(n_clicks, children, projectdir_path):
+    global prev_n_clicks
     if n_clicks:
-        df_recordings = pd.read_csv(os.path.join(
-            projectdir_path, 'tables/metadata_filtered.csv'))
-        try:
-            download_files(df_recordings=df_recordings,
-                           root_dir=os.path.join(
-                               projectdir_path, 'wav'))
-        except Exception as e:
-            return children, e
-    return children
+        if n_clicks > prev_n_clicks:
+            prev_n_clicks = n_clicks
+            df_recordings = pd.read_csv(os.path.join(
+                projectdir_path, 'tables/metadata_filtered.csv'))
+            try:
+                download_files(df_recordings=df_recordings,
+                               root_dir=os.path.join(
+                                   projectdir_path, 'wav'))
+            except Exception as e:
+                print(e)
+        return children
+
+# Graveyard:
+
+# @app.callback(
+#     Output("metadata_storage", "data"),
+#     [Input("project_selector", "value")]
+# )
+# def update_metadata_storage(projectdir_path):
+#     if projectdir_path == '':
+#         raise PreventUpdate
+#     else:
+#         csv_path = os.path.join(
+#             projectdir_path, 'tables/metadata_filtered.csv')
+#         df = pd.read_csv(csv_path)
+#         return df.to_dict('records')
 
 
-@ app.callback(Output('error-log2', 'value'), [Input("loading-2", "children"), Input('download_button', 'n_clicks'), State('project_selector', 'value')])
-def update_error_log(children, n_clicks, projectdir_path):
+# @ app.callback(
+#     Output("loading-2", "children"),
+#     [Input("download_button", "n_clicks")],
+#     [State("loading-2", "children"), State('project_selector', 'value')
+#      ])
+# def download_files_and_update_loading_state(n_clicks, children, projectdir_path):
+#     if n_clicks:
+#         df_recordings = pd.read_csv(os.path.join(
+#             projectdir_path, 'tables/metadata_filtered.csv'))
+#         try:
+#             download_files(df_recordings=df_recordings,
+#                            root_dir=os.path.join(
+#                                projectdir_path, 'wav'))
+#         except Exception as e:
+#             return children, e
+#     return children
 
-    if n_clicks:
-        df_recordings = pd.read_csv(os.path.join(
-            projectdir_path, 'tables/metadata_filtered.csv'))
-        try:
-            download_files(df_recordings=df_recordings,
-                           root_dir=os.path.join(
-                               projectdir_path, 'wav'))
-            return ''
-        except Exception as e:
-            return str(e)
+
+# @ app.callback(Output('error-log2', 'value'), [Input("loading-2", "children"), Input('download_button', 'n_clicks'), State('project_selector', 'value')])
+# def update_error_log(children, n_clicks, projectdir_path):
+
+#     if n_clicks:
+#         df_recordings = pd.read_csv(os.path.join(
+#             projectdir_path, 'tables/metadata_filtered.csv'))
+#         try:
+#             download_files(df_recordings=df_recordings,
+#                            root_dir=os.path.join(
+#                                projectdir_path, 'wav'))
+#             return ''
+#         except Exception as e:
+#             return str(e)
