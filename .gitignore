@@ -6,3 +6,6 @@ venv/
 src/controller/tests_in_progress/
 datasets/old/
 notebooks/
+__pycache__/
+*.pyc
+.DS_Store
