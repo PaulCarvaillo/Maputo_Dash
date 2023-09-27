@@ -1,3 +1,5 @@
+from os.path import abspath, dirname, join, normpath
+
 import dash_leaflet as dl
 import dash_leaflet.express as dlx
 from dash import dash_table, dcc, html
@@ -17,6 +19,13 @@ columns_visible_to_user = [
     "bird-seen",
     "en",
 ]
+
+ROOT_DIR = dirname(abspath(__file__))
+
+
+def get_assets_dir():
+    assets_dir = normpath(join(ROOT_DIR, "assets"))
+    return assets_dir
 
 
 def Header(app):

@@ -14,7 +14,7 @@ from utils import get_header
 
 matplotlib.use("Agg")
 
-df_ROI_final = pd.read_csv(join(tables_path), "df_ROI_final.csv")
+df_ROI_final = pd.read_csv(join(tables_path, "df_ROI_final.csv"))
 
 
 def create_layout(app, df_ROI_final):

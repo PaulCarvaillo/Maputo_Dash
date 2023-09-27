@@ -1,6 +1,5 @@
 from os.path import join
 
-import matplotlib
 import pandas as pd
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
@@ -11,10 +10,7 @@ from controller.tSNE.tSNE_GRAPHS import compute_tSNE_2d
 from loaded_data import tables_path
 from utils import get_header, get_menu
 
-matplotlib.use("Agg")
-
-
-df_ROI_final = pd.read_csv(join(tables_path), "df_ROI_final.csv")
+df_ROI_final = pd.read_csv(join(tables_path, "df_ROI_final.csv"))
 
 
 def create_layout(app, df_ROI_final):

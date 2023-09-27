@@ -5,7 +5,7 @@ from dash.exceptions import PreventUpdate
 from app import app
 from controller.UMAP.UMAP_GRAPHS import plot_umap
 from loaded_data import df_annot_final, df_ROI_final
-from utils import utils
+from utils import get_header
 
 
 def create_layout(app, df_ROI_final):
@@ -13,7 +13,7 @@ def create_layout(app, df_ROI_final):
     return (
         html.Div(
             [
-                html.Div([utils.get_header(app)]),
+                html.Div([get_header(app)]),
                 # page 1
                 html.Div(
                     [
