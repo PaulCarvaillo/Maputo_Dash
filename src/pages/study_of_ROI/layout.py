@@ -1,25 +1,24 @@
 import base64
-from utils import utils
-from app import app
+from glob import glob
+from os import listdir
+from os.path import basename, isdir, join
+
 import pandas as pd
+import plotly.graph_objects as go
+import plotly_express as px
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
+
+from app import app
 from controller.ROI.ROI import ROI_and_centroid, compute_Sxx_dB_nonoise_smooth
 from controller.ROI.ROIdetector import ROIDetector
-import plotly_express as px
-import plotly.graph_objects as go
-from pathlib import Path
-from loaded_data import df_annot_final
-from os.path import join, isdir, basename
-from os import listdir
-from loaded_data import datasets_path
-from glob import glob
-import matplotlib
+from loaded_data import datasets_path, df_annot_final
+from utils import get_header
 
-matplotlib.use("Agg")
-
-centroids_annot = df_annot_final  # Manual annotations by ornithologist Glenn Le floch on= Maputo Dataset
+centroids_annot = (
+    df_annot_final  # Manual annotations by Glenn Le Floch on Maputo Dataset
+)
 ROIDetector = ROIDetector()
 
 
@@ -28,7 +27,7 @@ def create_layout(app, df_metafiles_xenocanto):
     return (
         html.Div(
             [
-                html.Div([utils.get_header(app)]),
+                html.Div([get_header(app)]),
                 # page 1
                 html.Div(
                     [  # FILEPATH/SPECIES/FREQUENCY SELECTOR PARAMETERS:
@@ -376,10 +375,10 @@ def update_spectro_data(
 
 
 @app.callback(Output("datastore_annot", "data"), Input("wav_dropdown", "value"))
-def get_annot__data(wav_dropdown):
+def get_annot_data(sound_id):
     centroids_annot_dff = centroids_annot.copy()
-    if isinstance(wav_dropdown, str):
-        id = Path(wav_dropdown).parts[-1][:-4]
+    if isinstance(sound_id, str):
+        id = sound_id[:-4]
         print(id)
         centroids_annot_dff = centroids_annot[
             centroids_annot["sound_id"].astype(str) == id
