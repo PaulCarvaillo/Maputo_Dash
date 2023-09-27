@@ -1,9 +1,6 @@
-from venv import create
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
-import pandas as pd
-import pages
 
 from app import app
 from pages.info_about_data.layout import create_layout

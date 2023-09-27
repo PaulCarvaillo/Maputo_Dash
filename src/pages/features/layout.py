@@ -1,11 +1,5 @@
-from loaded_data import df_annot_final, df_ROI_final
 from utils import utils
-from app import app
-import pandas as pd
 from dash import dcc, html
-from dash.dependencies import Input, Output, State
-from dash.exceptions import PreventUpdate
-from controller.UMAP.UMAP_GRAPHS import plot_umap
 import matplotlib
 matplotlib.use('Agg')
 

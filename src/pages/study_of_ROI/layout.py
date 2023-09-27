@@ -8,12 +8,12 @@ from dash import dcc
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 from controller.ROI.ROI import ROI_and_centroid, compute_Sxx_dB_nonoise_smooth
+from controller.ROI.ROIdetector import ROIDetector
 import plotly_express as px
 import plotly.graph_objects as go
 from pathlib import Path
 from loaded_data import df_annot_final
 import os
-
 import matplotlib
 matplotlib.use('Agg')
 
@@ -22,7 +22,7 @@ datasets_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/d
 # df_data = pd.read_csv(
 #     '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_datapaths.csv')
 # df_data=pd.DataFrame()
-
+ROIDetector = ROIDetector()
 
 def create_layout(app, df_metafiles_xenocanto):
     # Page layouts
