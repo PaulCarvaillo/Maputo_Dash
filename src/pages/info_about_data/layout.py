@@ -107,10 +107,10 @@ def create_layout(app, df_metafiles_xenocanto):
                     [
                         html.Div(
                             [
-                                html.Div(
-                                    id='recordings_leaflet_map'),
                                 dcc.Graph(
                                     id='species_classification_sunburst_graph'),
+                                html.Div(
+                                    id='recordings_leaflet_map'),
                                 dcc.Graph(
                                     id='wave_length_and_quality_graph'),
                                 dcc.Graph(id='recorder_bar_graph'),

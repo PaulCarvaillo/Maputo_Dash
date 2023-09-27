@@ -13,16 +13,16 @@ import plotly_express as px
 import plotly.graph_objects as go
 from pathlib import Path
 from loaded_data import df_annot_final
-import os
+from os.path import join, isdir, basename
+from os import listdir
+from loaded_data import datasets_path
+from glob import glob
 import matplotlib
 matplotlib.use('Agg')
 
 centroids_annot = df_annot_final
-datasets_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/'
-# df_data = pd.read_csv(
-#     '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/df_datapaths.csv')
-# df_data=pd.DataFrame()
 ROIDetector = ROIDetector()
+
 
 def create_layout(app, df_metafiles_xenocanto):
     # Page layouts
@@ -42,8 +42,8 @@ def create_layout(app, df_metafiles_xenocanto):
                     ),
                     dcc.Dropdown(
                         id='project_selector', placeholder='Select project...',
-                        options=[{'label': project, 'value': os.path.join(datasets_path, project)}
-                                 for project in os.listdir(datasets_path) if os.path.isdir(os.path.join(datasets_path, project))],
+                        options=[{'label': project, 'value': project}
+                                 for project in listdir(datasets_path) if isdir(join(datasets_path, project))],
                         value='',
                         style={'width': '40%',
                                'marginLeft': '30px'}
@@ -192,38 +192,34 @@ def create_layout(app, df_metafiles_xenocanto):
 # callbacks
 
 
-@ app.callback(Output('datastore_info', 'data'),
-              Output('gen_dropdown', 'options'),
-              Input('project_selector', 'value'))
-def get_project_data_and_update_gen_drowpowns(projectdir_path):
-
-    if projectdir_path == '':
+@ app.callback(Output('gen_dropdown', 'options'),
+               Input('project_selector', 'value'))
+def get_project_data_and_update_gen_drowpowns(project):
+    if project == '':
         raise PreventUpdate
-    elif projectdir_path != '':
-        csv_path=os.path.join(
-            projectdir_path, 'tables/df_soundfiles_paths.csv')
-        df_datapaths = pd.read_csv(csv_path)
+    elif project != '':
+        genlist = [basename(path).split('_')[0] for path in glob(join(datasets_path, project,
+                                                                      'wav', '*'), recursive=True)]
         options = [{'label': gen, 'value': gen}
-                   for gen in df_datapaths['gen'].unique()]
-
-    return df_datapaths.to_dict('records'), options
-
-
-@ app.callback(Output('species_dropdown', 'options'), [Input('gen_dropdown', 'value'), Input('datastore_info', 'data')])
-def filter_data_by_gen(gen_dropdown, stored_info_data):
-    df_data = pd.DataFrame.from_dict(stored_info_data)
-    data = df_data[df_data['gen'] == gen_dropdown]
-    options = [{'label': species, 'value': species}
-               for species in data['species'].unique()]
+                   for gen in genlist]
     return options
 
 
-@ app.callback(Output('wav_dropdown', 'options'), [State('gen_dropdown', 'value'), Input('species_dropdown', 'value'), Input('datastore_info', 'data')])
-def filter_data_by_gen_and_species(genus, species, stored_info_data):
-    df_data = pd.DataFrame.from_dict(stored_info_data)
-    data = df_data[(df_data['gen'] == genus) & (df_data['species'] == species)]
-    options = [{'label': os.path.split(fullfilename)[-1], 'value': fullfilename}
-               for fullfilename in data['fullfilename'].unique()]
+@ app.callback(Output('species_dropdown', 'options'), [Input('gen_dropdown', 'value'), State('project_selector', 'value')])
+def filter_data_by_gen(genus, project):
+    spelist = [basename(path).split('_')[1] for path in glob(join(datasets_path, project,
+                                                                  'wav', f'{genus}_*'), recursive=True)]
+    options = [{'label': species, 'value': species}
+               for species in spelist]
+    return options
+
+
+@ app.callback(Output('wav_dropdown', 'options'), [State('project_selector', 'value'), State('gen_dropdown', 'value'), Input('species_dropdown', 'value')])
+def filter_data_by_gen_and_species(project, genus, species):
+    wavlist = [basename(path) for path in glob(join(datasets_path, project,
+                                                    'wav', f'{genus}_{species}', '*.wav'), recursive=True)]
+    options = [{'label': sound_id, 'value': sound_id}
+               for sound_id in wavlist]
     return options
 
 
@@ -234,15 +230,17 @@ def filter_data_by_gen_and_species(genus, species, stored_info_data):
 
                [Input('wav_dropdown', 'value'),
                 Input('smoothing', 'value'),
-                Input('frequency_selection', 'value')])
-def update_spectro_data(wav_dropdown, smoothing, frequency_selection):
+                Input('frequency_selection', 'value'), State('project_selector', 'value'), State('gen_dropdown', 'value'), Input('species_dropdown', 'value')])
+def update_spectro_data(wav_dropdown, smoothing, frequency_selection, project, genus, species):
     if isinstance(wav_dropdown, str) == False:
         raise PreventUpdate
     else:
+        soundpath = join(datasets_path, project,
+                         f'{genus}_{species}', wav_dropdown)
         fmin = frequency_selection[0]
         fmax = frequency_selection[1]
         Sxx, tn, fn, ext = compute_Sxx_dB_nonoise_smooth(
-            path=wav_dropdown, fmin=fmin, fmax=fmax, smoothing=smoothing)
+            path=soundpath, fmin=fmin, fmax=fmax, smoothing=smoothing)
         df_Sxx = pd.DataFrame(Sxx).to_dict('records')
         df_fn = pd.DataFrame(fn, columns=['fn']).to_dict('records')
         df_tn = pd.DataFrame(tn, columns=['tn']).to_dict('records')
