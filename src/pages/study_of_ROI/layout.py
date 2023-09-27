@@ -19,7 +19,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 
-centroids_annot = df_annot_final
+centroids_annot = df_annot_final  # Manual annotations by ornithologist Glenn Le floch on= Maputo Dataset
 ROIDetector = ROIDetector()
 
 
@@ -289,8 +289,6 @@ def create_layout(app, df_metafiles_xenocanto):
 
 
 # callbacks
-
-
 @app.callback(
     Output("gen_dropdown", "options"), Input("project_selector", "value")
 )  # noqa: E501
@@ -361,7 +359,9 @@ def update_spectro_data(
     if isinstance(wav_dropdown, str) is False:
         raise PreventUpdate
     else:
-        soundpath = join(datasets_path, project, f"{genus}_{species}", wav_dropdown)
+        soundpath = join(
+            datasets_path, project, "wav", f"{genus}_{species}", wav_dropdown
+        )
         fmin = frequency_selection[0]
         fmax = frequency_selection[1]
         Sxx, tn, fn, ext = compute_Sxx_dB_nonoise_smooth(
@@ -539,11 +539,18 @@ def plot_spectrogram_and_ROI_and_annot(
 
 
 @app.callback(
-    Output("audio-player-container", "children"), [Input("wav_dropdown", "value")]
+    Output("audio-player-container", "children"),
+    [
+        Input("wav_dropdown", "value"),
+        State("project_selector", "value"),
+        State("gen_dropdown", "value"),
+        State("species_dropdown", "value"),
+    ],
 )
-def update_audio_player(fullfilename):
-    if fullfilename:
-        encoded_sound = base64.b64encode(open(fullfilename, "rb").read())
+def update_audio_player(sound_id, project, genus, species):
+    if sound_id:
+        soundpath = join(datasets_path, project, "wav", f"{genus}_{species}", sound_id)
+        encoded_sound = base64.b64encode(open(soundpath, "rb").read())
         return (
             html.Audio(
                 id="audioplayer",
@@ -559,15 +566,3 @@ def update_audio_player(fullfilename):
 
 if __name__ == "__main__":
     app.run_server(debug=True)
-# @app.callback([Output('audio', 'children')],
-#               [Input('wav_dropdown', 'value')])
-# def load_audio(wav_dropdown):
-#     if wav_dropdown == []:
-#         raise PreventUpdate
-#     elif wav_dropdown:
-#         # Encode the local sound file.
-#         sound_filename = wav_dropdown
-#         encoded_sound = base64.b64encode(open(sound_filename, 'rb').read())
-#         url = 'data:audio/mpeg;base64,{}'.format(encoded_sound.decode())
-#         # url = 'file:///'+wav_dropdown
-#     return src=f"{sound_filename}",type="audio/wav"
