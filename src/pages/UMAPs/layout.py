@@ -1,4 +1,3 @@
-import matplotlib
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
@@ -7,8 +6,6 @@ from app import app
 from controller.UMAP.UMAP_GRAPHS import plot_umap
 from loaded_data import df_annot_final, df_ROI_final
 from utils import utils
-
-matplotlib.use("Agg")
 
 
 def create_layout(app, df_ROI_final):
