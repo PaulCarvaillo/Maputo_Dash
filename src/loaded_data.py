@@ -1,7 +1,8 @@
 from os.path import join, dirname
 import pandas as pd
 
-tables_path = join(dirname(dirname(__file__)), 'datasets', 'tables')
+datasets_path = join(dirname(dirname(__file__)), 'datasets')
+tables_path = join(datasets_path, 'tables')
 
 df_ROI_final = pd.read_csv(join(tables_path, 'df_ROI_final.csv'))
 df_annot_final = pd.read_csv(join(

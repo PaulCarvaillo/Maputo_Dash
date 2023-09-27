@@ -3,6 +3,7 @@ from utils import utils
 from app import app
 import xenopy as xeno
 import pandas as pd
+from loaded_data import datasets_path
 
 from dash import dcc, html, State
 from dash.dependencies import Input, Output
@@ -11,15 +12,9 @@ from dash.exceptions import PreventUpdate
 import plotly_express as px
 from controller.extract_xenocanto.xenocanto_utils import download_files
 
-# Global variables (cause running on local):--------------------------------------------------------------------------------
 table_visible_columns = ['id', 'rec', 'loc', 'gen', 'sp', 'lat',
                          'lng', 'alt', 'type', 'q', 'length', 'bird-seen', 'file', 'en']
 
-datasets_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/'
-tables_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables'
-metafiles_xenocanto_csv_path = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/metafiles_xenocanto.csv'
-metafiles_xenocanto_csv_path_filtered = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/tables/filtered_df.csv'
-project_sounds_root_dir = '/Users/Paul/Paul/Desktop/My_projects/Bioacoustics/Maputo_Dash/datasets/wav/xenocanto'
 # Layout--------------------------------------------------------------------------------------------------------------------
 
 
