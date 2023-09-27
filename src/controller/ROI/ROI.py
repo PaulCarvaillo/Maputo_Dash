@@ -53,7 +53,7 @@ def find_ROIs_soundfile(
         seeds are set to 1, the other remains 0
 
     """
-    # workaround RIFF bug from xenocanto import TO BE CHANGED
+    # workaround RIFF bug from xenocanto import TODO
     temp, sr = librosa.load(path)
     sf.write("tmp.wav", temp, 44100)
 

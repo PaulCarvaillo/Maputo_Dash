@@ -339,32 +339,38 @@ def update_graphs(rows, derived_virtual_selected_rows, n, projectdir_path):
 def generate_graphs(data):
     data = pd.DataFrame.from_dict(data)
     if data.shape != 0:
-        data[["length_min", "length_sec"]] = data["length"].str.split(":", expand=True)
-        data["file_length"] = (
-            data["length_sec"].astype(int) + data["length_min"].astype(int) * 60
-        )
-        data["birds"] = "Birds"
+        try:
+            data[["length_min", "length_sec"]] = data["length"].str.split(
+                ":", expand=True
+            )
+            data["file_length"] = (
+                data["length_sec"].astype(int) + data["length_min"].astype(int) * 60
+            )
+            data["birds"] = "Birds"
 
-        sunburst = px.sunburst(
-            data,
-            path=["birds", "gen", "sp"],
-            height=800,
-            title="Genus & Species distribution amongst files <br><sup>Areas represent number of files, hover for info.</sup>",  # noqa : E501
-        )
-        scatter = px.scatter(
-            data,
-            x="file_length",
-            facet_col="q",
-            labels={"file_length": "file length (s)", "y": "ID of file"},
-            title="Length and quality of files",
-            category_orders={"q": ["A", "B", "C", "D", "E"]},
-        )
-        bar = px.bar(
-            data,
-            barmode="group",
-            x="rec",
-            labels={"rec": "Recorder Name", "count": "Number of recordings"},
-        )
+            sunburst = px.sunburst(
+                data,
+                path=["birds", "gen", "sp"],
+                height=800,
+                title="Genus & Species distribution amongst files <br><sup>Areas represent number of files, hover for info.</sup>",  # noqa : E501
+            )
+            scatter = px.scatter(
+                data,
+                x="file_length",
+                facet_col="q",
+                labels={"file_length": "file length (s)", "y": "ID of file"},
+                title="Length and quality of files",
+                category_orders={"q": ["A", "B", "C", "D", "E"]},
+            )
+            bar = px.bar(
+                data,
+                barmode="group",
+                x="rec",
+                labels={"rec": "Recorder Name", "count": "Number of recordings"},
+            )
+        except Exception as e:
+            print(e)
+            raise PreventUpdate
     else:
         raise PreventUpdate
 
