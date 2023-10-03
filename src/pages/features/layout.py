@@ -1,18 +1,7 @@
-import json
-from os.path import join
-
 from dash import dcc, html
 
-from utils import get_assets_dir, get_header
-
-json_file_path = join(get_assets_dir(), "features.json")
-with open(json_file_path, "r") as json_file:
-    data = json.load(json_file)
-
-GENERIC_FEATURES = data["GENERIC_FEATURES"]
-SHAPE_FEATURES = data["SHAPE_FEATURES"]
-SPECTRAL_FEATURES = data["SPECTRAL_FEATURES"]
-TEMPORAL_FEATURES = data["TEMPORAL_FEATURES"]
+from assets.features import GENERIC_FEATURES, SPECTRAL_FEATURES, TEMPORAL_FEATURES
+from utils import get_header
 
 
 def create_layout(app, df_ROI_final):
