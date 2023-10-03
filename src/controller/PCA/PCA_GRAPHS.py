@@ -7,7 +7,13 @@ from plotly.subplots import make_subplots
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import minmax_scale
-from assets.features import GENERIC_FEATURES, SHAPE_FEATURES, SPECTRAL_FEATURES, TEMPORAL_FEATURES
+
+from assets.features import (
+    GENERIC_FEATURES,
+    SHAPE_FEATURES,
+    SPECTRAL_FEATURES,
+    TEMPORAL_FEATURES,
+)
 
 
 def compute_PCA(df_ROI_final, features_options="basic", dimensions=2, color="species"):

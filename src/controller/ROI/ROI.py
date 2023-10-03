@@ -101,7 +101,6 @@ def compute_ROI_all_features(s, fs, df_rois, resolution="med", display=True):
     df_temporal_features = pd.DataFrame(columns=TEMPORAL_FEATURES)
     df_spectral_features = pd.DataFrame(columns=SPECTRAL_FEATURES)
 
-    # Loop
     for index, row in df_rois.iloc[1:].iterrows():
         s_trim = sound.trim(s, fs, row.loc[index, "min_t"], row.loc[index, "max_t"])
         s_trim = s_trim - np.mean(s_trim)
@@ -137,7 +136,6 @@ def compute_Sxx_dB_nonoise_smooth(path="", fmin=100, fmax=10000, smoothing=0.5):
     Sxx_power, tn, fn, ext = maad.sound.spectrogram(
         s / maxAmp, fs, flims=(fmin, fmax), display=False
     )
-
     Sxx_power_noNoise = sound.median_equalizer(
         Sxx_power, display=False, **{"extent": ext}
     )
