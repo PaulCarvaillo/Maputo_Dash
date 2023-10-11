@@ -11,7 +11,7 @@ from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 
 from app import app
-from controller.ROI.ROI import ROI_and_centroid
+from controller.ROI.ROI import ROI_and_centroid, compute_Sxx_dB_nonoise_smooth
 from controller.ROI.ROIdetector import ROIDetector
 from loaded_data import datasets_path, df_annot_final
 from utils import get_header
@@ -19,7 +19,7 @@ from utils import get_header
 centroids_annot = (
     df_annot_final  # Manual annotations by Glenn Le Floch on Maputo Dataset
 )
-detector = ROIDetector()
+ROIDetector = ROIDetector()
 
 
 def create_layout(app, df_metafiles_xenocanto):
@@ -361,11 +361,17 @@ def update_spectro_data(
         soundpath = join(
             datasets_path, project, "wav", f"{genus}_{species}", wav_dropdown
         )
-        detector.fmin = frequency_selection[0]
-        detector.fmax = frequency_selection[1]
-        detector.process_file(filen=soundpath)
+        fmin = frequency_selection[0]
+        fmax = frequency_selection[1]
+        Sxx, tn, fn, ext = compute_Sxx_dB_nonoise_smooth(
+            path=soundpath, fmin=fmin, fmax=fmax, smoothing=smoothing
+        )
+        df_Sxx = pd.DataFrame(Sxx).to_dict("records")
+        df_fn = pd.DataFrame(fn, columns=["fn"]).to_dict("records")
+        df_tn = pd.DataFrame(tn, columns=["tn"]).to_dict("records")
+        df_ext = pd.DataFrame([ext]).to_dict("records")
 
-    return detector.spectro, detector.fn, detector.tn, detector.ext
+    return df_Sxx, df_fn, df_tn, df_ext
 
 
 @app.callback(Output("datastore_annot", "data"), Input("wav_dropdown", "value"))
