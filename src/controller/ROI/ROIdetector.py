@@ -1,6 +1,6 @@
 # %%
 import pickle
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 
 import numpy as np
 import soundfile as sf
@@ -28,7 +28,7 @@ class ROIDetector:
         self.tn, self.fn, self.ext, self.spectro = self.get_processed_spectro(
             audio_buffer, fs
         )
-        return self.spectro, self.tn, self.fn, self.ext
+        return asdict(self)
 
     def get_roi_coordinates(self, Sxx_db_noNoise_smooth, ext, param1, param2):
         self.rois = self.get_df_rois(ext, self.spectro)
@@ -72,7 +72,7 @@ class ROIDetector:
             savefig=None,
             **{"vmin": 0, "vmax": self.dB_max, "extent": ext}
         )
-
+        
         return tn, fn, ext, Sxx_db_noNoise_smooth
 
     def save_params(self):
